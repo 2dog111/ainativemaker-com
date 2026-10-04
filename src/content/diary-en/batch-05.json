@@ -1,0 +1,94 @@
+{
+  "2125": {
+    "paragraphs": [
+      "Vibe-coding is helped enormously by asking Codex, while it checks the results of its own work, to look with its eyes at what came out, instead of settling for a glance at the database and the assumption that it all renders correctly on the front end.",
+      "On the web, the Chrome DevTools MCP helps abundantly with this, and on the file system Codex figured out to ask me to share screen-recording permission for the Codex App and Terminal App, and now it slyly snaps pictures of the DMGs and clients it launches and checks the result for pixel-perfect correspondence with what it expects should be there. Result: -95% visual glitches. It catches almost everything itself, criticizes itself, and fixes it itself. If not on the third try, then on the fifth. Honestly I … care which try it is, as long as I get a decent final product without intervening =)"
+    ]
+  },
+  "2126": {
+    "paragraphs": [
+      "Well, dear vibe-coders, congratulate me or something — for the first time in my life I bought myself a real VPS at Hetzner, where I'll be crawling over from Railway, which I've finally outgrown:)",
+      "Codex is now setting all this up with a prompt the size of Jupiter, authored by Monsieur GPT PRO:)"
+    ]
+  },
+  "2136": {
+    "paragraphs": [
+      "Dudes, help me understand:",
+      "So I took a fat Hetzner cloud… Overall it's already gorgeous, and I can do what I want on it, and … will anyone else do it for me.",
+      "However, I want, for example, to run 3 different services on it. That's Ultima, and my private sender for 17 thousand mailboxes, and a couple of landing pages, and a Telegram bot, and the control panel for SLSBMB. Oops, that's not even 3 but … more.",
+      "Doesn't matter. What matters… What's the simplest and most straightforward way to do this? Why I'm asking:",
+      "You all understand perfectly well that I'm … no DevOps at all. I have no idea … about anything related to servers. Until yesterday I simply pressed the PUSH … button and it was a mystery to me by what mysterious means it related both to GitHub and to Railway.com at once. That was a cargo cult. I knew that if you press the button, things will be good. Only unlike the poor souls of the cargo cult, things really were good for me.",
+      "When I ask Codex how to split one server between, say, five services, it offers me such a wall of changes that I can't even read it. Like there are … 100,000 unfamiliar words in there, I swear I don't understand what any of it means. When there are 10 unfamiliar words, you can playfully decode them with ChatGPT, but when they're all unfamiliar and there are several A4 pages of them, I think you understand that doesn't work…",
+      "My meager little mind has picked up that you can, like, … anything into docker compose and it'll be isolated there, but when I asked GPT this way and that, the regular one, thinking and pro, they're … in no hurry to answer “yes” or “no.” From their answers on the topic it follows that “it's not so clear-cut,” to put it mildly.",
+      "So help those like me, whose brain is losing weight, and give me some video or tip or a well-aimed slap upside the head.",
+      "Insults are also welcome, but in return I'll … your mother; don't forget I'm also a Dota player, so careful with that;)"
+    ]
+  },
+  "2141": {
+    "paragraphs": [
+      "Thanks everyone, by the way, for the advice on dividing up the holy body of my little Hetzner server. In total I got about 360 degrees of advice. No point of view outweighs another by a gram.",
+      "The cloud of advice is this:",
+      "Hetzner is …, you just put projects into docker compose and the LLM will set up the orchestration between them wonderfully",
+      "Hetzner is … with docker compose even for 100 projects, but the LLM screws up load orchestration, you'll have to go take a DevOps course",
+      "Hetzner is …, but Docker is total …, you need special paid software that does everything nicely",
+      "Hetzner is total …, you should stay on Railway",
+      "Hetzner cloud is total … just like Railway, you need AWS/DO/Cloudflare/bare metal",
+      "In all cases absolutely everyone told me that owning your own server is a guaranteed hack within 15 minutes, impossible to avoid",
+      "The Internet is … quite the place, absolutely safe)))",
+      "Recommended for children",
+      "For now I've decided to spin up a separate server per task, and set up security such that, in the LLM's opinion, nothing could happen even in theory. It'll be interesting to see whether they break in or not) Well, at least I'm no longer storing the Telethon session anywhere at all, so if anything I'll at least still have Telegram :D"
+    ]
+  },
+  "2159": {
+    "paragraphs": [
+      "For those who don't pay $200 for GPT PRO and have no way to properly appreciate its value for development at the end of March 2026:",
+      "I used to use Pro a lot; without it I'm not sure my paywall for the group would have come together at all, nor the other stuff with which I proved to myself that vibe-coding can now be given at least a half-time position in life, never mind a full, fat one.",
+      "Pro let me do one elementary thing that is key for a person with no technical skills at all:",
+      "Having run out of steam from bugs and the uncertainties growing around the whole perimeter of the project, throw in the entire repo, describe my … about as thoroughly as I'd describe them to a buddy CTO or a therapist, and get back something breakthrough that changed the picture.",
+      "Pro thinks extremely long, so seriously coding on it continuously is impossible unless you're a truly hopeless autist.",
+      "But precisely planning something big, or breaking through some barrier too steep to keep hopping over in the short dashes of the junior models in Codex — that it allowed, and I'm sure a couple thousand vibe-coders are walking the planet right now who owe Pro everything they've paddled to so far, without pathos or exaggeration.",
+      "However, the old Pro had very small limits for repositories that grow along with your skills, and there was a moment when it degenerated into a slightly improved Thinking model you could have a fling with in dense text, but showing it a repo was simply impossible anymore, since its real limit was about 50 thousand lines of code across 10 files, and beyond that, brother, you're on your own.",
+      "Hardcore coders were probably still enjoying it then, since they can ask it in complex language for things beyond someone like me, but at some point it started helping me plainly worse than the models inside Codex itself, which for example have access to the full repo, and I just stopped using it. The Pro subscription became for me simply access to slightly deeper inference and roughly unlimited coding.",
+      "But everything changed dramatically with the release of Pro 5.4. I didn't immediately realize that 5.4 PRO is a completely different generation of Pro. Although 5.4 PRO compared to previous generations is roughly like the newest MacBook compared to a pager. Those who use the new Pro to the full depth of the instrument see not the slightest exaggeration in that statement.",
+      "Right now the situation is such that if you have access to 5.4 PRO, you can of course ignore it and content yourself with the, to put it mildly, not-dumb 5.4 xhigh in Codex, but that is very, very foolish and costs an extraordinary amount of time.",
+      "Pro thinks even longer than before. It doesn't forgive half-assed requests. And funnily enough, the most incredibly complex requests and requests about superficial … can easily be processed in the same ~75–90 minutes. I think this confuses many, and turned those who weren't lucky enough to be persistent away from the real capabilities of this beast of a model.",
+      "What you can get from Pro today with due persistence:",
+      "It can now swallow not just 10 files but 10 archives consisting of hundreds of files, and — absolutely counterintuitively, since it runs against all previous experience — it will somehow mysteriously read ALL those files (there can easily be close to a thousand) and manage to reason over all of them simultaneously in full connection with each other, even if the task it's given on top of those files ties them together into a tight knot of thousands of small aspects made of parameters and cross-feature interactions, which amounts to some absolutely unthinkable matrices of parameters it has to account for to produce the result.",
+      "Every day I push further and further, and so far I can't find the bottom where the model gives up and gets even a little dumb, makes a mistake anywhere…",
+      "For example, yesterday, on one prompt with a heap of attached files, it produced 16 prompts that Codex 5.4 processed for A FULL DAY, and gave me a repo that weighs 410 megabytes as a zip archive and consists of guess how many hundreds of files (hint — more than 500)."
+    ]
+  },
+  "2179": {
+    "paragraphs": [
+      "Heard today an essentially stupid thought: like, you all are puffing away now, and I'll wait, and when they release AGI, you'll be able to code without knowing how to code or vibe-code.",
+      "You're wasting your time, Tim, … like. Should've waited half a year … instead of …. That's what one local nitwit told me.",
+      "However, the thing is that this vibe-coding is by no means for nothing. It doesn't just help in idleness — finding a common language with our lesser brothers, the coders.",
+      "It also helps create products. Creating products isn't coding products. Creating products is creating … products. That little skill lives not outside but inside the head.",
+      "AGI will sit down in front of you and ask — … did you want, paying subscriber?",
+      "And you'll moo at it, “I want buttons.” It'll stamp its hooves and bury you in buttons … to death.",
+      "And the vibe-coders will ask more intelligently;)"
+    ]
+  },
+  "2186": {
+    "paragraphs": [
+      "Honestly, I'm of course a bit … with this vibe-coding.",
+      "It's all interesting.",
+      "But it's killing me.",
+      "But it kills like cigarettes. Or like a good sci-fi book you can't put down when you really just need to get up and go to work instead of turning pages to find out what the … happened to him and his spacesuit after he finally got hit, and the opponents who jumped out from around the corner to finish him off saw an empty spot, although there was nowhere left to crawl, but he'd gone somewhere…",
+      "What's happening to me now is absolutely unnatural. I quite consciously pumped up a heap of skills in myself, and pumped them up enough not to lose face in front of the Khodorkovskys and entirely real prime ministers, but none of those skills were pumped up in order to do what I've been doing these last months.",
+      "You can only end up doing this by accident, and that accident is an important component of the pulsing drama inside the head that won't let go, pulls you forward. Like in childhood at an abandoned construction site you wanted to “try to jump over there too,” not only because there's some point to it, like respect from the boys, the fluttering hearts of the girls, but something for yourself. Because honestly it's … interesting what's over there!!!",
+      "But a special charm is lent to all this by, again, a very childlike feeling — the understanding that this will pass, and will never happen again, either to me or to other people.",
+      "Vibe-coding in September 2025, which I nervously tried on myself, isn't even a pager in the era of iPhone 17s anymore. It's already a punch card. The feeling of belonging with those few out of millions who soldered a motherboard so it would support 8 megabytes more RAM, so they could later go to a forum meetup of 8 people in a bar on the outskirts and boast about their impressions — you can't mistake it for anything.",
+      "Everything we do today on 5.4 xhigh won't mean anything even in 3 months, let alone 3 or, all the more, 13 years. You won't even be able to explain to the kids of that time what it was and why, and the situation won't arise, just as I don't find situations where I'd explain to children how we rewound cassettes with a pencil.",
+      "And only those who are hopelessly sick with curiosity, whose symptom is enthusiasm, can understand this feeling."
+    ]
+  },
+  "2190": {
+    "paragraphs": [
+      "By the way, in all these years I never once touched the free models like llama with my own hands, and I thought that when people do anything with reasoning in their services, even something elementary, it's something they spend some sums on tokens for.",
+      "However, it all turned out completely prosaic (and simple as a penny):",
+      "If you need your service to do something somewhere with a touch of intelligence, for example sorting emails into the right folders, as in the case of my sender, it's as simple as asking Codex: Please wire in the latest llama so it decides which folder to put every incoming email. Make sure you describe folders well so it don't need to guess what do we mean by soft bouned or automatic reply, or reply-intent types.",
+      "I thought I'd still have to configure something, study something, but nothing was needed. It just jammed the model in, and from the very first test the model does everything exactly as expected.. For free =)"
+    ]
+  }
+}

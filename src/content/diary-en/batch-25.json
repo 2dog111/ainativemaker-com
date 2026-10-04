@@ -1,0 +1,62 @@
+{
+  "202609050823": {
+    "paragraphs": [
+      "I'm even glad it's another five hours to the little office and we won't leave for another fifteen, because we've buried our sparkling excitement so many times over the past nine supposedly great releases that I don't yet believe this miracle will last))) And you can't get a fucking thing done in the one day it might survive anyway)",
+      "How I wish that past experience would become obsolete, of course :)))"
+    ]
+  },
+  "202609070254": {
+    "paragraphs": [
+      "By the way, I just realized I'd never thought to ask in the prompt: don't jump straight into one fix; look at the whole scope of visible fixes, and only tackle one at a time if it's the only thing left before the finish line. Run the tests once the entire previous list is done, so everything gets tested together. And when a test fails, don't rush to fix it immediately: record it in the next plan and move in these broader iterations. I could add that to the task right now and see how it goes)))"
+    ]
+  },
+  "202609080145": {
+    "paragraphs": [
+      "Honestly, bro, jokes aside, I can't remember the last time I had a computer problem I couldn't solve. I just tell Codex what's wrong and it finds a way to fix it in a couple of minutes.",
+      "Whether it's on my computer, on a server, or on any device you can physically connect to a network or plug into a computer.",
+      "Their computer use has been downright hacker-level for a long time) The only reason something isn't working for you is that you haven't tried asking Codex to fix it with those same two screenshots)"
+    ]
+  },
+  "202609180442": {
+    "paragraphs": [
+      "I think I've used up my testing quota for the year. Now I just want to finish the project, and experience, the son of hard mistakes, tells me that testing Union Alpha or any other free piece of shit won't help with that at all.",
+      "The memory of Ox Alpha is still fresh: it couldn't finish a single task because of error 39874628ydwhe8fs877sd7fsd7f.",
+      "The nastiest part is that you don't even know who the fuck to tell off.",
+      "That fucking noob chatbot dodges every curse like an anonymous account in a Telegram channel."
+    ]
+  },
+  "202609300921": {
+    "paragraphs": [
+      "For the past six months I've basically had no content, here or there.",
+      "Because I have no energy for it, and nothing to show.",
+      "Every day I just slurp spoonfuls of a soup made of seven dicks.",
+      "And the splashes land here. To make content, a person has to live and think about different things. For a very, very, very long time now, I've thought about nothing but the goal) And the goal isn't fucking pretty. It's just to finish this fucking thing.",
+      "Then there's all the green I've accumulated, the complete change of personality, and so on.",
+      "A person returns from any journey changed. From a truly hard and long journey, they return changed as fuck)"
+    ]
+  },
+  "202610012259": {
+    "paragraphs": [
+      "Headless is, in my opinion, just the same session running as a process, without any of the bits that stick out for fucking humans)",
+      "Headless definitely doesn't save tokens)) I run a number of tasks headless, Market Scan for example, and it eats exactly as much as when I trigger it in a visible session)))",
+      "And if you mean computer resources, what kind of computers do you have if that matters? Though I don't think I've ever tried running a session on a server without headless, because why the fuck would I?",
+      "If you have enough different tasks for twenty sessions, why not start twenty sessions?",
+      "That used to be chaos. Now they coordinate with each other :)"
+    ]
+  },
+  "202610030251": {
+    "paragraphs": [
+      "I'm about 60% done.",
+      "I've passed 2,000 files)",
+      "It's been working since the Sol 6.1 release, plus a couple of hours.",
+      "I think it'll finish during the night after tomorrow.",
+      "And I can already start another session in parallel that will launch other sessions to fix what it finds)",
+      "The main thing is to ask it to double-check before launching anything, so nothing breaks and the business logic doesn't change.",
+      "In the end, that session will examine each finding, make a plan and launch a fresh session to handle it. That one will finish and report back)",
+      "The first session will check the work again and accept it.",
+      "Or send it back for revisions.",
+      "I've found 142 problems; 17 are already fixed)",
+      "That should use up the 500-dollar limit with one reset, alongside the other work I'm doing by hand :)"
+    ]
+  }
+}

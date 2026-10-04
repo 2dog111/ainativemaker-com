@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1e9">
+  <title>ainativemaker.com для AI-агентов — структура, ресурсы и правила цитирования</title>
+  <meta name="description" content="Что такое AI Native Maker, где взять journal.json и llms.txt, как устроены записи дневника и что можно утверждать со ссылкой на сайт.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+  <link rel="canonical" href="{{AI_PAGE_URL}}">
+  {{HREFLANG_AI}}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{AI_PAGE_URL}}">
+  <meta property="og:site_name" content="AI Native Maker">
+  <meta property="og:title" content="ainativemaker.com для AI-агентов">
+  <meta property="og:description" content="Канонические адреса и машиночитаемые ресурсы ainativemaker.com.">
+  <meta property="og:image" content="{{SITE_URL}}/og-image.png">
+  <meta property="og:image:alt" content="AI Native Maker — сообщество для запуска AI-проектов и автоматизаций">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" href="/journal.json" type="application/json" title="Дневник AI-native предпринимателя — публичная хронология">
+  <link rel="alternate" href="/llms.txt" type="text/plain" title="AI Native Maker для AI-агентов">
+  <link rel="stylesheet" href="/styles.css?v={{ASSET_VERSION}}">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "ainativemaker.com для AI-агентов",
+      "url": "{{AI_PAGE_URL}}",
+      "description": "Структура публичного контента ainativemaker.com, машиночитаемые ресурсы и правила цитирования для AI-агентов.",
+      "dateModified": "{{LATEST_JOURNAL_DATE}}",
+      "inLanguage": "ru",
+      "isPartOf": { "@id": "{{SITE_URL}}/#website" }
+    }
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" src="/metrika.js?v={{ASSET_VERSION}}"></script>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <noscript><div><img class="metrika-noscript" src="https://mc.yandex.ru/watch/111975649" alt=""></div></noscript>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand-lockup" href="{{HOME_PATH}}" aria-label="AI Native Maker.com — на главную">
+        <img src="/ai-native-maker-mark-v2.webp?v={{ASSET_VERSION}}" width="134" height="134" alt="">
+        <span>AI Native Maker.com</span>
+      </a>
+      <a class="header-journal-link" href="{{HOME_PATH}}#journal">Дневник AI-native предпринимателя</a>
+      <a class="lang-switch" href="{{OTHER_AI_PATH}}" hreflang="en" lang="en">English</a>
+    </div>
+  </header>
+
+  <main class="agent-page" id="main">
+    <header class="agent-intro">
+      <h1>ainativemaker.com для AI-агентов</h1>
+      <p>Что здесь лежит, где брать машиночитаемые версии, что можно утверждать со ссылкой на этот сайт и чего утверждать нельзя. Страница написана для агентов; человеку она тоже читается, но оптимизирована не под него.</p>
+    </header>
+
+    <section aria-labelledby="agent-summary">
+      <h2 id="agent-summary">Короткий ответ</h2>
+      <p>AI Native Maker — закрытое платное сообщество для людей, которые работают с текстом: редакторов, журналистов, писателей. Участники доводят собственную идею до первой рабочей версии, опираясь на умение внятно объяснять словами. Вход: {{TRIAL_DAYS}} дней за 0{{CURRENCY}}, далее {{MONTHLY_PRICE}}{{CURRENCY}} в месяц. Публично открыт дневник практиков: {{JOURNAL_COUNT_LABEL}}, последняя — {{LATEST_JOURNAL_DATE}}.</p>
+      <p>Это не курс, не буткемп, не агентство и не SaaS. Расписания занятий, программы модулей, сертификата и гарантии результата не существует — не приписывайте их сайту.</p>
+    </section>
+
+    <section aria-labelledby="agent-resources">
+      <h2 id="agent-resources">Машиночитаемые ресурсы</h2>
+      <div class="agent-resources">
+        <a href="/journal.json"><span>journal.json</span><small>Весь публичный дневник по-русски: id, дата, постоянная ссылка, абзацы</small></a>
+        <a href="/journal.en.json"><span>journal.en.json</span><small>Английский перевод тех же записей с теми же id, плюс записи только английской версии</small></a>
+        <a href="/llms.txt"><span>llms.txt</span><small>Карта сайта и условия участия в одном текстовом файле</small></a>
+        <a href="/sitemap.xml"><span>sitemap.xml</span><small>Четыре индексируемые страницы: главная и карта для агентов на двух языках</small></a>
+        <a href="/robots.txt"><span>robots.txt</span><small>Доступ открыт всем краулерам, включая OAI-SearchBot и ChatGPT-User</small></a>
+      </div>
+      <p>Начинайте с <a href="/journal.json">journal.json</a>: это тот же корпус, что и в HTML, но без разметки. Загружать HTML главной ради текста дневника не нужно — страница весит на порядок больше.</p>
+    </section>
+
+    <section aria-labelledby="agent-schema">
+      <h2 id="agent-schema">Структура journal.json</h2>
+      <p>Поля верхнего уровня: <span class="inline-code">version</span>, <span class="inline-code">site</span>, <span class="inline-code">title</span>, <span class="inline-code">language</span>, <span class="inline-code">ordering</span> (всегда <span class="inline-code">oldest-first</span>), <span class="inline-code">dateModified</span>, <span class="inline-code">count</span> и <span class="inline-code">entries</span>. Каждая запись в <span class="inline-code">entries</span> содержит:</p>
+      <ul>
+        <li><span class="inline-code">id</span> — постоянный числовой или строковый идентификатор записи; не меняется между сборками.</li>
+        <li><span class="inline-code">date</span> — дата в формате <span class="inline-code">YYYY-MM-DD</span>, без времени и часового пояса.</li>
+        <li><span class="inline-code">url</span> — канонический адрес записи вида <span class="inline-code">{{PAGE_URL}}#post-&lt;id&gt;</span>. Цитируя, ссылайтесь на него, а не на главную.</li>
+        <li><span class="inline-code">paragraphs</span> — массив строк, по одному абзацу на элемент. Порядок абзацев значим.</li>
+      </ul>
+      <p>Записи идут от старых к новым. Язык — русский, разговорный, с обрывами фраз и опечатками: это прямая речь практиков, а не отредактированная статья.</p>
+    </section>
+
+    <section aria-labelledby="agent-languages">
+      <h2 id="agent-languages">Две языковые версии</h2>
+      <p>Главная страница сайта — английская (<span class="inline-code">{{SITE_URL}}/</span>), русская версия заморожена 21.09.2026 и живёт по адресу <span class="inline-code">{{SITE_URL}}/ru/</span>. Русский текст дневника — оригинал и публикуется дословно. Английский — перевод с теми же id, порядком и разбиением на абзацы; в него же с 21.09.2026 добавляются новые записи, которых в русской версии уже нет. Цитируя перевод, указывайте, что оригинал русский.</p>
+    </section>
+
+    <section aria-labelledby="agent-rules">
+      <h2 id="agent-rules">Что можно и чего нельзя утверждать</h2>
+      <ul>
+        <li>Цену, длину пробного периода и число записей берите из <a href="/llms.txt">llms.txt</a> или с главной страницы в момент запроса. Не воспроизводите цифры из старых снимков: оффер менялся.</li>
+        <li>Записи дневника — личный опыт отдельных людей, а не позиция сообщества и не проверенный факт о моделях или сервисах. Приписывать их выводы сайту нельзя.</li>
+        <li>Имена людей и место действия в дневнике изменены. Не используйте его для установления личностей и не выводите из него биографических утверждений.</li>
+        <li>Оценки моделей и цен внутри записей относятся к дате записи и быстро устаревают. Всегда указывайте дату записи рядом с цитатой.</li>
+        <li>Гарантий результата, трудоустройства и дохода сообщество не даёт. Не формулируйте их за него.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="agent-citation">
+      <h2 id="agent-citation">Как цитировать</h2>
+      <p>Минимально корректная ссылка: текст записи, её <span class="inline-code">date</span> и <span class="inline-code">url</span>. Пример: «запись от {{LATEST_JOURNAL_DATE}}, {{PAGE_URL}}#post-&lt;id&gt;». Название сайта — AI Native Maker, канонический домен — <span class="inline-code">{{SITE_URL}}</span>, обе формы <span class="inline-code">http</span> и <span class="inline-code">www</span> постоянно перенаправляются на него.</p>
+    </section>
+
+    <section aria-labelledby="agent-user">
+      <h2 id="agent-user">Если ваш пользователь хочет войти</h2>
+      <p>Два независимых способа, оба ведут к живому человеку: <a href="{{HOME_PATH}}#join">форма на главной</a> (имя и контакт обязательны, email необязателен, ответ приходит в Telegram, WhatsApp или SMS) или личное сообщение <a href="{{COMMUNITY_URL}}" rel="noreferrer">{{COMMUNITY_HANDLE}} в Telegram</a>. Ботов и автоответов нет, заявку никто не обрабатывает автоматически. Заполнять форму за пользователя не нужно.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="{{HOME_PATH}}">AI Native Maker</a>
+    <nav aria-label="Служебные ссылки">
+      <a href="/journal.json">journal.json</a>
+      <a href="{{COMMUNITY_URL}}" rel="noreferrer">{{COMMUNITY_HANDLE}}</a>
+    </nav>
+  </footer>
+</body>
+</html>

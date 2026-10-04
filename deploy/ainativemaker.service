@@ -1,0 +1,29 @@
+[Unit]
+Description=AI Native Maker lead intake
+After=network.target
+
+[Service]
+Type=simple
+User=ainativemaker
+Group=ainativemaker
+WorkingDirectory=/opt/ainativemaker-server/current
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=8787
+Environment=DATA_FILE=/var/lib/ainativemaker/leads.jsonl
+Environment=STATUS_FILE=/var/lib/ainativemaker/lead-statuses.json
+Environment=COOKIE_SECURE=true
+EnvironmentFile=-/etc/ainativemaker-admin.env
+Environment=ALLOWED_ORIGINS=https://ainativemaker.com
+ExecStart=/usr/bin/node /opt/ainativemaker-server/current/server/index.mjs
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/ainativemaker
+
+[Install]
+WantedBy=multi-user.target

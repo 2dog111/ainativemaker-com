@@ -1,0 +1,109 @@
+{
+  "202606011300": {
+    "paragraphs": [
+      "I've been devouring 4 subscriptions at $200 for a month and a half now",
+      "It's logical to assume that less than 1 subscription at $200 isn't vibe-coding",
+      "Vibe-coding isn't as simple as people think when they imagine they're vibe-coding",
+      "A complex, reliable, stable … you'll only render in 500–2,500 commits",
+      "That's why you should only build what's genuinely needed",
+      "Same as in ordinary development — the principle doesn't change at all",
+      "And expand outward from what's needed, grabbing the sexy nice-to-haves if you're lucky",
+      "And those 500–2,500 commits don't come from …, you sit there and … them …",
+      "What subscription do you need to make that many commits not in a year but in a couple of weeks",
+      "The right answer — a couple at $200, and beyond that the sky is the limit. But the sky in my case is 4 subscriptions, because I simply can't process more. As soon as I learn to — I'll buy another"
+    ]
+  },
+  "2701": {
+    "paragraphs": [
+      "By the way, I think my sudden overnight migration today accidentally demonstrated very vividly how flawless Codex is these days.",
+      "I remembered that my old version of SLSBMB-stats, which was not yet the Bomb automation but an analytics platform on steroids, was still hanging on Railway + Supabase.",
+      "Also, the Pussymoneyweed bot that does business in this channel and in the discussion group, which hosts both the chess and the payment mechanism for streams and some of my other processes — was also still hanging on Railway + Supabase.",
+      "So as of last night I had 6 servers:",
+      "1 Hetzner at ~$45 hosts my Sender and everything related to it",
+      "2 balanced Hetzners host the farm of mailboxes and warm-up, also $45 each.",
+      "1 Hetzner at $5 for Ultima Online.",
+      "And two … Railway + Supabase, which for some reason together started charging me about $100 for no comprehensible reason.",
+      "I've generally noticed that all kinds of services that sell simplification for pennies to noobs have a tendency to quietly grow their cost many times over in short periods for no … reason at all.",
+      "The pricing depends on a mass of things including the load the neighbors put on my server, but the neighbors are invisible, meaning they can simply raise the cost to infinity, and that's that:)",
+      "In the end I glimpsed another bill from Railway+Supabase and asked Codex, like, bro, what do you think we should do with these repos?",
+      "Codex took a quick look and said, like, bro, what are you talking about?!?",
+      "The $4.99 server from Hetzner won't even hit 5% load if both projects move onto it!!!",
+      "But you don't even need to buy a new one, I'll just move you onto one of the fleet and that's it, those servers won't even notice these two projects. They wouldn't notice ten such projects.",
+      "And what, I say, is it hard to move?",
+      "Give the go-ahead and go to sleep; tomorrow morning you'll wake up and everything's moved.",
+      "Gave the go-ahead and went to sleep.",
+      "In the morning I thought, okay, now we'll be sorting something out, but no — it moved the projects, killed the accounts on Railway and couldn't kill the one on Supabase since they don't allow it until the last invoice is paid, but prepared a downgrade to free.",
+      "Not a single error found.",
+      "Simply moving two fairly different projects onto one server, which they now share with a very important project, without a single error)",
+      "And the whole thing, by the way, took only 1h 5min."
+    ]
+  },
+  "2707": {
+    "paragraphs": [
+      "Thanks to everyone who came to support my vibe-code reflection and hung out with me so long; I didn't notice almost 5 hours fly by.",
+      "Cool that I have Whisper-3-turbo lying around on the machine for business, and I simply gave Codex a YouTube link, and 10 minutes 35 seconds later it handed me timecodes.",
+      "However, while adding them to the video I realized that I have a connection to YouTube anyway, … it, via the Pussymoneyweed bot, thanks to which donations show up in the YouTube chat, and I can ask Codex to … the timecodes straight into the video; you don't even need to give the link, you just say “gild today's stream with timecodes plz, main focus on X and Y,” and it'll do it.",
+      "And I also realized that online, from the picture's point of view, I'll never age now and won't look like … like Krol. I think that's worth celebrating:***"
+    ]
+  },
+  "2714": {
+    "paragraphs": [
+      "A guy looked at the results of Knowledge's work on his project (a piece of the system I vibe-coded and showed yesterday), and writes exactly what I dreamed of seeing after 18 development iterations of this particular ….",
+      "Life is beautiful:***"
+    ]
+  },
+  "2715": {
+    "paragraphs": [
+      "By the way guys, it seems to me many of you should think about which VPNs you buy, and possibly build your own altogether (it's very easy to vibe-code for your own use).",
+      "Out of the corner of my eye I see that people can't watch the stream, but it's blocked only in Russia and Belarus out of all the countries in the world (some music producers don't want their music playing there because it can't be monetized there).",
+      "At first I thought, like, … people who can't press a button on a VPN to watch such streams, let them go … kick a puddle behind the garages instead.",
+      "But then I realized that everyone probably has a VPN now, it's just that the providers of that VPN are the same … kids as Instantly and the like.",
+      "Seems to me it would be an interesting project — to … your own VPN on the very cheapest server in nature =)"
+    ]
+  },
+  "2733": {
+    "paragraphs": [
+      "Here's a little nighttime treat for you:",
+      "Turns out that with two commands you can give Codex root access to a Steam Deck over Wi-Fi, and forget about climbing into the Steam Deck for anything other than games.",
+      "The Steam Deck is a … thing that first thrills you with the number of its geek capabilities, and then infuriates you …. I wanted to play, not crawl through the windows of … Linuxes; my beard isn't long enough for that.",
+      "Now Codex crawls for me =)))))) … my silicon brother-sister.",
+      "Imagine how nice: “Codex, buy me all the heroes please and find all the add-ons that can be bolted onto them, custom maps etc. on various forums.”",
+      "Done."
+    ]
+  },
+  "2734": {
+    "paragraphs": [
+      "Hmm, by the way, I hadn't thought about this, but the Steam Deck is also a wonderful server for something simple =)",
+      "I'll try running Ultima on it, and use Hetzner as a fallback in case the Steam Deck is unavailable)"
+    ]
+  },
+  "202606101940": {
+    "paragraphs": [
+      "But we know the cost of this at the present time in 2026",
+      "It's … not dollars",
+      "To learn to build something that actually works you have to spend … knows how many thousands of hours at this beast",
+      "And then, to actually learn to finish things — you have to try … hard",
+      "I don't … see people with even 1/5 of the enthusiasm required",
+      "Which says the technology is still at the very beginning; for now it's mass-market only on paper",
+      "People, even despite the obvious … financial and other benefits that the ability to vibe-code real products gives — aren't ready to invest as much enthusiasm as is required",
+      "That's why all around there's nothing but … about vibe-coding, and almost nobody shows real products",
+      "Most of the things I've been shown I could build over a weekend",
+      "Well, they also showed me repos of tens of thousands of files, but those were already tens of thousands of files before vibe-coding appeared)))",
+      "That … doesn't count, accordingly",
+      "I've really gotten on calls with a bunch of vibe-coders who talk a big game, but ask them to share their screen and they've got … to show",
+      "Which means there's no point listening to their words, although they push them into every channel quite proactively)))",
+      "The impression that everyone is now such … vibe-coders is just … how wrong. They're all just as much politicians, economists without knowing a single term beyond the ones taught on TV: “devaluation,” “inflation,” etc.",
+      "I'm very happy every time someone here shows their own projects that already represent at least a month of 8-hours-a-day vibe-coding",
+      "That's respectable; with people like that you'll be able to meet over a glass of a cheap drink in a warm third-world country",
+      "While the rest die of hunger",
+      "People don't get what's happening at all, unfortunately",
+      "More people will fall than in any war; there's absolutely no way out except knowing how to do some insane number of things, with product design of course coming first.",
+      "People aren't lifting a finger … — they keep dumbly, lazily going to collect their salary and look at their feet; honestly I'm … over this)",
+      "Don't look up, bitches",
+      "Just remember that I have friends with British passports and résumés that are off-the-charts … even by a Brit's standards, let alone a Russian's, who haven't been able to find work for half a year now, going through hundreds of interviews. I have no friends with … résumés; how those people look for work I can't even imagine)",
+      "That's … today, when AI hasn't even properly begun.",
+      "A couple of years ago these people were choosing from ten offers WITHOUT ADVERTISING THEMSELVES.",
+      "As if we're … living on different planets"
+    ]
+  }
+}

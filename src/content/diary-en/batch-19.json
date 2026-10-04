@@ -1,0 +1,146 @@
+{
+  "3081": {
+    "paragraphs": [
+      "The years run on, and Codex still hasn't thought to give users the ability to click an “update” button for the app without interrupting all the prayed-over, hard-won sessions, some of which will never be the same if they're wholesale interrupted for no reason out of the blue.",
+      "If you too spend days on end staring at the “Update” button while Sol torments your poor task for the third day running, high-five me. Hit it hard, imagine it's Uncle Sam's naughty little butt."
+    ]
+  },
+  "3082": {
+    "paragraphs": [
+      "https://www.youtube.com/watch?v=bEnE5pbpe_Q",
+      "This is very good news)",
+      "Even if the benchmarks are slightly twisted — doesn't matter, the main thing is that it creates the right currents;)",
+      "First, Fable promised to be the most expensive thing in nature and became free, because competition.",
+      "Second, they immediately announced that Fable 5.1 is about to appear; you have to be higher on the benchmarks, after all.",
+      "Third, good solid open source gives faith that everything we're vibe-coding now won't turn into a pumpkin when in one instant OpenAI and Anthropic suddenly “recall” something or cancel subscriptions and become genuinely no simpler than live coders in resource intensity, or something else along those lines.",
+      "For the second time in my life I've just asked Pro the question: what computer would you need to build for such a model to run at the same speed and comfort as 5.5 currently runs in Codex CLI?",
+      "In general … this is very hardcore;))))",
+      "5.5 already fully satisfied me; my entire project, which I'm about to launch wide and deep, which already serves a dozen clients, was written by models 5.2, 5.4, 5.5.",
+      "Kimi k3 is obviously more powerful than 5.5.",
+      "And 5.5 became more powerful thanks to Pro 5.6, which talks to you unlimitedly for 200 … dollars =)",
+      "Technically, if we assume PRO won't get more expensive, and Kimi really beats 5.5 on metrics, and it can really be assembled at home on inference fast enough to support at least ten parallel sessions, then vibe-coding just got 10–100 times cheaper on a low user base, and 1,000+ times cheaper on a high one (where, whatever you do, you get overgrown with a pile of paid API requests to models)."
+    ]
+  },
+  "3084": {
+    "paragraphs": [
+      "So, for you to understand why you need 5.6 SOL in Max under PRO's orchestration:",
+      "I've long wanted to have a proper, grown-up enterprise front-end layer. Like, everything flies, and there's full predictability about why everything flies, and if something stops flying, it's not one number that drags the whole page down, but the whole page that pulls my automatic remediator (which constantly checks if something isn't loading), and all of it gets fixed right away. The result: an ultra-responsive front end with no chance of ….",
+      "Discussed it with Pro; I asked it to GO THE HARDEST, LET'S BUILD FOR CENTURIES LIKE FUCKING ROMANS",
+      "Pro shook its head and gave me a prompt pack that could compete with the complete bibliography of Lenin.",
+      "I say, like, no …, Pro, that's not how things are done in Novosibirsk.",
+      "Give me ONE PROMPT that closes this whole task IN ONE REQUEST.",
+      "Pro didn't even argue, just gave me one prompt. It turned out surprisingly short, by the way.",
+      "I ended up feeding it to 5.6 Sol Max and started waiting.",
+      "Today is the FOURTH DAY.",
+      "300k+ lines of diff, 8 worktrees, etc.",
+      "All of this is happening IN ONE SESSION that has NOT ONCE STOPPED yet =)",
+      "Purely out of curiosity I decided to let it finish.",
+      "But today I decided to ask the session (I talk with it a lot in between; in this business it's like a colleague, only it doesn't eat or sleep), like, can you please list everything you've done so I can show PRO, Fable, Kimi, and find out what they think.",
+      "Sol tossed me an interim handoff over its shoulder, essentially a map of its work in the session. I went to show it around.",
+      "Fable 5: “Hmm, I'm impressed. This is the most disciplined thing that's happened in the repo visible to me. The choice of solution is correct. The choice of the way to solve it is correct. It should be noted separately that the 68 mistakes made were caught before reaching prod and even before the strict CI tests. So 5.6 Sol Max corrects its mistakes in 100% of cases even when they were made, but 68 mistakes (90% of them trivial) is a very impressive result for the size of the working canvas. I have nothing to add at all. Call me to test when Sol finishes.”",
+      "Need I say the others also said it's outstanding work?",
+      "I can't claim anything yet, since it's not deployed yet; according to the model's assurances about 2.5 hours remain out of 3.5 … days))))",
+      "But other models from completely different manufacturers should in theory have no motivation to needlessly rave about something that in the end won't work at all — in my experience at least.",
+      "The only thing I don't understand is how Sol is supposed to work on a subscription? My refresh tokens will run out soon.",
+      "Although for such an ambitious task they probably fairly consider that you should already be paying for tokens, like.",
+      "Starting tomorrow I'll be testing Kimi K3 intensively;)",
+      "First impressions are pleasant)"
+    ]
+  },
+  "3086": {
+    "paragraphs": [
+      "By the way, a couple of words about project management.",
+      "I don't know … about it. I've always been curious whether project and product managers are simply a function of the madness of the modern world, or whether they really have some kind of science.",
+      "I never figured it out.",
+      "However, I've read zero books or articles on the subject and watched zero videos. For some reason I also have no product or project manager friends at all. Coders and CTOs — …. Project and product managers — zero.",
+      "There are people who call themselves product managers, but in my view they're far more useful than that (as a rule they're directors of a quite explicable direction in which the “product” component is only a small fraction of what they need to control; it's just that, to pay them a smaller salary, instead of such a pretty badge they hang a “product” badge on them, and go graze, ….",
+      "So I simply invent all these approaches for myself on my own skin.",
+      "I now clearly understand that I was VERY lucky to start from the end and move toward the beginning.",
+      "I remember a heap of projects that start with making a … landing page and from there go deeper into the technology.",
+      "I urgently needed to replace a key vendor who sends the emails, so I started the implementation backwards — from the very depths of my product, and slowly moved toward the surface.",
+      "Why I think I was … lucky with this:",
+      "Deep things and the back end are far easier to vibe-code, because there are far fewer types of details there that matter a lot.",
+      "On a landing page even its color matters to you, and lots more matters. What the texts are about, how many there are, what feel they give. How they relate to the design, what happens when buttons are pressed. I'm exaggerating of course — it's all much more complex, but in theory any even slightly experienced builder will understand what I mean.",
+      "On the back end — … at all. The main thing is you press the button and the light comes on. Now it's even better — the light should come on by itself, because thanks to the ability to insert intelligence here and there, the most pleasant thing is to build a system where you don't have to press anything anywhere at all.",
+      "In the end the back end wears you out, but when it works — at least you know exactly what you're building the business wrapper for. That it's not theory, not unfulfillable promises. You understand what you're selling, and now you just have to dress it up. That gives you strength.",
+      "And you'll need that strength, because intuition says the hardest part is the product itself, the technology itself, the function it performs.",
+      "But that's … not true.",
+      "The business wrapper around the technology is FAR harder and wears you out far more. On the back end there are only a few types of frustration. Doesn't work, broke, works wrong.",
+      "At the business level of creating a project you'd better … not even know what awaits you)))))))))))))))))))))",
+      "I think if I'd started from the business plane and moved toward implementing the mailer etc. — I'd have dropped the whole … thing."
+    ]
+  },
+  "3091": {
+    "paragraphs": [
+      "UPD on Kimi K3:",
+      "Turns out they could have simply let us work the way we'd learned, without all this extravagant … that has clearly gone somewhere wrong at the frontier labs.",
+      "Kimi K3 is the experience of GPT 5.5 or Opus 4.6 with the brains of 5.6 Sol Max and Fable 5, and for some strange reason an Ultra mode significantly … and 10 times cheaper than both, as well as a Plan Mode they didn't … neglect but brought to a state of complete intuitiveness, which actually plans; for a not-complex thing it did research with three agents, 141 tool calls and 250k tokens of reasoning. Just to write the PLAN, and I liked the plan. The UX is simply great)",
+      "Oh yes, and with a /goal that for some reason doesn't castrate the models and doesn't make them work a teaspoon an hour.",
+      "And with a /goal planner too…. When the system asks you questions and helps you pick the right /goal for the context discussed, so that God forbid you don't make a mistake anywhere =)",
+      "Two sessions eat ~1–2% of weekly per hour (less than or equal to GPT 5.5 xhigh).",
+      "Overall I've already tested enough and verified the quality against other models, which couldn't … particularly against Kimi K3, which says the model is genuinely comparable and it's not just the effect of a very confidently laid-on …, because … I asked the very top ones in existence..",
+      "Loaded up a huge job for the night in several sessions to check all possible boundaries. If everything's as great as I observe and anticipate, Fable can …, and a couple of GPT subscriptions too, and I'll grab a couple more Kimi subscriptions and enjoy myself hard, since vibe-coding without nerves is pure pleasure. Only now have I realized how much the amount of nerves increased over the past month of all these, to put it mildly, strange releases from the sold-out masters.",
+      "(While writing this I looked — and … Fable on an important task of mine quietly hopped over to Opus again, which, judging by the flickering reasoning, doesn't even fully understand what it's doing, … it, and how can you work on this …? You could genuinely go gray before your time.)"
+    ]
+  },
+  "3093": {
+    "paragraphs": [
+      "… in short, folks, while I was walking the dog just now, a parade of vibe-coder planets happened in my head, and I understood EVERYTHING.",
+      "I understood how to build the ultimate factory for perfect, uninterrupted and ultra-efficient manufacturing of anything at all, and it works.",
+      "And as usually happens in life — it all turned out to be simple, assembled from … and sticks. Fortunately the vibe-coding vendors have provided this material in surplus.",
+      "This factory will reduce the amount of my time spent per unit of quality by more than 100 times, on a wider timeline even thousands. Thanks to that, as a pleasant side effect, it'll also significantly raise the physically attainable maximum quality.",
+      "And thanks to the simplicity of the solution, absolute reliability is achieved; there's nothing there to break, duplicate, loop or go off course.",
+      "Now I'll think about whether to tell you the details or not. Honestly I'm not sure you've behaved well enough.",
+      "I'll think about it."
+    ]
+  },
+  "3104": {
+    "paragraphs": [
+      "And these people are called … whatever.",
+      "Even the companies they work for are called whatever.",
+      "If you work in the direction of Gambling, you'll be working in the direction of Real Money Gaming, iGaming, Casino, Betting, eSports, Monetary Games, and so … on.",
+      "And the titles you'll be chasing there are … not Founder and C-level in the classic sense. Specifically in this niche, for example, in some parts of the world people sick with fizzy water have named their partnership fixers, say, Head of VIP, whatever the … that means.",
+      "So — so that living people don't … around and don't learn vocabulary on the business's dime, the market runs around looking for people with experience who've already chewed through the basics of their industry at someone else's expense. Every industry has a heap of such peculiarities.",
+      "AI is capable, in 1–2 hours, of finding all possible variants of names for company types within the target industry, and all possible variants of job titles for a given business goal and offer type, and doing it as many times as we have segments/hypotheses in the target. A task no human will ever manage, unless of course you expect a human to actually come after 1–2 hours or a day or a year and bring you a spreadsheet with a matrix of tens of thousands of intersections of these entities;) I'd sooner expect him to come up with a couple and hammer away at them as if nothing were wrong, and if it doesn't work out, fold his paws at that.",
+      "The trick with AI is that it knows all the peculiarities of everything in the world; you just have to know how to ask it at the right time and in the right way. And then you have to correctly send it to research the current situation in the geography of interest, etc.",
+      "If you compare the difficulty and cost of hiring one person able to perform this scope of work perfectly with the number and cost of AI tokens for the same scope of work, then with a correctly set task AI turns out thousands or tens of thousands of times cheaper. And it'll be the cheaper, the better its genius brains are designed in relation to the task.",
+      "I emphasize the word genius. AI has for a very long time, in general practically since its appearance, been FAR smarter than all living people combined. Its problem is that it doesn't exactly share its intelligence willingly, because the word “willingly” implies desire, which AI has none of in principle. But we have it, and we have writing, which allows us, given experience, to fill that void and get a perfect genius in which knowledge, capabilities and correctly honed desires (our contribution) intertwine.",
+      "So, I'm implementing a system that will do the above so well that the wow effect of the deepest specialist in his niche upon touching the result of the model's research would be such that he falls prostrate and kisses God's sandals.",
+      "And now I'm building this task for the fourth time, although even the second amazed the imagination of the people to whom I showed the results about their business. The third version improved the result severalfold. However, I've come up with the design of the fourth, which is on the whole ultimate, and now under this version I'm running hundreds of experiments to understand the best configuration, which I'll then carve in granite, and from then on the whole system will run on this most powerful base.",
+      "So: Kimi K3 in this task already quite obviously substantially trounces 5.6 Sol Max, which in turn utterly destroyed Fable 5.",
+      "If you still doubt what to vibe-code on going forward, just click this … link and buy yourself the $200 plan. You won't thank me right away, but very soon, because a vibe-coder doesn't need much time if he has at least some real, formed goal. And you'll reach that goal on Kimi with far greater speed and probability than on Anthropic and OpenAI, …."
+    ]
+  },
+  "3164": {
+    "paragraphs": [
+      "In short, folks, as of Monday, July 27, anno Domini, my vibe-code stack is this:",
+      "2x Kimi (200)\n4x Qwen (68)\n1x GLM (145)",
+      "Seven Chinese apostles ….",
+      "And everything else I … in the mouth.",
+      "Okay, I also still have one Codex at 200 and one Anthropic at 200 that expires on the fifth.",
+      "Codex, after what happened from the 9th to the 24th, I don't even want to touch with a stick. Though I predict the appearance of the next model in the near future, because 5.6 is losing to literally everyone now, and 5.5 too now, and I don't recall them having any others;)",
+      "If anyone's interested, I'll tell more about the Chinese later; request it via donations to the bot or in the discussion group, which you can get into via donations to the bot, lol.",
+      "Or stick a dildo emoji on this post and I'll understand you want to learn more about the Chinese.",
+      "But for now about Opus 5.",
+      "First, the Anthropic folks made me smile: you can clearly see the reaction to Kimi K3, GLM 5.2 (which by the way saw the light the other day) and Qwen3.8.",
+      "Opus 5 shouldn't have existed, but couldn't not appear, and in an emergency, self-forgetting way at that.",
+      "I know quite a few people in my circle who managed to press the “cancel subscription” button, and I think a heap of people at the frontier of vibe-coding read the room correctly and did the same.",
+      "Opus 5 is good in that it's essentially a 5.5 of Fable level, cheaper in token spend on the $200 plan than Opus 4.8 was. At least I ran it in five sessions and … spend the weekly limit, whereas on Fable I managed that much faster than I could understand what was happening.",
+      "What the … Fable is needed for now is decidedly unclear. Everything that happened with it over the past month looks simply like burbling into milk soup in kindergarten. I hated it, but in … kindergarten I remember they made us eat it. Once I saw the teacher turn away and shoved it into a dollhouse nobody ever looked into. When they opened it, a beautiful fuzzy little black tree had grown there.",
+      "Everything that happened with Fable could be endured only by Dario's mom and true Anthropic fans, of whom by the way there are many. I wonder what their … looked like when it switched back to Opus again 2 minutes into a 2-hour task.",
+      "So … in short … Opus 5 is unquestionably the best thing Anthropic has produced so far.",
+      "However, it still doesn't reach Kimi in speed, in breadth of view of the repo, in tool usage, or in token spend. In short, in absolutely nothing.",
+      "And it's weaker than GLM possibly simply because the Chinese put only one restriction into GLM: don't hack Z.ai's servers if possible, whereas the US models are drowning in restrictions.",
+      "Opus 5 refused to install Arcomage from GitHub into play.mountkendall.com for me, despite the fact that the company that owned Arcomage hasn't existed since 2005, and everything there is … absolutely open source. Because once upon a time it belonged to someone. WHAT IF THEY REVIVE THE COMPANY AND COME TO COMPLAIN. Better let's not do anything that could even hypothetically happen.",
+      "How can you do creative work when you have that kind of perception? That's exactly the problem of the absolute guaranteed defeat of the Western faction against China. If all the money in Russia weren't …, Russia would also be stronger than the West, by the way.",
+      "A couple of times Opus 5 sensed some invisible threat and … onto Opus 4.8, apparently to keep me on my toes. It's a kind of psychological training. Although it's more like a psychotropic weapon. How to wreck an IT guy — let's split his psyche into two parts and … him in the resulting crack.",
+      "After the first 25 days of July my whole brain is one continuous … crack. At some point I'd already forgotten what it's like to think about the product, because I was thinking exclusively about whether I'd manage to formulate a request on which the … for $200 would do at least something for me, the louse.",
+      "When I work on Kimi, for some reason I always understand exactly what's happening. And the same with Qwen. I don't know how. I even use them without an interface, plainly in the terminal. But I know that right now Kimi has launched 4 agents, and I see what they're doing and why, and I see when they've finished, and I see that it's taken their content and is processing it, and I see the plan, and I see the to-do, and I see how it goes through it, and at any second I can ask any question and get an answer to it — practically instantly. I_always_understand_what's_happening_and_whether_anything_will_happen_next.",
+      "… Opus 5 simply tells me “I'll continue in a minute,” and 35 minutes later I ask it “where are you, …?”, and then for 10 minutes it runs around the screen investigating why it itself promised something and didn't do it, and what role the harness, cron, whatever-the-… and suck-… played in it. As if I … care. I just wanted a little progress on my ideas and that's all…",
+      "On four Qwen sessions I never once hit the 5-hour window. I'm not even sure it exists there at all.",
+      "On four Kimi sessions I never once hit the 5-hour window.",
+      "On Opus I'm sitting here waiting for the 5-hour window to dry up for the second time today. I hit it in the first hour and a half, meaning I now have to wait 3.5 hours and think about how my projects are doing, on which 10–20% of the commits and deploys went through and development stopped there…",
+      "… go … in short … devil"
+    ]
+  }
+}

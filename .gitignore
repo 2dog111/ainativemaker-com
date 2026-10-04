@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.env.*
+node_modules/
+dist/
+dumps/
+.ideal-ui/
+*.log
+*.sqlite
+*.sqlite3
+*leads*.jsonl

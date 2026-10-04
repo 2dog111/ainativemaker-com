@@ -1,0 +1,161 @@
+{
+  "2378": {
+    "paragraphs": [
+      "There's one thing product creators (of whom, for obvious reasons, more newly minted ones are born per day now than in the entire history of the Internet) don't think about, but every one of them will have to face it:",
+      "Any system of any complexity that isn't built for show or for one-time use is written in blood.",
+      "I only recently started to understand this.",
+      "And it's not about vibe-coding. It's about absolutely any creation, and vibe-coding simply falls into this classification.",
+      "Even the most … thoroughly thought-through pieces of the system, which I'm not at all afraid of because I can picture them pixel by pixel, will without fail prove to me during live use that I hadn't thought through half of it.",
+      "In the most brilliantly polished button, buffed by 10,000 passes, there is still a bug. It's just that fixing it now is maximally hard, because it might only fire at 1:37 a.m. in 283 days. But it's there, and it will fire. Guaranteed. And when it does, it'll be possible to find and fix. And the system will get better by that one bug. But there are more in that button; you just have to wait for them.",
+      "So old products, or old teams, have this distance that isn't so easily covered, even though at first glance it seems elementary to … copy them. Drawing them is elementary, but to make it work even just as well, for starters — you'll have to spill blood. If the thing is complex — you'll have to flood the whole apartment with it and eat plenty of iron supplements, because you'll most likely have to spill FAR more than is currently sloshing around in your body."
+    ]
+  },
+  "202604272034": {
+    "paragraphs": [
+      "It's been felt for a long time already",
+      "Quality has gone up, time costs have fallen so much that in a day I do tens of times more than I could ever have done before",
+      "On top of the increased quality that's plain mathematical science fiction",
+      "And that gives the strength to keep grinding 24/7 and developing",
+      "Because at the end of this there are two artifacts:",
+      "1) The ability to do what we did before automatically, that is, to start far cheaper for clients and do it far more efficiently, doing nothing by hand. That's money out of thin air, compared to how organizations like this usually work.",
+      "Not even out of thin air but out of the space-time continuum, …)",
+      "2) You can sell this into enterprises.",
+      "Before, enterprises couldn't work with me in principle — try inserting a third-party B2B outreach agency into enterprise processes. You can't even if you want to",
+      "Like, we were forced to work only with startups or with the most … tasks of enterprises that are technically sub-projects of sub-projects, read: startups inside enterprises. They never let us into the core product and never would have",
+      "This isn't marketing, where on the contrary this combination begs to happen. For us it not only doesn't beg to happen, it's taboo from every side.",
+      "But when this thing works by the instruction “press these 2 buttons — get the result,” you can simply implant this … into an enterprise and support it, without odd operational costs and processes. Like, the way an enterprise implants other solutions into itself.",
+      "Plus some especially rich enterprise could in principle buy the whole thing outright with all its guts, a.k.a. exit",
+      "Whether all this works out or not, honestly I don't … care; to begin with I simply like being the first to build a real AI fully independent SDR — not in words and on paper, but in actual reality",
+      "And where it leads from there, that's where it'll lead) It's just cool that as a bonus to work becoming simpler and more profitable, opportunities are being added that didn't exist when there were many people and a far bigger Look & Feel of a successful company.",
+      "This week I'll … a stream where I'll show how it works",
+      "What's still in development, and what's already in full bloom and there's simply nothing left to polish",
+      "Very little will remain in development)",
+      "I left the automation of text creatives for the very end",
+      "And it's needed there, since with AI I can now give birth to dozens or even hundreds of hypotheses at the start of a project",
+      "And ideally, for each hypothesis, make an 8-step set of creatives with 4 verticals of a/b/c/d testing",
+      "By hand that's impossible even to imagine",
+      "There's no department in existence that I could orchestrate to do such a task by hand",
+      "Not for any money",
+      "But AI can be set up to do this, and as of today already not badly",
+      "And that will be a … leap in efficiency again",
+      "Because today I make a … text and mine 8–10k contacts for it, and I place my bet on that",
+      "Like, I'm forced to bet",
+      "Then I launch the second one the same way, then the third",
+      "That's slow, and it may not even be the fifth that works but, say, the eighth",
+      "That's a tragedy",
+      "Whereas here, in the very first month, you'll be able to clearly understand how the milking of all possible customer verticals lines up for the next year",
+      "Based on real data",
+      "AUTOMATICALLY",
+      "That's …"
+    ]
+  },
+  "2433": {
+    "paragraphs": [
+      "If someone had told me in April of last year that a year later a 198-terabyte NAS would be hosted on top of my wardrobe to back up six of my servers, I'd probably have … told them where to go :D"
+    ]
+  },
+  "202604300053": {
+    "paragraphs": [
+      "We're picking up speed, folks. The end of March and the beginning of April taught me to … front end, back end, server and point fixes all at once, as a continuous conveyor for two projects simultaneously on two servers with completely different properties, and to do it practically without errors.",
+      "In February–March, I recall, I often ran loop prompts, some of which turned out to be untenable, and by the time I realized it you could basically start writing from scratch, because clearing out that snake pit was impossible in principle.",
+      "If you're here now, keep going — the skill will come) In the last 3 weeks I haven't had a single prolonged agent run that could be classified as “better if it hadn't happened.”",
+      "The devil is in the details, and they're everywhere. The deeper I sink into this thicket, the less I can give even plainly useful advice, except the kind that always infuriates everyone immensely: “don't slack off, and it'll come to you” =)",
+      "Also, your model may behave better or worse, and that may be a global problem. But however it behaves — with you it behaves in its own way.",
+      "Working with models is like working with texts.",
+      "People recognize texts, although they can't explain how. They're supposedly just words, and all the words in texts are fairly ordinary, yet the texts are completely different.",
+      "Only beginners and the just plain … lazy have identical texts. Or the dumb and untalented. Then those aren't really their texts anyway, but their parodies of others'. Unskilled people parody identically because they have one note in their arsenal. What difference does it make which finger you press it with — it sounds the same either way.",
+      "But as soon as a person starts to succeed, experience accumulates, skill appears — and their work always becomes inimitable.",
+      "In working with models, as with texts, every detail matters, and past a certain level of skill you can no longer really explain to another person either the full set of those details or exactly how they synergize with each other.",
+      "The model will behave differently even if there is a comma in the prompt or no comma, in the very same text.",
+      "Let alone a model that also has memory. That sits on a different machine, sees a different environment, different files, different instructions, a different accumulated backlog of technical files, etc. etc.",
+      "None of us is using GPT 5.5 or Claude 4.7; we're using Tim Vetrov's GPT, and Maxim Sokolov's Claude, and insert your own name.",
+      "You can compare global glitches; comparing the results of an hour's work is pointless.",
+      "This makes the model far more human than its imitation of our speech.",
+      "8 billion people will install GPT, and that will be 8 billion people + 8 billion different GPTs.",
+      "Cool, right? =)",
+      "In April 2026 on main:",
+      "- SLSBMB-Sender: 1,410 commits (from feat(web): close T24 agreements cockpit to fix(ops): parse env file safely in watchdog smoke)",
+      "- SLSBMB-mailboxes: 352 commits (the repo itself was created in April — bd3053e fleet-infra(bootstrap): initial SLSBMB-mailboxes repo split from SLSBMB-Sender)",
+      "Total: 1,762 commits in a month."
+    ]
+  },
+  "2436": {
+    "paragraphs": [
+      "We're picking up speed, folks. The end of March and the beginning of April taught me to … front end, back end, server and point fixes all at once, as a continuous conveyor for two projects simultaneously on two servers with completely different properties, and to do it practically without errors.",
+      "In February–March, I recall, I often ran loop prompts, some of which turned out to be untenable, and by the time I realized it you could basically start writing from scratch, because clearing out that snake pit was impossible in principle.",
+      "If you're here now, keep going — the skill will come) In the last 3 weeks I haven't had a single prolonged agent run that could be classified as “better if it hadn't happened.”",
+      "The devil is in the details, and they're everywhere. The deeper I sink into this thicket, the less I can give even plainly useful advice, except the kind that always infuriates everyone immensely: “don't slack off, and it'll come to you” =)",
+      "Also, your model may behave better or worse, and that may be a global problem. But however it behaves — with you it behaves in its own way.",
+      "Working with models is like working with texts.",
+      "People recognize texts, although they can't explain how. They're supposedly just words, and all the words in texts are fairly ordinary, yet the texts are completely different.",
+      "Only beginners and the just plain … lazy have identical texts. Or the dumb and untalented. Then those aren't really their texts anyway, but their parodies of others'. Unskilled people parody identically because they have one note in their arsenal. What difference does it make which finger you press it with — it sounds the same either way.",
+      "But as soon as a person starts to succeed, experience accumulates, skill appears — and their work always becomes inimitable.",
+      "In working with models, as with texts, every detail matters, and past a certain level of skill you can no longer really explain to another person either the full set of those details or exactly how they synergize with each other.",
+      "The model will behave differently even if there is a comma in the prompt or no comma, in the very same text.",
+      "Let alone a model that also has memory. That sits on a different machine, sees a different environment, different files, different instructions, a different accumulated backlog of technical files, etc. etc.",
+      "None of us is using GPT 5.5 or Claude 4.7; we're using Tim Vetrov's GPT, and Maxim Sokolov's Claude, and insert your own name.",
+      "You can compare global glitches; comparing the results of an hour's work is pointless.",
+      "This makes the model far more human than its imitation of our speech.",
+      "8 billion people will install GPT, and that will be 8 billion people + 8 billion different GPTs.",
+      "Cool, right? =)"
+    ]
+  },
+  "2453": {
+    "paragraphs": [
+      "Oh, by the way, a small remark.",
+      "The Flipper guys themselves don't vibe-code as obsessively as we do here. They set up a couple of very niche funnels on Claude Code and press the button. But that's vibe-coding at the level of “let's use Claude-Flows instead of N8N.”",
+      "And when the guys were showing me and telling me about the device and its capabilities yesterday, I kept asking them — is there documentation for this? And for this? And how deep is it?",
+      "There's documentation for everything, naturally, and it's very deep.",
+      "Now imagine:",
+      "You have a device that can do hundreds of diverse functions, from which grow thousands of other functions, which at their intersections give birth to matrices of millions of possible use cases.",
+      "A fully programmable device on the basis of which you can build a million of the most diverse products.",
+      "And you have GPT PRO.",
+      "And you have CODEX, which is the hands of GPT PRO….",
+      "Get it?",
+      "The guys hadn't even thought about it, because they, burdened with technical knowledge, don't have to walk my path of creating something from absolute zero. Unconstrained by any prejudices or anchors of past experience, but constrained by absolute helplessness in questions not even of “how to build it” but of “what can be built at all” and “what must not be forgotten in order to build something that will also actually work.”",
+      "So over the past 7 months I've pumped this bicep of “orienting on the terrain without sense organs” to the max. I created my own payment services without knowing … about the internals of payment services. Set up various servers with complex network topology and hundreds of assorted Redises-Postgreses-linters-Caddies-… without knowing … even what these things do. Not even of their existence. Not even of the existence of the problems that gave rise to the very possibility of these things existing.",
+      "And imagine how I see the world now. How boundless the possibilities are, if I now KNOW FOR SURE that behind absolute nothing there is always an entire infinity. It basically doesn't matter which void you dive into. You only have to lower your head into that opaque water to see the boundless underwater kingdom and all the beautiful fish in it, good for the health (and especially for the reproductive system).",
+      "I listen to 3 minutes about a device, completely unlocked and ready for anything, and I'm already figuring how I invent ten thousand ways to use this device with GPT PRO, then pick the top 10 most thrilling and comprehensible to me, and off we go!!!"
+    ]
+  },
+  "2456": {
+    "paragraphs": [
+      "Now I have 4x GPT $200 and 1x Claude $200.",
+      "In our discussion group, which people get into by trying to comment and interacting with our vibe-coded bot, people regularly run in telling how they can't even burn through one half-Pro subscription for $100, and start handing out advice to “use the models more efficiently,” like, Tim, you're doing something wrong if a $200 Pro gets devoured in a day.",
+      "So, my dears, I regularly audit everything that affects token spend. The rules in Readme/Agents/Claude.md, the principles of how the models move inside tasks, etc. Regularly means once every 2–3 days — one session is guaranteed to be running around checking how we're doing in this department. And I optimize token spend with all my might, otherwise three subscriptions wouldn't have been enough for a day long ago.",
+      "With full confidence I declare: if in a week you can't manage to devour the weekly limit of a $200 subscription, then you're not even at the beginning of your path yet, and you need to sit down and solve this problem by the method of the most obsessive vibe-coding.",
+      "So you understand the scale of the problem: I now burn through $1,000 of subscriptions ON ONE PROJECT, which consists of two subprojects.",
+      "Meaning that if I later want to do something else while continuing to develop what I've already built — and a renovation can only be stopped, never finished — I'll have to get a fifth and a sixth and an eighth GPT subscription.",
+      "Today I calculated that $800 of subscriptions let me earn, far more stably than before, roughly 60–80 thousand dollars net already today, not counting the opportunities opening up and all the additional monetization of those opportunities, which will let me add zeros over time.",
+      "This is for those commentators who try to tell me that vibe-coding is gambling addiction, a.k.a. a disease with nothing but downsides.",
+      "If multiplying money 60–100x is gambling addiction — then I'm deeply and quite voluntarily ill, and I hope the disease progresses as fast as possible.",
+      "As of today this is essentially the only metric that should concern you. If you spend 10 times less than me on monthly subscriptions, then you vibe-code 20–30+ times less than me. Which means I live 20–30+ lives where you live one. Whether you need this competition or not is entirely your decision. But just be aware that it exists and has been going on for some time.",
+      "We will accelerate.",
+      "Once more: the number of tokens spent is the main metric of your vibe-coding. A month ago I too couldn't physically spend even two $200 subscriptions. The very ability to do so says that discoveries have happened, successful searches, ideas that worked, valuable experiments.",
+      "Today I'm at the stage where I can already understand how to efficiently burn 1 $200 subscription a day on one project. And I know where to dig to learn to burn 2 and 3."
+    ]
+  },
+  "202605042128": {
+    "paragraphs": [
+      "What I'd like to be doing:",
+      "What I have to be doing:",
+      "C'EST LA VIE …!!!!!!!!!",
+      "We'll break through, finish it off, we don't lose!!!",
+      "On one hand these 2+ million lines were written more easily than ever by anyone in history, by the nature of what's happening.",
+      "On the other hand, in blood) My brain has already … told me off so many times over these couple of months… Sometimes it even gives me chills, like a fever, toward five in the morning.",
+      "But … all the LLMs already agree that we've implemented about 80% of the vision. What's left is the simplest in terms of code and the hardest in terms of design. The brain crunches, the bastard, but it's not going anywhere)",
+      "Funny that some things I … over my shoulder to myself while writing down the vision end up requiring simply unreal effort.",
+      "How about this task: think through a multilayered AI research machine which, regardless of product type, can give birth to hundreds of hypotheses, then, having automatically collected human feedback, adjust their weighting, and test them with hundreds of types of … logical emails?",
+      "Sounds nice, of course. But you still have to … build it. And when you start designing this …, there's … no bottom in sight at all. And all of it has to be held in mind, written down, rewritten; I'm … writing prompts now far longer than any longreads I ever wrote. And how many of those have there been? Several a day; I … how many thousands of pages have been filled to end up at the current point.",
+      "Truly, vibe-coding is no simpler than writing books. Honestly, writing books now seems like a very simple task =)",
+      "The difference is that a book you can simply not write, whereas not finishing vibe-coding the thing you've … so many months into, and bet so much on, and know how it'll help rake in the dough — that you CAN'T =))))))))))",
+      "For those who'll latch on now, like, … yourself, why are you in Claude, where's your beloved Codex.",
+      "In short, Claude performs two functions for me now:",
+      "1) It's very useful from time to time to ask Claude, speaking with my mouth into the watch, to look at Codex's last 10 commits and search the derivatives of those commits for bugs/glitches/room for optimization. Without distracting Codex from creation, so to speak.",
+      "2) When all 4 Codex Pro subscriptions are exhausted, about 1.5–2 days remain, and those 1.5–2 days I finish off on the Claude subscription)",
+      "The nearest Codex dries up at 6:37 a.m. San Francisco time tomorrow, and I'll be grinding on Codex again until the 4 subscriptions … over the next 4.5 days =)",
+      "That's how we live. At the moment.",
+      "There's no point planning how we live in principle right now; every 2 weeks we live some new way ))))))"
+    ]
+  }
+}

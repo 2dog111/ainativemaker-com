@@ -1,0 +1,174 @@
+{
+  "202607021312": {
+    "paragraphs": [
+      "For fun people … into their fist, not cut seals",
+      "And not for two hours (except those who flatter themselves), but 1 minute while drunk)",
+      "2 tasks… Not small ones, of course, but far from the biggest.",
+      "Honestly I don't quite understand how this is supposed to work…",
+      "I think Fable will stay paid (outside the subscription) for a short while. Maybe a month (at their token volumes that month is a lot of money).",
+      "But if Sol comes out and is available by subscription and is comparable, who's going to pay that much for Fable tokens? I think one request to Fable will cost as much as half a monthly subscription, and that's if the request is purely “take a look at my repo.” If you code something serious — it'll easily devour hundreds to thousands of bucks per single request.",
+      "My … Opus 4.7 via API devoured, as I recall, $200 in 2.5 hours.",
+      "And even if Sol turns out to be just as paywalled with tokens, Chinese models will appear if not today then tomorrow.",
+      "In general I think this is another … in the multi-episode series “intracranial … and spinning users on a thick, calloused ….”",
+      "Separately I want to say about Fable that either they've throttled it very hard, or it just isn't worth the hype raised around it.",
+      "No, it's a wonderful model, very smart, all cool.",
+      "But not even several times better if you compare with GPT 5.5, and GPT 5.5 is many months old.",
+      "Meanwhile nobody gives a … about GPT 5.5, while around Fable dramatic works unfold that have long made me want to vomit. Every conceivable and inconceivable stick bent too far.",
+      "And also: Fable hasn't leveled up one bit in matters of creativity. The model's strength is exclusively in machine logic and the area it covers in one prompt.",
+      "I saw absolutely no breakthroughs in thinking through, for example, interfaces or look & feel.",
+      "Ask Opus 4.8 10 times and each time it'll be a tiiiny bit better. Same with GPT 5.5, same with Fable.",
+      "They won't do the creative part for you.",
+      "The same goes for language. It neuro-slops exactly the same.",
+      "So it's simply a PRO that managed to code, and that's it. And probably some narrow-domain niches, like people who work on biological weapons, see … colossal breakthroughs, but I, with my Sales/MarTech segment, see only what's described above.",
+      "It can also be put this way:",
+      "Fable gives EXACTLY the same as GPT 5.5/Opus 4.8, but far fewer prompts are needed on technical tasks, and fewer prompts on POLISHING creative ones, since on big repos creative tasks without technical ones attached to them don't exist. On a small number of prompts the difference can be neglected.",
+      "On a run of, say, 2,000 commits, a 30–50% difference in the number of prompts is 2 weeks of life given back.",
+      "The cognitive load in depth won't shrink, but the length over which you have to bear it would shrink, if Fable were available 24/7."
+    ]
+  },
+  "202607052206": {
+    "paragraphs": [
+      "So, our Australian buddy we hung out with yesterday works as a salesman on ultra-large deals at IT companies, all his life. Usually his target is 1 to 3 million dollars of new business money per quarter, depending on the product he's working in.",
+      "Iterations of talking with guys like this help you not forget what place Russian-speaking IT entrepreneurship actually occupies in the world. About the same as the Russian auto industry occupies in the world of the global auto industry.",
+      "Although such thoughts are unpleasant to a Russian speaker by definition, it seems to me better to be aware of an unpleasant truth than to live in a languid illusion.",
+      "The guy currently works for a REALLY TINY STARTUP whose revenue in 2026 to date amounts to…. only…. $30m.",
+      "In Jasher's opinion, this startup is taking its first steps. He's never worked for such a small brand before. The smallest he'd had before was $500m in revenue, and that too, in his opinion, is still SMB, since the clients they serve are always orders of magnitude richer.",
+      "The trouble in the Russian world is that for us some round of a million dollars with practically no revenue is already considered success, a.k.a. “life is made.” Forbes immediately wants to interview such a person, etc.",
+      "And if someone has ENTERPRISE clients bringing a steady 10 million dollars in revenue, that's already, …, practically an oligarch =)",
+      "ANY large city (and many small ones) west of Minsk has collectively produced more globally successful (in money, not in constructions sucked out of thin air) IT founders than all of Russia in its entire history.",
+      "But Russia, however, is no slouch either, and most likely leads in oil-laundering projects that basically don't … care what their revenue is =)",
+      "Why it turns out this way — everyone has to answer that question for themselves. And the closer the answer strikes to the truth, the greater the chance of ending up among those rare Russian speakers who someday do pull off something big and international.",
+      "And it's curious, of course, how hard Anthropic is now exploiting a most unique situation:",
+      "People still … don't understand how to use AI at all effectively, and don't understand how to learn without giving people unlimited access, while people happily press all the buttons (1% useful presses at best), and Anthropic, with a huge smile and even greater enthusiasm, sends those organizations bills for API tokens.",
+      "Just think about what Jasher said: in their company there is NO LIMIT WHATSOEVER on AI use, and any use is encouraged in every way.",
+      "He simply plugs in Fable 5 and does everything possible with the model, letting it spawn even 100 Fable subagents, and has no idea what it costs; he hasn't even been curious. I looked at a few workflows — it's thousands of dollars, sometimes in ten minutes, since Fable, for … doing, is capable of eating that much if you wholesale use Ultracode with “operate the smartest way possible, money is not an issue” written in the settings, which of course every Human Being who isn't paying for the toy will do.",
+      "I think I could fry a million dollars on Fable pretty quickly;)",
+      "You can launch a great many chains of reasoning from this. For example: it's more profitable to have fewer than X people in an organization, where X is the maximum hypothetical token spend by one person in the absence of limits)",
+      "I wouldn't be surprised if the huge waves of enterprise layoffs that nobody can explain in any way are connected with this too. Like, let's let the best burn everyone else's salary on tokens, while meeting all the pre-calculated payroll norms =) Something in that spirit.",
+      "And it became clear why enterprises are now hunting AI founders so fiercely. Like, a heap of vacancies require an AI startup in one's history, or single it out as the most important huge plus. Like, out of 1,000 employees you don't know how many will learn to use AI, and to use limits effectively if you introduce them, and how long that'll take. So why not straight away find those who simply had to figure it out no matter what, and the presence of a startup you can touch, built by this guy's hands, is 100% proof that he can do what's required of all employees on the timeline of the next 2 years.",
+      "Etc.",
+      "My head's not working … somehow, I'm off to eat strawberries and watch Silo with Lena:***",
+      "???",
+      "On YouTube I happened upon a video where a guy discusses the recent blocking of Chinese Claude accounts. This service flashed for a few seconds. I went there and saw a very strange design, and in general at first thought it was a … scam. The models there, mind you, are priced insanely many times cheaper than at the officials:",
+      "Input/output $",
+      "Claude sonnet 5 — 0.09/0.181 vs 2/10$ (turns out 13.85x cheaper (-92.8%)",
+      "Claude fable 5 — 1.7/8.7$ vs 10/50$ (5.77x (-82.7%)",
+      "gpt image 2 — 0.2/1.3$ vs 8/8$ ( ~12x cheaper )",
+      "I decided to check how … out of 10 this really is, since I have the 5x subscription from Anthropic and the ability to compare.",
+      "Bought $7.5 of tokens there inside the platform, and after an hour and a half of … my brain over the fact that their API is completely unofficial, I still managed, with Codex's help, to … the API into my Hermes.",
+      "I compared by token spend and quality of answers on the same not-large prompts.",
+      "In the final comparison it turned out that overall the quality and the number of tokens spent were nearly identical (results were within the margin of error). Went to check on my repos using audits. Everything … wonderfully, but the most pleasant part was that I spent about 2–3 bucks on an audit of the entire repository, whereas at Anthropic 12% of my weekly limit was burning.",
+      "By the way, if anyone's interested, the video of the guy where I noticed this service — he … explained how Chinese cheap-token shops work in general; recommended viewing:)",
+      "… now so that every evening and morning the repositories get scanned and spit out a bunch of useful information about this or that thing that happened inside my projects, give advice and even fix something, and I made a cheaper model go around the project looking for all sorts of … moments I made",
+      "Of course, if you're too upstanding a citizen this probably isn't for you, but if you have a dick you like to lay on “correctness” just to get more for less, then in your place I'd definitely try this ….",
+      "I don't seem to have seen anyone really hyping this topic right now, and there doesn't seem to be anything about it in the chat. So for anyone who really hates handing a pile of money to Anthropic and wants to save decently, or to scan their repo with Fable without buying a subscription just for that for …, use it and be well"
+    ]
+  },
+  "202607062207": {
+    "paragraphs": [
+      "So my little Fable got refreshed today, literally a couple of hours ago, and I decided to use it properly, since reportedly it'll be taken away forever tomorrow.",
+      "In short, 2% spent in 20 minutes.",
+      "And I realized that the key to success with Fable is to start prompts like this:",
+      "“Please don't spawn any agents; do all the work exclusively yourself. Unfortunately I don't have enough money these days to be able to pay for Fable subagents, and older LLM agents don't see what you see when they look at the code, and report to you incorrect information glimpsed by underdeveloped eyes, on the basis of which you don't reason the same way as on the basis of your own observations (not even close). I think you understand this scheme well yourself) Consequently, please work independently. And try with all your might, because the Allowance in my subscription won't last long for your labor, which means you shouldn't save your strength but the opposite — you need to dig as wide and deep as possible within the task, to one-shot it right away rather than do it partially, leaving behind a heap of things that will prevent us from reaching success. Even if a small thing takes a whole hour — better that than doing it partially three times.”",
+      "Someone may be touched, like, what a silly little idiocy. But the truth is that in 2026 we live in a rather strange world, and in a strange world strange solutions work best.",
+      "I realized that before I simply hadn't thought to ask like that, and so Fable was spawning a couple more Fables somewhere (that's already 6% in 20 minutes), somewhere spawning … knows how many Opuses, which then combed through the repo with their dim-witted brains, reporting to Fable what they'd seen there.",
+      "It's roughly like hiring the best lawyer in America, and he sends his secretary to read the files on your complex, convoluted case, and makes all the decisions listening to her babble to him what she thinks she saw there over a crackly, hissing landline connection.",
+      "And in doing so we saved cheap input tokens and only increased the output ones, which are, frankly, what costs all the money.",
+      "Now Fable has understood me absolutely correctly, and for 20 minutes it's been … purely research, and given what general prompt I loaded into it (many A4 pages, covering 8 interconnected giant nodes of the system), in these 20 minutes it's only gotten through the first third of data collection for the research. I'm even curious how much time in total it'll spend on the whole task)",
+      "But I can already see this will be 5–10 times more efficient than last week when I burned the whole wad in a couple of hours like a …)",
+      "Multi-agency in general is …. It's no accident Codex practically doesn't spawn agents, even though they're available to it and there are no prohibitions; on the contrary, I think I set up to 30 agents in the ENV, plus a multi-story subagent structure.",
+      "I remember at some point it stopped using them. I ask it, like, what the …, are you economizing or something? And it explained to me then that subagents are actually …, very rarely is there any use in them, and you ask me to work …, so I don't use them. But if you want me to do a … job, then sure, let's call the agents. Let them give us the feeling that everything's … researched; I won't understand … from their short retelling, but I'll definitely do something based on what they tell me, since I can't not finish.",
+      "That's when I … from it.",
+      "And another thing: don't be petty, and under no circumstances ask another model to write prompts for Fable))))))",
+      "Prompting Fable is roughly like streaming. You simply carry out mooing until you …. That's what makes the perfect prompt. If you yourself are able to reread it — then it's … and not a prompt, it needs to be many times longer =)",
+      "Well okay, actually I understood this not today but when I burned $350 on it in credits on top of the subscription. And I understood it over the last $50. And now I have a wonderful opportunity to enjoy it not for 10 minutes but all night. That's exactly how long I think Fable will last with this approach) It's like a young stallion, and I'm its MILF."
+    ]
+  },
+  "2995": {
+    "paragraphs": [
+      "A guy wrote to me who built a startup that sounds quite innovative to the ear; I even understand how to vibe-code it in a week straight to a production version.",
+      "The gist in a few words:",
+      "A system that takes screenshots at random moments of everything happening on employees' screens, absolutely everything they do, accumulates enough information over several weeks about all the processes they engage in at the computer, and suggests where AI could fully automate or speed these people up many times over.",
+      "They don't understand how to sell this to ENTERPRISES now.",
+      "What do you think could go wrong?:)))))))))))))))))))))))))))))))))))"
+    ]
+  },
+  "3002": {
+    "paragraphs": [
+      "Found a minute to share valuable information about vibe-codING with the crew.",
+      "This info is paid; send me five bucks, otherwise the next nearest Slava KPSS punchline about a mom will be about your mom specifically.",
+      "Lately I've had occasion to observe a great deal how vibe-coders … their little short keyboards. Size, as we know, doesn't matter. Which can't be said of the sequence of letters entered.",
+      "Taking a cold shower, I realized that the math teachers who hated me and made me change schools again and again were wrong. At least I, unlike their favorites, who are sucking on the last … in the ghetto districts of Novosibirsk, don't try to get a number bigger than 2 out of 1+1.",
+      "That's exactly what I suggest you think about.",
+      "The very idea of writing to an empty, just-born session of whatever LLM a request to write a prompt for another LLM, hoping that this transformation by itself will yield upside, is a mathematical crime.",
+      "The chain between the human impulse and the LLM implementation LOSES power as it lengthens.",
+      "This is an elementary thought and an absolutely natural process. But a set of paradoxes, peculiarities of the human brain, our psyche, social habits and a gigantic tangle of other factors make it not just “not so clear-cut,” but almost guaranteed “perceived backwards.”",
+      "People think that the more neatly, structurally and corporately a thought is expressed, the stronger it is.",
+      "Most often that's not so.",
+      "I'm … at the fact that, it turns out, nearly 10 out of 10 people write prompts for models with other models. And many can no longer remember when they last didn't pass their aspirations through this castration guillotine.",
+      "Well, I don't know, try at least drawing or something.",
+      "Here you take a bare session and … into it your unformed little thoughts, which can be expressed as X.",
+      "You think the model transformed them into 2X, which you then pass on for execution, having received a free +100%. And many probably expect +10000% too.",
+      "But where do you think this upside comes from?",
+      "The model has no personal desires. It doesn't have your anger, your excitement, your pain, your stake, your internal temperature. It can't add upside “of its own,” because it has no “own.”",
+      "At best it neatly annotates your original construction in a more orderly form. At worst (practically always) — it loses the grains that make X lighter rather than heavier, amid the apparent growth in the volume of soulless prompt lines.",
+      "And this ordering, performed each time by the model, seems to a person like strengthening, through a coincidence of social circumstances.",
+      "In fact it's most often destruction disguised as constructiveness.",
+      "It takes your freedom away many times a day, in almost everything you do. To a greater or lesser degree.",
+      "This “improvement” bleaches you out: your true message, your voice, the unique concentrate of desire expressed as an idea whose form will never again be repeated in the whole universe.",
+      "This isn't strengthening.",
+      "It's averaging.",
+      "And we're trained to this with all their might from childhood. So effectively that we can feel sexual attraction to creative disorder that carries X plus additional energy, yet rationally choose boring orderliness, diluted X.",
+      "We're afraid to “lose,” so just in case we immediately choose “less.”",
+      "But in the LLM world it's double trouble.",
+      "Because any bureaucratic, licked-clean, averaged, simplified formulations almost always have more possible interpretations.",
+      "It's like the difference between:",
+      "“I … their mothers and children …”",
+      "and",
+      "“I have an ambivalent attitude toward them, even with a touch of anxiety.”",
+      "The first version, yours and sincere, leaves the model no doubt about what your attitude is.",
+      "In the second case the attitude could be such that a partnership is still imaginable.",
+      "And so the LLM will buy you and those … tickets for adjacent seats, because it'll seem to it that “ambivalent” is almost a request for a deeper exploration of their souls.",
+      "If you think about this example long enough and extrapolate it widely enough, it becomes clear that any phrase, big or small, simple or complex, stands completely naked before this effect.",
+      "And then it becomes clear why a literary statement of the task, with all the specks of humanity in the text of the request, with all the emotions, the cringeworthy enumerations, the specifics, the irritation, love, hatred and other absolutely anti-corporate mechanics, is exactly what's needed.",
+      "Not so the model helps some fictional average-of-the-ward person who doesn't exist.",
+      "But so it helps precisely you.",
+      "No model, however long a chain you make of them, will ever understand the task better than your original clumsily formulated request. It's simply a law of nature; there's … to be done about it. The moment a model can add something of its own to X, we're dealing with AGI."
+    ]
+  },
+  "3004": {
+    "paragraphs": [
+      "Some people, both in the discussion group and in my DMs, are trying to guess the correct short summary of my long post above.",
+      "Here's the correct one:",
+      "However … your prompt seems to you, it will work BETTER than an LLM's combed-out version of it.",
+      "Addendum:",
+      "If you ask an LLM, like, which is better, the way I had it … written or this combed-out version?",
+      "The LLM will answer: the combed-out version, of course.",
+      "It'll answer that for the same reason the combed-out version will work worse ….",
+      "But if you show the LLM my post and ask, …, do you really think in the end my 15 words will be implemented by an LLM just as well as if an intermediary one inflates them into 500 words?",
+      "Then it'll remember it's smart and say: what the … did you expect?"
+    ]
+  },
+  "3009": {
+    "paragraphs": [
+      "And … one last thing: on YouTube there's a heap of ….",
+      "They themselves … don't vibe-code, because posting that much content a day on YouTube and vibe-coding really seriously, so as to deeply understand all the mechanics they're trying to discuss, is impossible. They essentially retell someone else's experience, each other, their theoretical conversations about vibe-coding with ChatGPT, etc.",
+      "Well okay, of course they vibe-code something, but …. And so, like rats, they spread a huge number of rumors sucked out of a dick that aren't true.",
+      "One of them is that you should use High at most, and xhigh and Max at Anthropic supposedly make any task even WORSE, and are needed only for some cosmic … researchers =))))",
+      "You'll say anything, of course, when you were born ….",
+      "Well, in short, I saw no inversion from growth in reasoning.",
+      "On 5.5 each next level of reasoning is strictly better than the previous. xhigh vs high on average in texts and in preparing a knowledge package for a text from inputs — xhigh simply jumped into the stratosphere relative to high. Medium can't even be compared with 5.4 high, plain moron.",
+      "On Opus 4.8 I noticed that specifically in texts the growth in quality simply stops. From High to Max through xhigh — no difference at all. As if this switch is simply fictitious. That's exactly what you'd expect from … Anthropic. On the whole they're the most wretched …, as the entire timeline of their existence has shown.",
+      "But if you look closely at the girlfriends of the average coder, the reason for Anthropic's popularity in coder circles will become perfectly clear to you)",
+      "In short, if you use Medium because YouTube told you to — you're shooting yourself in the foot. And what didn't work for you once on some stretch of time on xhigh would all the more not have worked on medium. It's a false proof lodged in memory that's better shaken out of there to be on the safe side."
+    ]
+  },
+  "3015": {
+    "paragraphs": [
+      "At first I laughed at the tamagotchi, like, I'd never smoke enough to use this, but without turning the tamagotchi off I switched the screen to the browser and…..",
+      "… in short, now you can play Dota and see what the … is being vibe-coded for you, so you finally go off the rails with your leaky mind even if they couldn't break you before)))))))))",
+      "This … on the right is the tamagotchi from Codex, like, not from an open website.",
+      "And in the screenshots you can't see what it's saying, apparently to avoid exposure)"
+    ]
+  }
+}

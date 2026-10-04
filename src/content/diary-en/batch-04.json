@@ -1,0 +1,100 @@
+{
+  "2055": {
+    "paragraphs": [
+      "Guys, imagine — I … hadn't noticed that GPT has a GitHub connector.",
+      "And I noticed it because I'd started missing GPT 5.2 PRO, which so nicely helped me think through the deep architecture of important pieces of the system, where Codex itself seemed to lack the time OpenAI lets it think.",
+      "I'd usually throw an archive of the project into 5.2 PRO, wait an hour, and get a very well-thought-out prompt for Codex, much stronger than what plan mode in Codex can do.",
+      "However, when my repo outgrew 50k lines of code, GPT 5.2 PRO started throwing an error on an archive context of that size, and I realized that from there on Codex and I were left alone, and Pro could no longer help us at the global level.",
+      "Right now my repo has about 155 thousand lines, and I decided to try whether anything had changed in 5.4 PRO, and O MIRACLE: 5.4 PRO happily swallowed the archive and … reviewed my entire 155-thousand-line project, not counting tests!!!",
+      "And then I saw the Git connector and got really happy.",
+      "I set up the connector, dropped a prompt without an archive, and it turned out that Pro loses the connector before it starts reasoning, can't find my private repo, tries to search for it on the Internet and doesn't see it because it's Private.",
+      "I was upset, but for the sake of experiment asked 5.3 instant to look at the repo through the connector… and it saw it. The connector didn't drop.",
+      "Then I asked 5.4 thinking.",
+      "It also saw the connector and my private repo.",
+      "Went back to PRO, and this … once again doesn't see my repo …!!!!!!!!!!!!!",
+      "So the most useful model is the only one that drops my GitHub connector and can't reason over the repo for me.",
+      "Meanwhile it reasons over a zip archive of the repo just fine.",
+      "Is this a known bug? Is it a … paid feature? What the … is this, does anyone understand?",
+      "Dropping a zip isn't God knows what kind of problem, but it's strange.",
+      "And the problem with the zip is that if you then throw a second prompt into the same window with a modified repo, it kills Pro's brain, since it sees both zips at once with different content and gets lost guessing which one is correct, and starts producing …. Restricting the reading to the second file only is useless; the first one still gets captured in the context, checked twice.",
+      "Halp"
+    ]
+  },
+  "2056": {
+    "paragraphs": [
+      "Okay, so who among us here are the Ultima connoisseurs and fans? Please throw into the chat, from your memories, what seems important to you and what you'd really miss. The more the better.",
+      "Between other things I've already built a lot; the server launch is very soon. I'm not going to … over it forever before launch, because afterwards we'll just polish it together based on your feedback.",
+      "The main thing I'm finishing now is my own hand-written Inject, which is simply built into the client and will allow any automations. Frankly, I'm even considering letting you just paste in a model's token and let it control the game with no automations at all =)",
+      "In that case you could say “Yo, can you please max out all my skills? By any means; if you're missing something to be more efficient — get it by doing the necessary intermediate actions.” Or “Run around Moonglow and … someone; if they get you, try to run away, and if that doesn't work I'll wipe you ….”",
+      "But I think that would be worse than scripting, because Ultima isn't just actions, it's also reaction speed to what's happening, and a script will probably pull a reaction out of the model in any case =)",
+      "Although tasks like “log into my Plevel 7 account and dress all the NPCs in the game in thoughtful, beautiful outfits, much richer than default, with colors matching the spirit of each city, etc. — come up with the accessories and all that … yourself” — the LLM does simply magnificently :D"
+    ]
+  },
+  "2063": {
+    "paragraphs": [
+      "In short, folks, as usual I'm getting fundamentally new experience through a game. Back in December I built chess, and thanks to that I learned interfaces, dynamic elements, traffic and much more, which I then wonderfully applied in my SalesBomb automation machine of 230 thousand lines (including tests and failsafes, as of today).",
+      "And now I'm doing something completely new for me — working not with the web over HTTP, but with a distribution, file libraries, a client being rewritten completely from scratch for my task.",
+      "So — it's … mesmerizing to watch Codex juggle files, test servers, builds. Every now and then new versions of the client open, Codex measures something, runs around a bit, clicks buttons in the game, hums disapprovingly, kills the process, goes and rewrites something, recompiles, assembles a new build, tests again. This goes on for hours. It works with a live file system significantly longer than with web services, and it runs simply … tons of tests that brought my computer to life. Some coder gizmos get installed, some programs restart, and a completely different reasoning monologue in the chat. It really digs around like a detective, openly rejoices at progress, gets upset that it crashed again…",
+      "Ferocious bliss)))"
+    ]
+  },
+  "2065": {
+    "paragraphs": [
+      "This kind of … happens regularly when you work with the file system.",
+      "But I understood why. An order of magnitude less context gets spent. It writes code for a while and the context flies away, but then when the file-system debugging starts, all those tests with launches, installations of all kinds of junk, restarts, builds-…, all of that consumes extremely little context. Context is measured not in gigabytes of files but in thousands of characters. And to check a status and send a terminal command takes a piddling number of characters.",
+      "And OpenAI apparently lets Codex do whatever its heart desires on low-token tasks. In those 2 hours 20 minutes, no joke, ~250k tokens were burned. Of which 200k in the first 25 minutes or so)"
+    ]
+  },
+  "2072": {
+    "paragraphs": [
+      "Guys, please don't forget the main thing: vibe-coders don't code.",
+      "Many write, like, I coded this up with Cursor, with Claude Code…",
+      "You did not …)",
+      "Real vibe-coders ASK.",
+      "Not coded, but ASKED FOR.",
+      "Not coding, but ASKING.",
+      "Some beg or aggressively demand, but those get bad, boorish vibe-code-code, because the LLM returns a result symmetrical to the request.",
+      "You have to be courteous with it. You have to ASK it, and then it does everything smoothly.",
+      "Right now I've ASKED my LLM to build me about three more hours' worth of vibe-coding features, while I'm running around the garden with a shovel replacing the lawn:)",
+      "Read this and many other valuable tips in this Telegram channel! And throw some dough my way for tokens so I can … generate even more tips for you:"
+    ]
+  },
+  "2078": {
+    "paragraphs": [
+      "Until March 18 I'm living on Codex credits, which are bought on top of the $200 subscription when the weekly limit is exceeded.",
+      "If you work on one project one prompt at a time, $5 flies away in about 1.5–2 hours of vibe-coding.",
+      "So 12 hours of very smooth work on ONE project a day will suck up about $25. If you work on 3 projects in parallel and have Codex do one-off … during the day, I think $100 will fly away too, without false modesty.",
+      "I'm not strong in math, but I … sense that credits are noticeably more expensive than the token limit in the body of the subscription))))",
+      "Although it's not even clear how to count the body of the subscription) There's so much in there. Deep research, all kinds of other modes, the Pro model, etc. If you count the subscription as containing the full $200 worth of Codex tokens — credits are still noticeably more expensive than the subscription bundle.",
+      "And if you count the Codex unit in the $200 subscription as a half or a quarter of the total subscription cost — then credits become simply astronomically expensive compared to the subscription body.",
+      "However, a couple of years ago Altman said an agent should cost a small business the same as one employee at 2–3 thousand dollars a month, while doing far more than an employee would for that money. Ideally doing absolutely everything =)",
+      "I think that's where they're heading, both to “doing absolutely everything” and to “2–3 thousand dollars” =)",
+      "I wonder — if you code with an API token, does it come out the same? Coding by token on frontier models seems even more expensive? Though my latest data is from March '25, when the Escalator staff, two of them, burned through … 20 thousand dollars in a month with Opus.",
+      "In general, as someone rightly noted recently in the discussion group, coding has rapidly moved from “you get paid for it” to “you pay for it” =)))",
+      "But guys, that's not because someone is trying to … coders, it's because it's not coders who code now. And before, these “non-coders” paid coders … knows how many hundreds of times more for development than they pay OpenAI, if you count the output per invested dollar =)",
+      "There's a lot more you could reason about here, of course. In particular, that everyone who busted their ass vibe-coding like me from September to March got a wonderful opportunity to learn practically for free.",
+      "From here on it will all get more and more expensive every quarter)",
+      "It can't be otherwise, unless of course Sam Altman invents a new economy and sells it to all of civilization, which I very much doubt :D"
+    ]
+  },
+  "2088": {
+    "paragraphs": [
+      "How do you like this art for the installer splash screen of the shard?:)",
+      "By the way, this shard has one feature: I do nothing by hand, and I mean ….",
+      "Every setting, every file, every monster, every piece of clothing, every button, every NPC, every corner of the map, every type of art in every city — all of it is done exclusively through the Codex APP.",
+      "In all this time I've logged into my own server 3 times: to test the mind-blowing new-school inject that Codex wrote, to play with the TypeScript scripts, and to poke around in the, again hand-written, GM control panel for the shard, for GMs if we ever have any)",
+      "It's kind of my gestalt — to make an AI-native UO shard that's steeped not only in a maximalist's Ultima but thoroughly steeped in AI, 360 degrees)",
+      "Just finished a smart updater that once a day will collect all the accumulated release candidates and push them to the updater. Characters will become invulnerable and lose connection, and you'll be able to come back through the triggered updater, like in Dota.",
+      "Crisis bugfixes will be force-pushed bypassing this, so at first it'll probably disconnect more often than once a day, but over time there'll be nothing left to polish on the client side, and server updates like new items don't need a client update, or even a server restart)",
+      "That's the little technical design =)",
+      "Part of this is dreamed up by GPT PRO, part by 5.4 in Codex. And all the rest by your lazy servant, who … doesn't want to do anything by hand, only code 14 hours a day …)",
+      "Don't forget the wish list in the discussion group, those who know what Ultima is and are waiting for the release)",
+      "The first 50 accounts will get … beautiful perks, some of them during the first 200 hours online;) The only thing you won't be able to do on autopilot on this shard is stand around doing nothing. Idling will disconnect you; disconnect for idling more than X times — IP ban) At least level hiding, for crying out loud;)"
+    ]
+  },
+  "2119": {
+    "paragraphs": [
+      "By the way, all of this in my life started happening when I began vibe-coding 24/7. I swear, discover round-the-clock vibe-coding, you won't regret it!!!"
+    ]
+  }
+}

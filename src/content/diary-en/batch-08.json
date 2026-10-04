@@ -1,0 +1,146 @@
+{
+  "2285": {
+    "paragraphs": [
+      "Well, my sweet Saturday style icons, I've finally finished the main part of what I've been vibe-coding for the last … knows how many weeks or months or years — I've lost track. Tonight is the first night in a long time that I slept peacefully, like the dead.",
+      "Now I can slowly return to normal life, to streams, interviews, breakdancing, Ultima, maybe even play some Dota!!!!!!!",
+      "Life is getting better.",
+      "I'll finish off the cosmetic stuff and on a separate stream show what the thing I built looks like and what will happen there next.",
+      "By the way, OpenAI's latest changes sort of hint at what I dreamed of: the model now seems to have no limits at all on executing a task. Apparently the latest price changes (everyone noticed it got more expensive and is getting more expensive still) let OpenAI unclench and let people get more from the models without resistance.",
+      "Before, I had to spend a lot of energy to burn through all the limits of the $200 subscription usefully rather than stupidly. It took a colossal number of prompts, and the behavior pattern itself — “we stop not when we're done but when OpenAI won't let us continue” — meant you needed 50 times more prompts, because complex tasks required dozens of approaches, then dozens more approaches to debug themselves, then dozens more to debug the seams with other systems and subsystems, then dozens more for optimization, which spawned new bugs both inside and at the seams…….",
+      "Now the model … away for 3–5 hours on a single prompt, and sometimes does more useful work than it used to in dozens of hours and fifty prompts.",
+      "For those who build landing pages or Telegram bots this may be unnoticeable, but if you were already building something very complex, on a stack of 5 languages, with … knows what labyrinths between front end and back end, you simply couldn't fail to notice it.",
+      "Bottomless context in a single session plus the above = the model now works exclusively 24/7, with no downtime at all. In the morning I throw just 5 complex prompts into the future in two parallel sessions (10 total), and in general the next time I'll need to throw in something new is in the evening at best, or deep at night — that's how it works now.",
+      "And that's great.",
+      "I once said earlier that OpenAI would arrive at the point where we simply say what we want to work, and how, and until it works exactly that way the model will …, maybe for several days, maybe a week.",
+      "That's the direction everything is developing in, for good.",
+      "For truly nimble work on a single project you now need 3 GPT PRO subscriptions at $200, meaning normal serious development simply costs $600 a month now.",
+      "I suppose the next model will make it go up to around $800, and that's how they'll smoothly bring us to the spend they need, controlling so that user churn doesn't eat the benefit of the inflow of new revenue. If it starts eating it — they'll widen the model lineup to satisfy more or less everyone. But those who know how to make money in business will always use the max tier, and I think by the end of this year they'll have learned to charge those people $2k.",
+      "Claude, by the way, lags far behind on this point. Mythos had better show up already. Honestly I would have unsubscribed from Claude by now if not for the ultra-convenient Telegram session that lets me throw in tasks from Telegram while I walk the dog in the park.",
+      "Although the last 3 tasks I threw in that way were done quite …. Anthropic has some problems with Opus's thinking.",
+      "Just imagine: Opus couldn't, on the second try, stand up a miserable GitHub Actions worker for a gitleaks scan and a couple of other ….",
+      "Or rather, it stood it up, spent 30 minutes per task, but the errors kept coming to my inbox as before.",
+      "Codex in 20 minutes found a heap of reasons why Claude failed and fixed them so that now everything works perfectly."
+    ]
+  },
+  "2302": {
+    "paragraphs": [
+      "Any fans of the Telegram MCP for Anthropic here?",
+      "What's going on over there? Yesterday mine started glitching, which could only be cured by a reboot, and now it's literally a couple of messages to the model via Telegram — and bye-bye, reboot required.",
+      "Is that it? … to the Telegram connector, or what? =((",
+      "That was the only feature keeping me subscribed to Claude:)))"
+    ]
+  },
+  "2304": {
+    "paragraphs": [
+      "In short, you don't need the Telegram MCP to connect Claude Code to the terminal on your computer.",
+      "All you need is to say:",
+      "Hey, can you please create our own webhook/postgress-based infra that will allow me to code remotely via telegram as we're doing now via telegram MCP, but without this motherfucking buggy idiotic piece of dogshit? I need you to use the same bot token, and simply wire this connection in one of my projects on Hetzner seemlessly. Test that it fully works and there's no additional dellays (if there is - optimize), and when it works - get rid of telegram MCP like we never had it on this machine.",
+      "That one prompt (and answering a couple of questions) is enough for you to have your own connector that will also work perfectly. Later you can strengthen it with a worker that checks whether a message sent in either direction arrived and, if not — retries)"
+    ]
+  },
+  "2307": {
+    "paragraphs": [
+      "Haha, in short, the collapse of the … Telegram MCP made me strain my … and whip up my own handler for messages from Telegram, text + voice via Whisper. Images and everything else an LLM can swallow it sends fine too.",
+      "It picks up data through a cron monitor once a second; this works even faster than Telegram's MCP and doesn't glitch anymore at all. Nice that Claude now launches this monitor by itself every time I launch Claude, and I launch Claude every time my computer boots)",
+      "Technically — whenever the computer is running — you can talk to Claude via Telegram.",
+      "It also turned out you can inject into the same path via Apple Actions, and now I can press the action button on my watch or on my iPhone and say anything into the void, for example while running, or driving, or just because I felt like it.",
+      "Claude Code will receive the audio file, transcribe it, do everything I told it there, and reply to me back in Telegram.",
+      "Set Telegram to monitor and read incoming DMs aloud — and voilà, absolutely hands-free vibe-coding available 24/7, FAR more reliable than Telegram's … MCP, because the workers make it so nothing can … in principle, as long as both devices had Internet.",
+      "The only thing that seriously depresses me, and can't be fixed, is Apple's closed ecosystem, which won't let you change the message reader in Telegram……. And it's just …))))",
+      "But nothing to be done; in the end you can understand what's being said, and since things like this can now be created in an hour, I think Apple will roll out a decent notification reader in upcoming updates)",
+      "Actually these hands-free refinements are a big deal. I liked that I could add tasks while walking the dog in the park, but I really didn't like that I couldn't while running when an idea came, or especially in the car while driving… Now you can drive to Italy and spend 13 hours creating some useful … by voice;)",
+      "Hey Siri, how do I avoid a divorce for the reason “I'm …”?"
+    ]
+  },
+  "2308": {
+    "paragraphs": [
+      "Oh, and lastly — Codex turns out to have a … load of flags you can use to control your user experience. In the Codex APP.",
+      "Today I configured many of them for more better results =) For example, by default there are 6 agents there; why not stick in 12 and give each agent the ability to spawn up to 3 agents of its own when needed?",
+      "And there are webhooks there too, which means the same … I just built for Claude can be cloned onto Codex)",
+      "Here's the list of all the config flags, for anyone who doesn't know about them yet:",
+      "Best Power Knobs\nIf your goal is “full possible power mode”, these are the highest-value unused public options:",
+      "agents.max_threads: raises concurrent subagent count; this is one of the biggest real “power” knobs. Official default is 6 when unset.\nagents.max_depth: lets spawned agents spawn more agents. Default is 1 when unset.\nagents.job_max_runtime_seconds: increases worker timeout for long delegated jobs.\nweb_search: explicitly set search mode. live is the strongest/most current mode.\ntools.web_search: tunes search with context_size = \"low|medium|high\", allowed_domains, and location { country, region, city, timezone }.\ntools.view_image: explicitly keeps local image viewing enabled.\nreview_model: separate stronger model just for /review.\nmodel_reasoning_summary: auto | concise | detailed | none; useful if you want maximum visibility into what Codex is doing.\nmodel_verbosity: low | medium | high; useful if you want fuller answers and richer summaries.\nservice_tier: flex | fast; this affects responsiveness, not raw intelligence.\nmodel_instructions_file: lets you add a permanent instruction file in addition to or instead of relying on AGENTS.md.\nfeatures.codex_hooks: experimental lifecycle hooks. Powerful, but only if you actually want automation around turns.\nmcp_servers.<id>.tool_timeout_sec: important if some MCP tools are timing out before finishing.\nmcp_servers.<id>.required: forces startup failure if a critical MCP server is unavailable.\nUnused Public Options\nGrouped by family, with what each one does:",
+      "review_model: override model used only by /review.",
+      "model_provider: choose which configured provider to use instead of the built-in OpenAI provider.",
+      "openai_base_url: override the built-in OpenAI provider base URL.",
+      "model_context_window: manual context window token setting for the active model.",
+      "model_auto_compact_token_limit: token threshold for automatic history compaction.",
+      "model_catalog_json: load a custom model catalog file.",
+      "model_instructions_file: replace built-in instructions with a file.",
+      "model_reasoning_summary: control reasoning summary detail.",
+      "model_supports_reasoning_summaries: force-enable or force-disable reasoning metadata handling.",
+      "model_verbosity: GPT-5 verbosity override.",
+      "review_model: separate review-only model.",
+      "service_tier: preferred tier for new turns.",
+      "oss_provider: choose lmstudio or ollama for --oss.",
+      "web_search: global search mode, disabled | cached | live.",
+      "tools.web_search: per-tool search config; object form supports context_size, allowed_domains, and location.",
+      "tools.view_image: enable/disable the local image-viewing tool.",
+      "apps._default.enabled: default app/connector enablement.",
+      "apps._default.destructive_enabled: default permission for destructive app tools.",
+      "apps._default.open_world_enabled: default permission for open-world app tools.",
+      "apps.<id>.enabled: enable/disable a specific app.",
+      "apps.<id>.destructive_enabled: allow destructive tools for one app.",
+      "apps.<id>.open_world_enabled: allow open-world tools for one app.",
+      "apps.<id>.default_tools_enabled: default tool enablement for one app.",
+      "apps.<id>.default_tools_approval_mode: default approval mode for one app’s tools.",
+      "apps.<id>.tools.<tool>.enabled: enable/disable one specific app tool.",
+      "apps.<id>.tools.<tool>.approval_mode: set approval behavior for one app tool.",
+      "mcp_servers.<id>.env: env vars passed to an MCP stdio server.",
+      "mcp_servers.<id>.env_vars: whitelist extra inherited env vars for an MCP server.",
+      "mcp_servers.<id>.cwd: working directory for an MCP stdio server."
+    ]
+  },
+  "202604141655": {
+    "paragraphs": [
+      "So folks, remember how yesterday, in passing, almost by accident, I whipped up my own Claude <-> Telegram connector?",
+      "I went for a run and was … by the fact that I can now really press a button on my watch, say by voice what I want Claude to answer, and listen to the reply simply read aloud by Siri, which can be forced to read out all DMs in Telegram (and only DMs; thankfully the app has that option in the iPhone settings, otherwise I'd have had to code another app to forward the bot's replies to, but I didn't have to).",
+      "Just think about it: you don't even have to look at the phone. At any second — say an idea comes — you just speak into the watch after pressing ONE button, tap the watch and keep walking or running. If there are no headphones on your head, you won't know exactly what it did, but for those who've spent as much time vibe-coding as I have, it's generally clear what will happen next if the request is about creating something. After all, we know how to ASK :D",
+      "If the ears are on the head — you simply hear the model's reply.",
+      "I don't know how this can fail to amaze. I … did about ten tasks today without doing anything for it except ten phrases, while walking the dog in the park!!!!!!!",
+      "And this connector lets you throw in ABSOLUTELY ANY files or request any screenshots, videos, audio, files, like the one I'm attaching next — I asked the model for it by voice, said in which repo what needed to be done, and a minute later got a little file.",
+      "If you're interested in setting this up for yourself but don't know where to start — you can just show this little file to your Claude or Codex, and it'll set up the same thing I have =)",
+      "For Codex I set up exactly the same. So now I have two bots:",
+      "Codex Vibedrocher",
+      "Claude Vibedrocher",
+      "And I eventually realized you can also write a mandatory one-line rule into the global Agents.md — any summary of any completed task must, besides the TUI, be duplicated over the bridge of the model that did it into the Telegram bot.",
+      "(My agents.md is a single global one for both Claude and Codex at once.)",
+      "So in Telegram you end up with a log of all your models' activity, and the ability to … by voice, quoting pieces of those reports, about any little thing, any detail of each of your repositories, and even your computer's entire disk as a whole.",
+      "If you don't understand how powerful this is, you simply haven't vibe-coded long enough; believe me — in time you'll understand =)",
+      "Sanitized version — safe to share publicly",
+      "When I sent the previous message, I realized that many might raise an eyebrow and think, “well, … you can just look at the phone, I don't see the difference, what the … are these headphones and tapping on a watch for??”",
+      "The thing is, guys, there's a difference between simply doing something and becoming the best at it.",
+      "Right now it's not even about becoming the best, really. It's evolution.",
+      "Some faster, some slower, are evolving into AI-sapiens. Those who can't — I don't even want to think about how sad their life will be. Just as you don't want to think about all those grandmothers selling sunflower seeds on the outskirts of a provincial town.",
+      "So — evolution doesn't look down on details. Evolution is precisely the set of details that make up the whole. One detail may have little significance. The totality of details makes it so that one thing lays eggs and another breaks the spine of a crocodile that didn't even suspect what would happen a moment later.",
+      "If you walk around the park looking at your phone, and not looking at your phone, you'll understand what makes sense in the long run and what makes absolutely no sense at all.",
+      "This 16-hours-a-day grinding of mine is a desire to live a normal, full life. It's a paradox)",
+      "Right now I'm automating the main aspects of my professional and creative life sufficiently that I could calmly get into a car in San Francisco and get out of it in Cambodia without … ANYTHING useful. AI makes it so I no longer have to choose between work and myself, and I'm very grateful to it, because I don't know how to choose myself, unfortunately. Life threw me a rope and I'm climbing it toward a hot-air balloon, to fly away from my prison, which is located in a mental city burned to ash many years ago. And I've already covered more than half the way to the basket;)",
+      "It only gets better from here!"
+    ]
+  },
+  "2316": {
+    "paragraphs": [
+      "So folks, remember how yesterday, in passing, almost by accident, I whipped up my own Claude <-> Telegram connector?",
+      "I went for a run and was … by the fact that I can now really press a button on my watch, say by voice what I want Claude to answer, and listen to the reply simply read aloud by Siri, which can be forced to read out all DMs in Telegram (and only DMs; thankfully the app has that option in the iPhone settings, otherwise I'd have had to code another app to forward the bot's replies to, but I didn't have to).",
+      "Just think about it: you don't even have to look at the phone. At any second — say an idea comes — you just speak into the watch after pressing ONE button, tap the watch and keep walking or running. If there are no headphones on your head, you won't know exactly what it did, but for those who've spent as much time vibe-coding as I have, it's generally clear what will happen next if the request is about creating something. After all, we know how to ASK :D",
+      "If the ears are on the head — you simply hear the model's reply.",
+      "I don't know how this can fail to amaze. I … did about ten tasks today without doing anything for it except ten phrases, while walking the dog in the park!!!!!!!",
+      "And this connector lets you throw in ABSOLUTELY ANY files or request any screenshots, videos, audio, files, like the one I'm attaching next — I asked the model for it by voice, said in which repo what needed to be done, and a minute later got a little file.",
+      "If you're interested in setting this up for yourself but don't know where to start — you can just show this little file to your Claude or Codex, and it'll set up the same thing I have =)",
+      "For Codex I set up exactly the same. So now I have two bots:",
+      "Codex Vibedrocher\nClaude Vibedrocher",
+      "And I eventually realized you can also write a mandatory one-line rule into the global Agents.md — any summary of any completed task must, besides the TUI, be duplicated over the bridge of the model that did it into the Telegram bot.",
+      "(My agents.md is a single global one for both Claude and Codex at once.)",
+      "So in Telegram you end up with a log of all your models' activity, and the ability to … by voice, quoting pieces of those reports, about any little thing, any detail of each of your repositories, and even your computer's entire disk as a whole.",
+      "If you don't understand how powerful this is, you simply haven't vibe-coded long enough; believe me — in time you'll understand =)"
+    ]
+  },
+  "2319": {
+    "paragraphs": [
+      "Oh and yes, today I'm a little envious of those on Android:)",
+      "Apple with its ultra-closed system and crappy Siri is 1% of what you can do on Android. On Android you can simply vibe up a voice for the models from Kokoro, give each model its own voice at that, and talk to the coding models as directly and sweetly as you talk to GPT in Voice Mode.",
+      "No joke, I've been thinking about going and buying myself some Xiaomi until Apple updates this node that's now so important to me =)"
+    ]
+  }
+}

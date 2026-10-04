@@ -1,0 +1,19 @@
+{
+  "name": "vibe-result",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:diary": "node scripts/import-diary.mjs",
+    "import:chat-diary": "node scripts/import-chat-diary.mjs",
+    "import:chat-diary:en": "node scripts/import-chat-diary.mjs --en-extra",
+    "audit:diary": "node scripts/audit-diary.mjs",
+    "translations:merge": "node scripts/merge-translations.mjs",
+    "build": "node scripts/merge-translations.mjs && node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "lint": "node --check src/app.js && node --check src/metrika.js && node --check src/config/site.js && node --check src/content/automation-cases.js && node --check src/content/journal-exclusions.js && node --check src/content/chat-diary-selection.js && node --check scripts/lib/clean-text.mjs && node --check scripts/import-chat-diary.mjs && node --check server/admin-ui.mjs && node --check server/index.mjs && node --check scripts/audit-diary.mjs && node --check scripts/build.mjs && node --check scripts/check.mjs && node --check scripts/typecheck.mjs && node --check scripts/test.mjs && node --check scripts/test-server.mjs",
+    "typecheck": "node scripts/typecheck.mjs",
+    "test": "node scripts/test.mjs && node scripts/test-server.mjs",
+    "dev": "python3 -m http.server 4173 -d dist"
+  }
+}
