@@ -26,7 +26,7 @@ const sourcePosts = JSON.parse(await readFile("src/content/diary.generated.json"
 const chatPosts = JSON.parse(await readFile("src/content/chat-diary.generated.json", "utf8"));
 const excludedIds = new Set(excludedJournalEntryIds);
 const channelPosts = sourcePosts.filter(({ id }) => !excludedIds.has(id));
-const posts = [...channelPosts, ...chatPosts.filter(({ id }) => !excludedIds.has(id))]
+const posts = [...channelPosts, ...chatPosts.filter(({ id }) => !excludedIds.has(id)), ...chatPostsEnExtra.filter(({ id }) => !excludedIds.has(id))]
   .sort((a, b) => a.date.localeCompare(b.date) || (a.time ?? "").localeCompare(b.time ?? "") || a.id - b.id);
 // Публикуемая версия: та же очистка, что применяет сборка.
 const publicPosts = sanitizePosts(posts);
@@ -50,6 +50,16 @@ assert.equal((html.match(/<h1(?:\s|>)/gu) ?? []).length, 1);
 assert.equal((aiHtml.match(/<h1(?:\s|>)/gu) ?? []).length, 1);
 assert.match(html, /<progress class="reading-progress" data-progress max="100" value="0" aria-hidden="true"><\/progress>/u);
 assert.match(app, /progress\.value = percent/u);
+for (const page of [enHtml, html, enAiHtml, aiHtml]) {
+  const copy = page.includes('<section class="journal"') ? page.slice(0, page.indexOf('<section class="journal"')) + page.slice(page.indexOf('</main>')) : page;
+  assert.doesNotMatch(copy, /community|комьюнит|сообществ|#join|data-lead-form|trial|пробн|membership|участия/iu);
+}
+assert.equal(enJournalJson.ordering, "newest-first");
+assert.equal(journalJson.ordering, "newest-first");
+assert.equal(enJournalJson.entries[0].date, "2026-10-05");
+assert.match(enHtml, /id="month-2026-10"/u);
+assert.ok(enHtml.indexOf('id="month-2026-10"') < enHtml.indexOf('id="month-2026-09"'));
+assert.ok(html.indexOf('id="month-2026-10"') < html.indexOf('id="month-2026-09"'));
 assert.doesNotMatch(app, /progress\.style/u);
 for (const pageHtml of [html, aiHtml]) {
   assert.equal((pageHtml.match(/src="\/metrika\.js\?v=[a-f0-9]{12}"/gu) ?? []).length, 1);
@@ -58,11 +68,6 @@ for (const pageHtml of [html, aiHtml]) {
 }
 assert.match(metrika, /mc\.yandex\.ru\/metrika\/tag\.js\?id=111975649/u);
 assert.match(metrika, /ym\(111975649,"init",\{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",referrer:document\.referrer,url:location\.href,accurateTrackBounce:true,trackLinks:true\}\)/u);
-assert.match(app, /window\.ym\(111975649, "reachGoal", goal, payload\)/u);
-assert.match(app, /reachMetrikaGoal\("lead_form_submitted", goalPayload\)/u);
-assert.match(app, /Проверьте интернет и попробуйте ещё раз или напишите в Telegram\./u);
-assert.match(app, /response\.json\(\)\.catch\(\(\) => \(\{\}\)\)/u);
-assert.match(html, /data-form-status[^>]*><\/p>\s*<button class="button form-submit"/u);
 assert.match(html, /content="https:\/\/ainativemaker\.com\/ru\/"/u);
 assert.match(html, /name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"/u);
 assert.match(html, /rel="manifest" href="\/site\.webmanifest"/u);
@@ -71,7 +76,6 @@ assert.match(html, /rel="alternate" href="\/journal\.json" type="application\/js
 assert.match(html, /rel="alternate" href="\/llms\.txt" type="text\/plain"/u);
 assert.doesNotMatch(html, /name="keywords"/u);
 assert.doesNotMatch(html.slice(0, html.indexOf('<section class="journal"')), /Закрытое комьюнити/u);
-assert.match(html, new RegExp(`Первые ${siteConfig.trialDays} дней — 0\\${siteConfig.currency}\\. Далее — ${siteConfig.monthlyPrice}\\${siteConfig.currency} в месяц\\.`, "u"));
 assert.doesNotMatch(html, /8(?:\s| )?800|3(?:\s| )?800|₽|Первый платный месяц|платный месяц дороже/u);
 assert.doesNotMatch(html, /людей, которые много работают с текстом/u);
 assert.doesNotMatch(html, /кто читает, пишет или редактирует тексты/u);
@@ -84,15 +88,9 @@ assert.match(html, /AI Native Maker\.com/u);
 assert.match(html, /class="header-journal-link" href="#journal"[^>]*>Дневник AI-native предпринимателя</u);
 assert.doesNotMatch(html, /\{\{[A-Z_]+\}\}/u);
 assert.doesNotMatch(html, /Банковская карта для первых/u);
-assert.equal(siteConfig.trialDays, 15);
-assert.equal(siteConfig.monthlyPrice, 100);
-assert.match(html, /Вы умеете объяснять словами\./u);
 assert.doesNotMatch(html, /Вы всю жизнь объясняете словами/u);
 assert.doesNotMatch(html, /Отказаться можно в любой день/u);
 assert.doesNotMatch(html, /Оставьте имя и выберите, куда ответить|вы успеете прочитать архив/u);
-assert.match(html, /Начните с того, что хотите сделать/u);
-assert.match(html, /Промпт — это текст\./u);
-assert.match(html, /Возьмите 15 дней и проверьте на своей задаче/u);
 assert.match(html, /class="button-journal"/u);
 assert.match(html, /<h2 id="journal-title">Дневник AI-native предпринимателя<\/h2>/u);
 assert.doesNotMatch(html, /Записи из канала и из закрытого чата|правлены только имена людей и город/u);
@@ -117,21 +115,6 @@ assert.match(html, /это sci-fi уровня &quot;Паровозика Том
 assert.match(html, /Как делать дизайн и UI, если вы вообще в нем ничего не понимаете/u);
 assert.doesNotMatch(html, /\[написал пост про страдания\]\(/u);
 assert.match(html, /—  ui-skills\.com[\s\S]*<br>— ui\.shadcn\.com[\s\S]*<br>— emilkowal\.ski\/ui\/you-dont-need-animations/u);
-assert.equal((html.match(/<form(?:\s|>)/gu) ?? []).length, 1);
-assert.match(html, /<form class="lead-form" data-lead-form/u);
-assert.match(html, /name="name"[^>]+required/u);
-assert.match(html, /type="email" name="email"/u);
-assert.doesNotMatch(html, /type="email" name="email"[^>]+required/u);
-assert.match(html, /data-error-for="name"/u);
-assert.match(html, /data-error-for="contact"/u);
-assert.match(html, /data-error-for="email"/u);
-assert.match(app, /field\.setAttribute\("aria-invalid", "true"\)/u);
-assert.match(html, /name="contactMethod" value="Telegram"/u);
-assert.match(html, /name="contactMethod" value="WhatsApp"/u);
-assert.match(html, /name="contactMethod" value="SMS"/u);
-assert.match(html, /Куда вам ответить\?/u);
-assert.doesNotMatch(html, />Отправить заявку</u);
-assert.match(html, new RegExp(`Первые ${siteConfig.trialDays} дней — 0\\${siteConfig.currency}\\. Далее — ${siteConfig.monthlyPrice}\\${siteConfig.currency} в месяц\\.`, "u"));
 assert.match(html, /href="\/ru\/ai\/">Для AI-агентов</u);
 assert.match(nginx, /https:\/\/mc\.yandex\.md/u);
 
@@ -141,18 +124,17 @@ assert.equal(homeStructuredData["@graph"].find((item) => item["@type"] === "WebS
 assert.equal(homeStructuredData["@graph"].find((item) => item["@type"] === "WebPage")?.dateModified, siteConfig.latestJournalDate);
 
 assert.match(aiHtml, /ainativemaker\.com для AI-агентов/u);
-assert.match(aiHtml, /закрытое платное сообщество для людей/u);
 assert.match(aiHtml, /Две языковые версии/u);
-assert.match(aiHtml, /Это не курс, не буткемп, не агентство и не SaaS/u);
-assert.match(aiHtml, /Имена людей и место действия в дневнике изменены/u);
+assert.doesNotMatch(aiHtml, /закрытое платное сообщество для людей/u);
+assert.match(aiHtml, /Имена людей и место действия в старых записях изменены/u);
 assert.match(aiHtml, /href="\/journal\.json"/u);
 assert.match(aiHtml, /href="\/llms\.txt"/u);
 assert.doesNotMatch(aiHtml, /\{\{[A-Z_]+\}\}/u);
 
 assert.equal(journalJson.count, posts.length);
-assert.equal(journalJson.ordering, "oldest-first");
+assert.equal(journalJson.ordering, "newest-first");
 assert.equal(journalJson.entries.length, posts.length);
-for (const [index, post] of publicPosts.entries()) {
+for (const [index, post] of publicPosts.toReversed().entries()) {
   assert.equal(journalJson.entries[index].id, post.id);
   assert.equal(journalJson.entries[index].date, post.date);
   assert.equal(journalJson.entries[index].url, `${siteConfig.siteUrl}/ru/#post-${post.id}`);
@@ -175,19 +157,18 @@ assert.match(enHtml, /^<!doctype html>\n<html lang="en">/u);
 assert.equal((enHtml.match(/<h1(?:\s|>)/gu) ?? []).length, 1);
 assert.equal((enAiHtml.match(/<h1(?:\s|>)/gu) ?? []).length, 1);
 assert.match(enHtml, /<h2 id="journal-title">AI-Native Founder's Diary<\/h2>/u);
-assert.match(enHtml, /Take your idea to <span>a working first version<\/span>/u);
-assert.match(enHtml, new RegExp(`First ${siteConfig.trialDays} days — \\${siteConfig.currency}0\\. Then \\${siteConfig.currency}${siteConfig.monthlyPrice} a month\\.`, "u"));
+assert.match(enHtml, /AI-Native Founder.s Diary/u);
 assert.match(enHtml, /class="lang-switch" href="\/ru\/" hreflang="ru" lang="ru"/u);
 assert.match(html, /class="lang-switch" href="\/" hreflang="en" lang="en"/u);
 assert.match(enHtml, /<link rel="alternate" hreflang="x-default" href="https:\/\/ainativemaker\.com\/">/u);
 assert.match(html, /<link rel="alternate" hreflang="en" href="https:\/\/ainativemaker\.com\/">/u);
 assert.equal((enHtml.match(/data-entry data-entry-id=/gu) ?? []).length, new Set(enPosts.map(({ date }) => date)).size);
-assert.ok(enPosts.length > posts.length, "English diary carries English-only entries");
+assert.deepEqual(enPosts.map((post) => post.id), posts.map((post) => post.id), "Both languages carry the same selected entries");
 assert.equal((enHtml.match(/<h1(?:\s|>)/gu) ?? []).length, 1);
 assert.doesNotMatch(enHtml.slice(0, enHtml.indexOf('<section class="journal"')).replace(/По-русски/gu, ""), /[А-Яа-яЁё]/u);
 assert.equal(enJournalJson.language, "en");
 assert.equal(enJournalJson.count, enPosts.length);
-for (const [index, post] of enPosts.entries()) {
+for (const [index, post] of enPosts.toReversed().entries()) {
   assert.equal(enJournalJson.entries[index].id, post.id);
   assert.equal(enJournalJson.entries[index].date, post.date);
   assert.equal(enJournalJson.entries[index].url, `${siteConfig.siteUrl}/#post-${post.id}`);

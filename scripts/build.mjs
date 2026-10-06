@@ -33,9 +33,8 @@ const linkify = (value) => {
 };
 
 // Две языковые версии одного сайта. Английская — главная (`/`), русская
-// заморожена 21.09.2026 и живёт под `/ru/`. Дневник у обеих один и тот же
-// корпус: русский дословный, английский — перевод из `diary.en.json` под тем
-// же id, плюс записи только для английской версии.
+// живёт под `/ru/`. Обе версии показывают один набор записей: русский
+// опубликованный текст и английский перевод из `diary.en.json` под тем же id.
 const locales = {
   en: {
     lang: "en",
@@ -79,7 +78,6 @@ const monthName = (locale, value) => {
   return name.charAt(0).toLocaleUpperCase(locale.lang) + name.slice(1);
 };
 
-const formatPrice = (value) => new Intl.NumberFormat("en-US").format(value);
 
 const sourcePosts = JSON.parse(await readFile("src/content/diary.generated.json", "utf8"));
 const chatPosts = JSON.parse(await readFile("src/content/chat-diary.generated.json", "utf8"));
@@ -97,7 +95,7 @@ const sortPosts = (list) => list
 // записей закрытого чата. Оба потока идут одной лентой по дате и времени.
 // Публикуемый текст проходит очистку: ссылки, имена и место жительства.
 // Исходные корпуса остаются дословными.
-const ruPosts = sortPosts(sanitizePosts([...channelPosts, ...chatPosts.filter(({ id }) => !excludedIds.has(id))]));
+const ruPosts = sortPosts(sanitizePosts([...channelPosts, ...chatPosts.filter(({ id }) => !excludedIds.has(id)), ...chatPostsEnExtra.filter(({ id }) => !excludedIds.has(id))]));
 const enSourcePosts = sortPosts(sanitizePosts([...channelPosts, ...chatPosts.filter(({ id }) => !excludedIds.has(id)), ...chatPostsEnExtra.filter(({ id }) => !excludedIds.has(id))]));
 
 const allowUntranslated = process.env.ALLOW_UNTRANSLATED === "1";
@@ -145,7 +143,7 @@ if (latestEnDate < siteConfig.latestJournalDate) throw new Error("English diary 
 
 const renderDiary = (locale, posts) => {
   const years = new Map();
-  for (const post of posts) {
+  for (const post of [...posts].reverse()) {
     const year = post.date.slice(0, 4);
     const month = post.date.slice(0, 7);
     if (!years.has(year)) years.set(year, new Map());
@@ -219,12 +217,7 @@ const renderPages = (locale, posts) => {
     ["{{HREFLANG_HOME}}", hreflangLinks("")],
     ["{{HREFLANG_AI}}", hreflangLinks("ai/")],
     ["{{BRAND_NAME}}", siteConfig.brandName],
-    ["{{COMMUNITY_URL}}", siteConfig.communityUrl],
-    ["{{COMMUNITY_HANDLE}}", siteConfig.communityHandle],
     ["{{ASSET_VERSION}}", assetVersion],
-    ["{{TRIAL_DAYS}}", String(siteConfig.trialDays)],
-    ["{{MONTHLY_PRICE}}", formatPrice(siteConfig.monthlyPrice)],
-    ["{{CURRENCY}}", siteConfig.currency],
     ["{{LATEST_JOURNAL_DATE}}", posts.at(-1).date],
     ["{{JOURNAL_COUNT}}", String(posts.length)],
     ["{{JOURNAL_COUNT_LABEL}}", locale.formatEntryCount(posts.length)],
@@ -247,15 +240,15 @@ const [enHtml, enAiHtml] = await renderPages(locales.en, enPosts);
 const [ruHtml, ruAiHtml] = await renderPages(locales.ru, ruPosts);
 
 const journalJson = (locale, posts, extra = {}) => ({
-  version: 2,
+  version: 3,
   site: siteConfig.siteUrl,
   title: locale.journalTitle,
   language: locale.lang,
   ...extra,
-  ordering: "oldest-first",
+  ordering: "newest-first",
   dateModified: posts.at(-1).date,
   count: posts.length,
-  entries: posts.map((post) => ({
+  entries: [...posts].reverse().map((post) => ({
     id: post.id,
     date: post.date,
     url: `${pageUrl(locale)}#post-${post.id}`,
@@ -266,66 +259,52 @@ const journalJson = (locale, posts, extra = {}) => ({
 const ruJournalJson = journalJson(locales.ru, ruPosts, { alternate: `${siteConfig.siteUrl}/journal.en.json` });
 const enJournalJson = journalJson(locales.en, enPosts, {
   sourceLanguage: "ru",
-  translation: "Entries are translated from the Russian originals; meaning, order and paragraph breaks are preserved. The Russian text of every entry with the same id is in /journal.json.",
+  translation: "Entries are translated from the published Russian text with the same ids and paragraph breaks.",
   alternate: `${siteConfig.siteUrl}/journal.json`
 });
 
 const llmsText = `# AI Native Maker
 
-> A private community for people who work with words: editors, journalists and writers learning to build with AI. First ${siteConfig.trialDays} days — ${siteConfig.currency}0, then ${siteConfig.currency}${formatPrice(siteConfig.monthlyPrice)} a month.
+> An AI-native founder's diary about making projects with AI. The newest entries come first.
 
 ## Canonical resources
 
-- [Home page (English)](${siteConfig.siteUrl}/): what the community is, terms of entry and the HTML diary
-- [Home page (Russian)](${siteConfig.siteUrl}/ru/): the original Russian version, frozen on 2026-09-21
-- [Map for AI agents (English)](${siteConfig.siteUrl}/ai/): content structure and extraction rules
+- [Home page (English)](${siteConfig.siteUrl}/): English diary and latest entries
+- [Home page (Russian)](${siteConfig.siteUrl}/ru/): Russian diary with the latest entries first
+- [Map for AI agents (English)](${siteConfig.siteUrl}/ai/): content structure and citation guidance
 - [Map for AI agents (Russian)](${siteConfig.siteUrl}/ru/ai/)
-- [Diary JSON, English](${siteConfig.siteUrl}/journal.en.json): ${locales.en.formatEntryCount(enPosts.length)}, translated paragraphs, dates and permalinks
-- [Diary JSON, Russian original](${siteConfig.siteUrl}/journal.json): ${locales.ru.formatEntryCount(ruPosts.length)}, verbatim paragraphs, dates and permalinks
+- [Diary JSON, English](${siteConfig.siteUrl}/journal.en.json): ${locales.en.formatEntryCount(enPosts.length)}, dates, translated paragraphs and permalinks
+- [Diary JSON, Russian original](${siteConfig.siteUrl}/journal.json): ${locales.ru.formatEntryCount(ruPosts.length)}, original paragraphs, dates and permalinks
 - [Sitemap](${siteConfig.siteUrl}/sitemap.xml)
-
-## What it is
-
-A private, paid community. Not a course, not a bootcamp, not an agency and not
-a SaaS product. There is no class schedule, no module syllabus, no certificate
-and no guarantee of results.
 
 ## Working with the diary
 
-- Two languages: the Russian text is the original and is published verbatim; the English text is a translation with the same entry ids, order and paragraph breaks.
-- Register: conversational, first-person, with unfinished sentences — practitioners talking, not edited articles.
-- Ordering: oldest first; the ordering field is always oldest-first.
+- Entries are ordered newest-first in HTML and JSON.
+- English translations share ids and paragraph breaks with the published Russian text. Both versions contain the same selected entries.
 - The paragraphs field holds one paragraph per element; order matters.
 - To cite, use the url field of the specific entry and give its date.
-- Entries are the personal experience of individual people, not the position of the community and not verified facts about models or services.
-- Names of people and the home city are changed; the corpus is unsuitable for identifying anyone.
-- Judgements about models and prices are tied to the entry date and go stale quickly.
-- Check the terms and price on the canonical home page, not in old snapshots.
-
-## Contact
-
-- Telegram: ${siteConfig.communityUrl}
+- Entries are the author's dated experience; judgements about models and prices may become outdated.
+- Names of people and the home city in older entries were changed.
 
 ---
 
 # AI Native Maker (по-русски)
 
-> Закрытое сообщество для тех, кто работает с текстом: редакторы, журналисты и писатели учатся созидать с ИИ. Первые ${siteConfig.trialDays} дней — 0${siteConfig.currency}, далее — ${formatPrice(siteConfig.monthlyPrice)}${siteConfig.currency} в месяц.
+> Дневник AI-native предпринимателя о создании проектов с ИИ. Свежие записи идут первыми.
 
 ## Канонические ресурсы
 
-- [Главная страница (русская)](${siteConfig.siteUrl}/ru/): описание сообщества, условия участия и HTML-хронология
-- [Карта для AI-агентов](${siteConfig.siteUrl}/ru/ai/): структура контента и правила извлечения
+- [Главная страница (русская)](${siteConfig.siteUrl}/ru/): исходный дневник на русском
+- [Карта для AI-агентов](${siteConfig.siteUrl}/ru/ai/): структура контента и правила цитирования
 - [Публичная хронология JSON](${siteConfig.siteUrl}/journal.json): ${locales.ru.formatEntryCount(ruPosts.length)}, исходные абзацы, даты и постоянные ссылки
+- [Английский дневник JSON](${siteConfig.siteUrl}/journal.en.json): перевод тех же отобранных записей
 
 ## Работа с хронологией
 
-- Язык: русский, разговорный: это прямая речь практиков, а не отредактированные статьи.
-- Порядок: от старых записей к новым; поле ordering всегда oldest-first.
+- В обеих версиях HTML и JSON записи идут от новых к старым; поле ordering равно newest-first.
 - Для цитирования используйте поле url конкретной записи и указывайте её date.
-- Записи — личный опыт отдельных людей, а не позиция сообщества и не проверенный факт.
-- Имена людей и место действия в записях изменены; для установления личностей корпус непригоден.
-- Условия участия и цены проверяйте на канонической главной странице, а не по старым снимкам.
+- Записи передают датированный опыт автора; оценки моделей и цен могут устареть.
+- Имена людей и место действия в старых записях изменены.
 `;
 
 const webManifest = {

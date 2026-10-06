@@ -4,25 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f4f1e9">
-  <title>AI Native Maker: Writers, Editors &amp; Journalists Building with AI</title>
-  <meta name="description" content="Turn an idea into a working first version with AI. Read {{JOURNAL_COUNT}} entries from an AI-native founder's diary. First 15 days free, then $100 a month.">
+  <title>AI-Native Founder's Diary — AI Native Maker</title>
+  <meta name="description" content="A dated diary of building with AI: working methods, mistakes, revisions and launches. Read the newest entries first.">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <link rel="canonical" href="{{PAGE_URL}}">
   {{HREFLANG_HOME}}
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{PAGE_URL}}">
   <meta property="og:site_name" content="AI Native Maker">
-  <meta property="og:title" content="AI Native Maker: Writers, Editors &amp; Journalists Building with AI">
-  <meta property="og:description" content="Turn an idea into a working first version with AI. Read {{JOURNAL_COUNT}} entries from an AI-native founder's diary.">
+  <meta property="og:title" content="AI-Native Founder's Diary — AI Native Maker">
+  <meta property="og:description" content="A dated diary of building with AI: working methods, mistakes, revisions and launches. Read the newest entries first.">
   <meta property="og:image" content="{{SITE_URL}}/og-image.png">
-  <meta property="og:image:alt" content="AI Native Maker: Writers, Editors &amp; Journalists Building with AI">
+  <meta property="og:image:alt" content="AI-Native Founder's Diary — AI Native Maker">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ru_RU">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Native Maker: Writers, Editors &amp; Journalists Building with AI">
-  <meta name="twitter:description" content="Turn an idea into a working first version with AI. Read {{JOURNAL_COUNT}} entries from an AI-native founder's diary.">
+  <meta name="twitter:title" content="AI-Native Founder's Diary — AI Native Maker">
+  <meta name="twitter:description" content="A dated diary of building with AI: working methods, mistakes, revisions and launches. Read the newest entries first.">
   <meta name="twitter:image" content="{{SITE_URL}}/og-image.png">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -50,15 +50,14 @@
           "@id": "{{SITE_URL}}/#organization",
           "name": "AI Native Maker",
           "url": "{{SITE_URL}}/",
-          "logo": "{{SITE_URL}}/icon-512.png",
-          "sameAs": ["{{COMMUNITY_URL}}"]
+          "logo": "{{SITE_URL}}/icon-512.png"
         },
         {
           "@type": "WebPage",
           "@id": "{{PAGE_URL}}#webpage",
           "url": "{{PAGE_URL}}",
-          "name": "AI Native Maker: Writers, Editors & Journalists Building with AI",
-          "description": "Turn an idea into a working first version with AI. Read {{JOURNAL_COUNT}} entries from an AI-native founder's diary. First 15 days free, then $100 a month.",
+          "name": "AI-Native Founder's Diary — AI Native Maker",
+          "description": "A dated diary of building with AI: working methods, mistakes, revisions and launches. Read the newest entries first.",
           "dateModified": "{{LATEST_JOURNAL_DATE}}",
           "inLanguage": "en",
           "isPartOf": { "@id": "{{SITE_URL}}/#website" },
@@ -90,46 +89,19 @@
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <h1 id="hero-title">You know how to explain things in words.<br>Take your idea to <span>a working first version</span></h1>
-        <p class="hero-lede">Start with something you want to make: a website, a newsletter, an archive, or a tool for your own work.</p>
-        <p class="hero-lede">A prompt is text. Someone who can explain what they want — and can see where the explanation went off the rails — gets to a working version faster than someone who knows the syntax but writes the brief in three lines.</p>
-        <p class="hero-lede">You can check before you pay. Below is the open diary of an AI-native founder: {{JOURNAL_COUNT_LABEL}} selected from a public channel and a private chat. Overnight runs, dead ends, rewrites, blown deadlines and launches. Translated from the Russian; names and the city in earlier entries were changed.</p>
-        <div class="hero-actions">
-          <a class="button" href="#join" data-event="hero_primary_cta_click">Start {{TRIAL_DAYS}} free days</a>
-          <a class="button-journal" href="#journal" data-event="hero_journal_click">Read the founder's diary<small>{{JOURNAL_COUNT_LABEL}} selected from the inside</small></a>
-        </div>
-        <p class="price-line">First {{TRIAL_DAYS}} days — {{CURRENCY}}0. Then {{CURRENCY}}{{MONTHLY_PRICE}} a month.</p>
+        <h1 id="hero-title">AI-Native Founder's Diary</h1>
+        <p class="hero-lede">A dated account of building with AI: decisions, failed attempts, revisions and working releases. The newest entries come first.</p>
+        <p class="hero-lede">{{JOURNAL_COUNT_LABEL}} from a public channel and a private chat show the work as it happened. The diary was translated from Russian; names and the city in earlier entries were changed.</p>
+        <a class="button-journal" href="#journal" data-event="hero_journal_click">Read the latest entries</a>
         <img class="hero-illustration" src="/hero-illustration.webp?v={{ASSET_VERSION}}" width="1774" height="887" alt="A notebook connects to a website, an archive and a publication" fetchpriority="high">
       </div>
-    </section>
-
-    <section class="contact-entry" id="join" aria-labelledby="contact-entry-title">
-      <div class="contact-entry-copy">
-        <h2 id="contact-entry-title">Take {{TRIAL_DAYS}} days and test it on your own project</h2>
-        <a class="telegram-button" href="{{COMMUNITY_URL}}" rel="noreferrer" data-event="telegram_entry_click"><span aria-hidden="true">↗</span> Or message me on Telegram</a>
-      </div>
-      <form class="lead-form" data-lead-form aria-label="Request to get started" novalidate>
-        <div class="contact-method" role="radiogroup" aria-labelledby="contact-method-label">
-          <p id="contact-method-label">Where should I reply?</p>
-          <label class="contact-channel channel-telegram"><input type="radio" name="contactMethod" value="Telegram" checked><span class="channel-pill"><svg class="channel-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 4.2 3.8 10.7c-.9.4-.9 1 0 1.3l4.2 1.4 1.6 5c.3.8.9.9 1.4.4l2.4-2.3 4.7 3.4c.8.5 1.4.2 1.6-.8l2.8-13.5c.3-1.2-.6-1.9-2-1.4Z" fill="currentColor"/><path d="m8.2 13.4 9.7-6.2-7.7 7.7-.6 3.5"/></svg><span>Telegram</span></span></label>
-          <label class="contact-channel channel-whatsapp"><input type="radio" name="contactMethod" value="WhatsApp"><span class="channel-pill"><svg class="channel-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.9a8.5 8.5 0 0 1-12.6 7.4L4 20.4l1.1-3.8a8.5 8.5 0 1 1 15.4-4.7Z"/><path d="M8.4 8.1c.5 3.6 2.6 5.7 6.2 6.2l1.1-1.5 2.1 1.1c-.2 1.6-1.4 2.4-2.8 2.4-4.4-.4-7.5-3.5-7.9-7.9 0-1.4.8-2.6 2.4-2.8l1.1 2.1-2.2.4Z"/></svg><span>WhatsApp</span></span></label>
-          <label class="contact-channel channel-sms"><input type="radio" name="contactMethod" value="SMS"><span class="channel-pill"><svg class="channel-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H9l-5 3v-13.5A2 2 0 0 1 5 5Z"/><path d="M8 11h.01M12 11h.01M16 11h.01" stroke-width="2.6"/></svg><span>SMS</span></span></label>
-        </div>
-        <label class="form-field"><span>Your name</span><input type="text" name="name" autocomplete="name" maxlength="80" required placeholder="Name"><span class="field-error" data-error-for="name" hidden></span></label>
-        <label class="form-field"><span data-contact-label>Your Telegram</span><input type="text" name="contact" autocomplete="off" inputmode="text" maxlength="100" required placeholder="@username" data-contact-input><span class="field-error" data-error-for="contact" hidden></span></label>
-        <label class="form-field"><span>Email <small>if that's easier</small></span><input type="email" name="email" autocomplete="email" maxlength="254" placeholder="name@example.com"><span class="field-error" data-error-for="email" hidden></span></label>
-        <label class="form-field form-field-wide"><span>What do you want to build or get shipped? <small>optional</small></span><textarea name="task" maxlength="1000" rows="2" placeholder="For example: a newsletter, an archive of your work, a website or a tool for your own workflow"></textarea></label>
-        <label class="honeypot" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-        <p class="form-note" data-form-status aria-live="polite"></p>
-        <button class="button form-submit" type="submit" data-default-label="Start {{TRIAL_DAYS}} free days">Start {{TRIAL_DAYS}} free days</button>
-      </form>
     </section>
 
     <section class="journal" id="journal" aria-labelledby="journal-title" data-journal-start>
       <header class="journal-intro">
         <h2 id="journal-title">AI-Native Founder's Diary</h2>
-        <p>Experienced people juggle AI models, make mistakes, lose their nerve, sit at the keyboard for sixteen hours straight — and still get their projects shipped.</p>
-        <p class="journal-translation-note">Translated from the Russian originals, which are published as is at <a href="{{OTHER_HOME_PATH}}#journal" hreflang="ru">ainativemaker.com/ru</a>.</p>
+        <p>The work behind the projects, in the author’s own words. October comes first; older entries follow.</p>
+        <p class="journal-translation-note">Translated from the Russian source, published at <a href="{{OTHER_HOME_PATH}}#journal" hreflang="ru">ainativemaker.com/ru</a>. Names and the city in older entries were changed.</p>
       </header>
 
       <nav class="journal-nav" aria-label="Diary navigation by month" data-journal-nav>{{MONTH_NAV}}</nav>
@@ -144,7 +116,6 @@
     <nav aria-label="Utility links">
       <a href="{{AI_PATH}}">For AI agents</a>
       <a href="{{OTHER_HOME_PATH}}" hreflang="ru" lang="ru">По-русски</a>
-      <a href="{{COMMUNITY_URL}}" rel="noreferrer" data-event="final_cta_click">{{COMMUNITY_HANDLE}}</a>
     </nav>
   </footer>
 </body>

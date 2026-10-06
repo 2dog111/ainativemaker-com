@@ -7,13 +7,14 @@ import { sanitizePosts } from "./lib/sanitize-diary.mjs";
 const sourceText = await readFile("src/content/diary.generated.json", "utf8");
 const sourcePosts = JSON.parse(sourceText);
 const chatPosts = JSON.parse(await readFile("src/content/chat-diary.generated.json", "utf8"));
+const chatPostsEnExtra = JSON.parse(await readFile("src/content/chat-diary.en-extra.generated.json", "utf8"));
 const excludedIds = new Set(excludedJournalEntryIds);
 const channelPosts = sourcePosts.filter(({ id }) => !excludedIds.has(id));
 // Публикуемый текст сверяется после той же очистки, что применяет сборка.
-const posts = sanitizePosts([...channelPosts, ...chatPosts.filter(({ id }) => !excludedIds.has(id))])
+const posts = sanitizePosts([...channelPosts, ...chatPosts.filter(({ id }) => !excludedIds.has(id)), ...chatPostsEnExtra.filter(({ id }) => !excludedIds.has(id))])
   .sort((a, b) => a.date.localeCompare(b.date) || (a.time ?? "").localeCompare(b.time ?? "") || a.id - b.id);
 const manifest = JSON.parse(await readFile("build/diary-manifest.json", "utf8"));
-// Русская версия (`/ru/`) — заморожена 21.09.2026, английская — главная.
+// Обе языковые версии публикуют один отбор; английская — главная.
 // Русские текстовые проверки ниже идут по `html` = dist/ru/index.html,
 // английские — по `enHtml` = dist/index.html.
 const html = await readFile("dist/ru/index.html", "utf8");
@@ -23,7 +24,6 @@ const enAiHtml = await readFile("dist/ai/index.html", "utf8");
 const journalJson = JSON.parse(await readFile("dist/journal.json", "utf8"));
 const enJournalJson = JSON.parse(await readFile("dist/journal.en.json", "utf8"));
 const translations = JSON.parse(await readFile("src/content/diary.en.json", "utf8"));
-const chatPostsEnExtra = JSON.parse(await readFile("src/content/chat-diary.en-extra.generated.json", "utf8"));
 const css = await readFile("dist/styles.css", "utf8");
 const app = await readFile("dist/app.js", "utf8");
 const metrika = await readFile("dist/metrika.js", "utf8");
@@ -123,21 +123,10 @@ if (html.includes("Что важно знать до заявки") || /class="f
 
 if (/\{\{[A-Z_]+\}\}/u.test(aiHtml)) failures.push("Unresolved AI page template token remains");
 if (!llms.includes("Карта для AI-агентов") || !llms.includes("Публичная хронология JSON") || !llms.includes("Map for AI agents (English)") || !llms.includes("/journal.en.json")) failures.push("LLMS resource map is incomplete");
-if (journalJson.count !== posts.length || journalJson.entries.length !== posts.length || journalJson.ordering !== "oldest-first") failures.push("Journal JSON metadata differs from the public diary");
-if (journalJson.entries.some((entry, index) => entry.id !== posts[index].id || entry.date !== posts[index].date || entry.url !== `${siteConfig.siteUrl}/ru/#post-${posts[index].id}` || JSON.stringify(entry.paragraphs) !== JSON.stringify(posts[index].paragraphs))) failures.push("Journal JSON content differs from the public diary");
+if (journalJson.count !== posts.length || journalJson.entries.length !== posts.length || journalJson.ordering !== "newest-first") failures.push("Journal JSON metadata differs from the public diary");
+if (journalJson.entries.some((entry, index) => entry.id !== posts.toReversed()[index].id || entry.date !== posts.toReversed()[index].date || entry.url !== `${siteConfig.siteUrl}/ru/#post-${posts.toReversed()[index].id}` || JSON.stringify(entry.paragraphs) !== JSON.stringify(posts.toReversed()[index].paragraphs))) failures.push("Journal JSON content differs from the public diary");
 if (webManifest.name !== "AI Native Maker" || webManifest.icons.length !== 3) failures.push("Web manifest is incomplete");
 if (appleTouchIcon.readUInt32BE(16) !== 180 || appleTouchIcon.readUInt32BE(20) !== 180) failures.push("Apple touch icon dimensions are wrong");
-if (!html.includes(`href="${siteConfig.communityUrl}"`)) failures.push("Community intake link is missing");
-if (!html.includes(`Первые ${siteConfig.trialDays} дней — 0${siteConfig.currency}. Далее — ${siteConfig.monthlyPrice}${siteConfig.currency} в месяц.`)) failures.push("Current trial and monthly price are missing");
-if (siteConfig.trialDays !== 15 || siteConfig.monthlyPrice !== 100) failures.push("Offer does not match the agreed price");
-// Дневник цитируется дословно и может содержать любые старые числа,
-// поэтому старый оффер ищем только в маркетинговой части страницы.
-const landingHtml = html.slice(0, html.indexOf('<section class="journal"'));
-if (/14 дней|50\$|25 сценариев|Выбранная задача|case-detail|category-tab/u.test(landingHtml)) failures.push("Old offer or scenario picker remains on the landing page");
-if (!html.includes("Вы умеете объяснять словами.") || !html.includes("Доведите свою идею до <span>первой рабочей версии</span>")) failures.push("Text-worker positioning is missing from the hero");
-if (html.includes("Вы всю жизнь объясняете словами")) failures.push("Previous hero headline remains");
-if (/закрытое комьюнити|private community/iu.test(`${html.slice(0, html.indexOf('<section class="journal"'))}${enHtml.slice(0, enHtml.indexOf('<section class="journal"'))}`)) failures.push("Community copy remains on the homepage");
-if (!html.includes("Промпт — это текст.")) failures.push("Central idea of the offer is missing");
 if (!html.includes('class="button-journal"') || !css.includes(".button-journal")) failures.push("Prominent journal entry button is missing");
 if (!/\.button-journal\s*\{[^}]*min-height:\s*3\.25rem/u.test(css)) failures.push("Journal button is smaller than the primary action");
 if (/class="pricing"|price-steps/u.test(`${html}${css}`)) failures.push("Duplicated pricing block remains");
@@ -168,20 +157,13 @@ if (/\{\{[A-Z_]+\}\}/u.test(html)) failures.push("Unresolved template token rema
 if (!/\/styles\.css\?v=[a-f0-9]{12}/u.test(html) || !/\/app\.js\?v=[a-f0-9]{12}/u.test(html)) failures.push("Versioned assets are missing");
 if (!app.includes("IntersectionObserver")) failures.push("Journal position observer is missing");
 if (!app.includes('localStorage.setItem("lastReadEntryId"')) failures.push("Reading continuation is missing");
-if ((html.match(/<form(?:\s|>)/gu) ?? []).length !== 1) failures.push("Expected one lead form");
-if (!html.includes('name="name"') || !html.includes('name="contact"')) failures.push("Required lead fields are missing");
-if (!html.includes('type="email" name="email"')) failures.push("Optional email field is missing");
-if (!html.includes('data-error-for="name"') || !html.includes('data-error-for="contact"') || !html.includes('data-error-for="email"') || !app.includes('field.setAttribute("aria-invalid", "true")')) failures.push("Inline accessible form errors are incomplete");
-if (!html.includes('name="contactMethod" value="Telegram"') || !html.includes('name="contactMethod" value="WhatsApp"') || !html.includes('name="contactMethod" value="SMS"')) failures.push("Contact method buttons are incomplete");
-if (!html.includes(`Возьмите ${siteConfig.trialDays} дней и проверьте на своей задаче`) || !html.includes("Куда вам ответить?") || !html.includes(`Войти на ${siteConfig.trialDays} дней бесплатно`)) failures.push("Conversion form copy is incomplete");
-if (html.includes(">Отправить заявку<")) failures.push("Old form CTA remains");
-if (/Получить 14 дней доступа|Хочу в сообщество/u.test(`${html}${app}`) && !/Enter your Telegram username/u.test(app)) failures.push("Awkward conversion copy remains");
-if (!css.includes(".contact-method input:checked + .channel-pill") || !css.includes("#229ed9") || !css.includes("#25d366")) failures.push("Branded contact method states are incomplete");
-if (!/\.form-submit\s*\{[^}]*width:\s*clamp\(14rem, 22vw, 18rem\)/u.test(css) || !css.includes("@keyframes liquid-sheen")) failures.push("Compact glass form CTA is missing");
-if (!app.includes('fetch("/api/leads"')) failures.push("Lead API submission is missing");
-if (!app.includes("Проверьте интернет и попробуйте ещё раз или напишите в Telegram.") || !app.includes("response.json().catch(() => ({}))")) failures.push("Friendly form transport error recovery is incomplete");
-if (!/data-form-status[^>]*><\/p>\s*<button class="button form-submit"/u.test(html)) failures.push("Global form status must appear before the submit button");
-if (!app.includes('window.ym(111975649, "reachGoal", goal, payload)') || !app.includes('reachMetrikaGoal("lead_form_submitted", goalPayload)')) failures.push("Successful lead goal for Yandex Metrika is missing");
+for (const [route, page] of [["/", enHtml], ["/ru/", html], ["/ai/", enAiHtml], ["/ru/ai/", aiHtml]]) {
+  const publicCopy = route === "/" || route === "/ru/" ? page.slice(0, page.indexOf('<section class="journal"')) + page.slice(page.indexOf("</main>")) : page;
+  if (/community|комьюнит|сообществ|#join|data-lead-form|trial|пробн|membership|участия|monthly price/iu.test(publicCopy)) failures.push(`Community offer remains on ${route}`);
+}
+if (enHtml.includes("<form") || html.includes("<form")) failures.push("Lead form remains on a public page");
+if (!enHtml.includes("AI-Native Founder's Diary") || !html.includes("Дневник AI-native предпринимателя")) failures.push("Diary title is missing");
+if (enJournalJson.entries[0]?.date !== "2026-10-05" || !enHtml.includes('id="month-2026-10"')) failures.push("Latest October entries are missing");
 if (!server.includes("appendFile(dataFile")) failures.push("Lead persistence is missing");
 if (!server.includes('url.pathname === "/admin/api/leads"')) failures.push("Admin lead feed is missing");
 if (!server.includes("ADMIN_PASSWORD_SHA256") || !server.includes("ainm_admin") || !server.includes('url.pathname === "/admin/login"') || !server.includes("lead-statuses.json") || !adminUi.includes("response.status===401") || !adminUi.includes("data-admin-notice")) failures.push("Admin authentication, recovery or lead statuses are incomplete");
@@ -203,10 +185,6 @@ const enPosts = sanitizePosts([...channelPosts, ...chatPosts.filter(({ id }) => 
 if (!enHtml.startsWith("<!doctype html>\n<html lang=\"en\">") || !enAiHtml.includes('<html lang="en">')) failures.push("English pages must declare lang=en");
 if (!html.includes('<html lang="ru">')) failures.push("Russian page must declare lang=ru");
 if ((enHtml.match(/<h1(?:\s|>)/gu) ?? []).length !== 1 || (enAiHtml.match(/<h1(?:\s|>)/gu) ?? []).length !== 1) failures.push("English pages must contain exactly one H1");
-if (!enHtml.includes("You know how to explain things in words.") || !enHtml.includes("<span>a working first version</span>")) failures.push("English hero headline is missing");
-if (!enHtml.includes("A prompt is text.") || !enHtml.includes("Translated from the Russian;")) failures.push("English hero copy is incomplete");
-if (!enHtml.includes(`First ${siteConfig.trialDays} days — ${siteConfig.currency}0. Then ${siteConfig.currency}${siteConfig.monthlyPrice} a month.`)) failures.push("English price line is missing");
-if (!enHtml.includes(`Start ${siteConfig.trialDays} free days`) || !enHtml.includes("Where should I reply?") || !enHtml.includes(`Take ${siteConfig.trialDays} days and test it on your own project`)) failures.push("English conversion copy is incomplete");
 if (!enHtml.includes('<h2 id="journal-title">AI-Native Founder\'s Diary</h2>') || !enHtml.includes('class="header-journal-link" href="#journal" data-event="header_journal_click">AI-Native Founder\'s Diary</a>')) failures.push("English journal naming is missing");
 if (!enHtml.includes('class="journal-translation-note"') || !enHtml.includes('href="/ru/#journal" hreflang="ru"')) failures.push("Translation notice with a link to the Russian original is missing");
 if (!enHtml.includes('class="lang-switch" href="/ru/" hreflang="ru" lang="ru"') || !html.includes('class="lang-switch" href="/" hreflang="en" lang="en"')) failures.push("Language switch is missing");
@@ -216,8 +194,8 @@ for (const [route, page] of [["/", enHtml], ["/ai/", enAiHtml], ["/ru/", html], 
 if (/[А-Яа-яЁё]/u.test(enLandingHtml.replace(/По-русски/gu, "").replace(/lang="ru"/gu, ""))) failures.push("Russian text remains in the English landing copy");
 if (/[А-Яа-яЁё]/u.test(enAiHtml.replace(/По-русски/gu, ""))) failures.push("Russian text remains in the English AI page");
 if ((enHtml.match(/data-entry data-entry-id=/gu) ?? []).length !== new Set(enPosts.map(({ date }) => date)).size) failures.push("English rendered day count differs");
-if (enPosts.length <= posts.length) failures.push("English diary must carry the English-only entries");
-if (chatPostsEnExtra.some((post) => post.date < "2026-09-01")) failures.push("English-only entries must belong to the September update or later");
+if (enPosts.length !== posts.length || enPosts.some((post, index) => post.id !== posts[index].id)) failures.push("Language versions must contain the same selected entries");
+if (chatPostsEnExtra.some((post) => post.date < "2026-09-01")) failures.push("Later additions must belong to the September update or later");
 if (enPosts.some((post) => !translations[String(post.id)])) failures.push(`English translation is incomplete: ${enPosts.filter((post) => !translations[String(post.id)]).length} entries untranslated`);
 if (enPosts.some((post) => translations[String(post.id)] && translations[String(post.id)].paragraphs.length !== post.paragraphs.length)) failures.push("Translation paragraph counts differ from the source");
 if (/<article[^>]* lang="ru"/u.test(enHtml)) failures.push("Untranslated entries remain on the English page");
@@ -225,12 +203,11 @@ const enDiaryText = Object.values(translations).flatMap((entry) => entry.paragra
 if (/[А-Яа-яЁё]{4,}/u.test(enDiaryText)) failures.push("Cyrillic words remain inside the English translation");
 if (/Антох|Гладков|Кирилл|Новиков|Машк|Anton Gladkov|Gladkov/u.test(enDiaryText)) failures.push("A real name leaked into the English translation");
 if (!/San Francisco/u.test(enDiaryText)) failures.push("Home city must read San Francisco in the English translation");
-if (enJournalJson.language !== "en" || enJournalJson.sourceLanguage !== "ru" || enJournalJson.count !== enPosts.length || enJournalJson.entries.length !== enPosts.length || enJournalJson.ordering !== "oldest-first") failures.push("English journal JSON metadata differs from the English diary");
-if (enJournalJson.entries.some((entry, index) => entry.id !== enPosts[index].id || entry.date !== enPosts[index].date || entry.url !== `${siteConfig.siteUrl}/#post-${enPosts[index].id}` || JSON.stringify(entry.paragraphs) !== JSON.stringify(translations[String(entry.id)]?.paragraphs))) failures.push("English journal JSON entries differ from the translations");
+if (enJournalJson.language !== "en" || enJournalJson.sourceLanguage !== "ru" || enJournalJson.count !== enPosts.length || enJournalJson.entries.length !== enPosts.length || enJournalJson.ordering !== "newest-first") failures.push("English journal JSON metadata differs from the English diary");
+if (enJournalJson.entries.some((entry, index) => entry.id !== enPosts.toReversed()[index].id || entry.date !== enPosts.toReversed()[index].date || entry.url !== `${siteConfig.siteUrl}/#post-${enPosts.toReversed()[index].id}` || JSON.stringify(entry.paragraphs) !== JSON.stringify(translations[String(entry.id)]?.paragraphs))) failures.push("English journal JSON entries differ from the translations");
 if (journalJson.language !== "ru" || journalJson.alternate !== `${siteConfig.siteUrl}/journal.en.json` || enJournalJson.alternate !== `${siteConfig.siteUrl}/journal.json`) failures.push("Journal JSON files must point at each other");
 if (!enAiHtml.includes("ainativemaker.com for AI agents") || !enAiHtml.includes('href="/journal.en.json"') || !enAiHtml.includes('href="/journal.json"') || !enAiHtml.includes("How to cite") || !enAiHtml.includes("Two languages")) failures.push("English AI agent guide is incomplete");
 if (!aiHtml.includes("Две языковые версии") || !aiHtml.includes('href="/journal.en.json"')) failures.push("Russian AI agent guide does not mention the English version");
-if (!app.includes('document.documentElement.lang === "ru"') || !app.includes("Enter your Telegram username.") || !app.includes("lang: pageLang")) failures.push("Form copy is not localized");
 if (!server.includes('input?.lang === "en"') || !server.includes("Enter a contact for the reply.")) failures.push("Lead API errors are not localized");
 if (!webManifest.lang || webManifest.lang !== "en") failures.push("Web manifest language is missing");
 const enDocumentIds = new Set([...enHtml.matchAll(/\sid="([^"]+)"/gu)].map((match) => match[1]));

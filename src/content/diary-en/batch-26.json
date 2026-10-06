@@ -1,0 +1,40 @@
+{
+  "202610011843": {
+    "paragraphs": [
+      "When I realized what 6.1 Sol Max costs on the $500 subscription, I went back to a dream task while I still could: go through my entire product for every possible bug, mismatch, stale piece of code and duplicate.",
+      "I've tried this with every new model release (apart from Astra; that was too expensive). Every time, I've found that no model could properly study a codebase this size.",
+      "I used to think that when I asked PRO to find bugs and got a list back, it had really examined everything. That was never true. PRO, like every other model, just looked at the GitHub repo, opened a selection of files, no more than a couple dozen, and packaged what it found as if to say, 'I've found it all.'",
+      "That still had value: it found things we could fix. But it missed nearly everything buried in the files, so a proper refactor of the project remained out of reach.",
+      "For the first time, 6.1 Sol Max approached my request differently. It spent an hour and a half turning the repo over, then proposed a tracking system that would have fresh sessions move from file to file, map the codebase and record bugs, duplicates, code needing refactoring and points of failure.",
+      "We also agreed that after more than forty compactions, a session would finish its current finding and hand the ledger over to a new session to continue.",
+      "Honestly, I didn't expect it to work this time either, but I tried. The process has now run for about 36 hours, passed the baton to its fourth session, and scanned 1,003 of the repo's 3,870 files in detail.",
+      "No wonder earlier models never managed a proper review. They were less capable and finished in a couple of hours; they probably saw a random sliver of the project and stopped there.",
+      "When I read through the 78 findings, I was pleasantly surprised. Almost none looked fabricated or dubious. Now I can discuss each one with PRO: when it arose, what came before it, why it happened and how to fix it reliably for this project.",
+      "While it's cheap, I'd recommend that anyone with a huge repo try something similar. Later it might cost tens of thousands of dollars in tokens again, and the appetite for it will disappear =)"
+    ]
+  },
+  "202610042010": {
+    "paragraphs": [
+      "The auditor running on Sol 6.1 Max has only just finished. It worked continuously since the model was released and used three subagents to speed things up; without them, I reckon it would have taken at least fifteen days.",
+      "This is one of those rare tasks where subagents can help rather than get in the way.",
+      "It went through 3,900 files and found 220 problems across 62 categories.",
+      "Most are nasty, real bugs of the kind where the expected behavior would fail under particular conditions. Some aren't fatal, but many would simply break a feature and cost me hours just to understand what happened, never mind the unhappy client who thinks they've signed up for a pile of shit.",
+      "The difficult part turned out to be coordinating the fixes. I let it run ten sessions at once, but even with three subagents helping review the fixers' work, the queue kept growing. In two days I barely got twenty fixes through, while 28 worktrees waited more than ten hours each to be reviewed.",
+      "That's where Dot helped.",
+      "I described the bottleneck and asked Dot to design a way to distribute tasks and review them without building up a queue. Overnight, Dot got the fixes moving at a steady pace of roughly two fully tested and deployed fixes an hour, with twenty sessions working at any given moment.",
+      "At that load, about 30% of the weekly limit on the $500 subscription went in the past ten hours. There's one reset left, so I think the whole job will be done by Wednesday :)",
+      "Dot also tested different reasoning levels for Sol 6.1 and concluded it was better to keep every session on Max."
+    ]
+  },
+  "202610052233": {
+    "paragraphs": [
+      "Last night, a few drinks and the fourteen hours of Claude I had left before the reset gave me the idea to make a new game based on Arcomage.",
+      "The brainstorm with Fable went well, and by around three in the morning we had a plan. I still had about 87% of the weekly limit unused. I put the plan into a goal and went to sleep.",
+      "In the morning I looked: only 3% of the weekly limit was left. Fuck, it got through it)))",
+      "I haven't looked at the result yet. I'm off to walk the dog; please take a look (it should appear as a new game in the arena).",
+      "I'm really curious what it managed to make))))",
+      "What stands out is that, to balance the game, it took my request literally: 'even if it takes hundreds of millions of games, just make the balance tight, fuck.' It ran 3.5 BILLION simulated games to try to reach that balance :)",
+      "It worked for more than ten hours, bringing in Opus 5 sessions for side tasks and Codex for the artwork. I respect that)"
+    ]
+  }
+}

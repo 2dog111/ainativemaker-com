@@ -10,10 +10,7 @@ const requireString = (value, path) => {
   if (typeof value !== "string" || !value.trim()) throw new TypeError(`${path} must be a non-empty string`);
 };
 
-for (const key of ["brandName", "siteUrl", "communityUrl", "communityHandle", "currency", "latestJournalDate"]) requireString(siteConfig[key], `siteConfig.${key}`);
-for (const key of ["trialDays", "monthlyPrice"]) {
-  if (!Number.isFinite(siteConfig[key]) || siteConfig[key] <= 0) throw new TypeError(`siteConfig.${key} must be a positive number`);
-}
+for (const key of ["brandName", "siteUrl", "latestJournalDate"]) requireString(siteConfig[key], `siteConfig.${key}`);
 
 for (const [index, post] of posts.entries()) {
   if (!Number.isInteger(post.id)) throw new TypeError(`posts[${index}].id must be an integer`);
