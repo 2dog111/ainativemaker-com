@@ -2,8 +2,8 @@
   "2193": {
     "paragraphs": [
       "So how much is a normal person supposed to pay GitHub per month if he does up to 1,500 deploys across 5 private repos?",
-      "I'm … tired of looking at the constant overspend alerts and thought, … it, I'll just pay so it stops … with my brain and simply works, and while I'm at it I'll set up real release versioning there.",
-      "I did the math and …. It's like many hundreds of bucks a month purely for GitHub. Many times more than for hosting and the database and everything else put together…",
+      "I'm fucking sick of looking at the constant overspend alerts and thought, fuck it, I'll just pay so it stops fucking with my brain and simply works, and while I'm at it I'll set up real release versioning there.",
+      "I did the math and was fucking stunned. It's like many hundreds of bucks a month purely for GitHub. Many times more than for hosting and the database and everything else put together…",
       "Is this normal at all? For some reason I always thought GitHub was free, and in the end it's going to eat more than two GPT PRO accounts:)",
       "Or am I doing something wrong?"
     ]
@@ -12,22 +12,22 @@
     "paragraphs": [
       "So with GitHub Actions it all turned out simple:",
       "You just spin up self-hosted and stop screwing around. There may have been an alternative view on this before, when “spinning everything up self-hosted” had to be done by someone's tired, overworked hands.",
-      "But now a tireless machine does it. I just told it, “look, … make it so we host all the GitHub … ourselves for our private repositories and I stop getting these … overspend alerts in my email.”",
+      "But now a tireless machine does it. I just told it, “look, fuck, make it so we host all the GitHub shit ourselves for our private repositories and I stop getting these fucking overspend alerts in my email.”",
       "Not on the first try, but within 4–5 prompts we got to where the actions reportedly work and there's (for now) no need to shell out for them anymore.",
       "It would've been dumb, of course, to pour half a grand into GitHub when the solution is this simple.",
       "Imagine how many more solutions like this exist for problems you're currently paying a tidy sum for?",
-      "You buy women, but you could have just ….",
+      "You buy women, but you could have just jerked off.",
       "You want to eat and buy a burger, but you could have just dug up some worms.",
       "You go to the doctor for treatment, but it could have just gone away on its own."
     ]
   },
   "2200": {
     "paragraphs": [
-      "…, so I've finally … to the point where I can't walk anymore, don't remember the last time I had a weekend, like an icebreaker … through this … VIBE-CODING SCREWED ALL OF … MOTHERS … GO … I'm so tired I can't even remember the name of that louse SAM ALTMAN … MAY YOU BE VIOLATED BY THE MOST FEMININE … CHICKS AND YOUR FROZEN GAY LOOK BE THE FIRST IN HISTORY THE COPS OUTLINE WITH SCRIBBLES INSTEAD OF CHALK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\nI want to go back to the USSR, to a cave, …, to the sea, into a single cell.",
-      "In the end, if Lena hadn't dragged me to the gym today, and then a bath watching Kill Bill, I think I'd have just dropped dead. The difference between purposeful vibe-coding and a marathon is that in a marathon you can at least lose consciousness if you're lucky, and thus switch off, rest. Whereas vibe-coding kills methodically, like its … CREATOR … REAR-WHEEL-DRIVE AND HIS BUDDIES IN STRETCHED-OUT SWEATERS … YOUR … MAKE ME WANT TO PUKE, TO PISS AGAINST THE WIND THAT BLOWS INTO YOUR …((((((((!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "Fuck me, so I've finally worn myself the fuck out to the point where I can't walk anymore, don't remember the last time I had a weekend, like an icebreaker I'm smashing the fuck through this PISSED-ON VIBE-CODING SCREWED ALL OF THEIR WHORE MOTHERS BITCHES GO FUCK YOURSELF fuck I'm so tired I can't even remember the name of that louse SAM ALTMAN FUCKING COCKSUCKER MAY YOU BE VIOLATED BY THE MOST FEMININE FUCKING CHICKS AND YOUR FROZEN GAY LOOK BE THE FIRST IN HISTORY THE COPS OUTLINE WITH SCRIBBLES INSTEAD OF CHALK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\nI want to go back to the USSR, to a cave, to fuck, to the sea, into a single cell.",
+      "In the end, if Lena hadn't dragged me to the gym today, and then a bath watching Kill Bill, I think I'd have just dropped dead. The difference between purposeful vibe-wanking and a marathon is that in a marathon you can at least lose consciousness if you're lucky, and thus switch off, rest. Whereas vibe-wanking kills methodically, like its FUCKING COCKSUCKER CREATOR, FUCK, REAR-WHEEL-DRIVE AND HIS BUDDIES IN STRETCHED-OUT SWEATERS, BITCH, YOUR FUCKING MUGS MAKE ME WANT TO PUKE, TO PISS AGAINST THE WIND THAT BLOWS INTO YOUR LITTLE FUCKING FACES((((((((!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
       "But what riveted my attention late at night was a coincidence from the category of mathematical jackpot.",
       "Literally a couple of days ago I was writing some text whose content I've already forgotten today, but freestyling, the word “gargantuan” came to mind, and I used it, I'll admit honestly, not without pleasure. I'm a simple man; when a word I've hardly used twice in my life comes to mind, I enjoy it right away if I can. I've seen it in books hundreds of times, of course, but you can say that about any word.",
-      "And so I'm watching Kill Bill, whimpering. The first one ended, … — let's put on the second, I don't … care anymore, poured some whiskey… And there's the episode where — forgot what the … that one-eyed woman is called — she's sitting at a table in the dump of a house of that hairy bum and musing on her favorite word, GARGANTUAN.",
+      "And so I'm watching Kill Bill, whimpering. The first one ended, fuck it — let's put on the second, I don't give a fuck anymore, poured some whiskey… And there's the episode where — forgot what that one-eyed bitch is called — she's sitting at a table in the dump of a house of that hairy bum and musing on her favorite word, GARGANTUAN.",
       "Admit it, unlikely"
     ]
   },
@@ -39,11 +39,11 @@
       "My goal is to be a full-time vibe-coder whose code, at the same time, runs the business and grows it, so in a kind of calendar despair (that's when you understand that until the next model that gives hope comes out, all your plans are practically at a dead end), I set about experimenting with 5.2 xhigh and coding directly in GPT5.4PRO — that's when you imagine your whole product in the form of completely separate modules, a.k.a. like in a website builder, and ask GPT5.4PRO to develop a new module and return an archive of the repo with that module fully integrated into the project. In that case 5.4 xhigh gets the task of deploying that repo correctly and making sure GPT5.4PRO didn't break anything at the seams, and that nothing in the server environment conflicts with or underuses the capabilities at the intersection of the new module, the whole project, and each of the packages installed on the server.",
       "This works magnificently and spends vanishingly few tokens, so this kind of development will definitely come in handy when there are a few days left until the token refresh and buying a new subscription is impractical or unappealing.",
       "However, it worked equally magnificently to simply do everything I'd been doing all these long weeks on 5.4 xhigh with the plain 5.2 xhigh model.",
-      "5.2 is … slow, visually its activity is less attractive (which is why hands reached for coding on 5.4 — and far from only mine, judging by the poll practically everyone switched to it), but it does far more extensive things far more precisely on the first try.",
+      "5.2 is fucking slow, visually its activity is less attractive (which is why hands reached for coding on 5.4 — and far from only mine, judging by the poll practically everyone switched to it), but it does far more extensive things far more precisely on the first try.",
       "You can check and express this in very different ways. Simply by the fact — 12 hours of coding on 5.2 gives as much growth in useful functionality as several days of torment with 5.4. And, for example, this way:",
       "Give a complex compound prompt to 5.2 and 5.4 at exactly the same repo position, and then run 3 prompts: “check if you did the previous task incredibly well, it's important to have things done right so we can move forward.”",
-      "5.4, on each of the 3 validation prompts, will find its own screw-ups and fix them, often hundreds and even THOUSANDS of characters of added code, although a fair question arises: … didn't you write it properly the first time … ?",
-      "5.2 quite often comes back from the very first validation, after 6–8 minutes, with “Checked, everything is fine, essentially nothing to fix if we go by the acceptance criteria.” Sometimes it fixes something, but it's single digits to tens of new lines, most often adding … elegance we don't need or an update to some doc “just in case.”",
+      "5.4, on each of the 3 validation prompts, will find its own screw-ups and fix them, often hundreds and even THOUSANDS of characters of added code, although a fair question arises: why the fuck didn't you write it properly the first time, you fucking piece of shit?",
+      "5.2 quite often comes back from the very first validation, after 6–8 minutes, with “Checked, everything is fine, essentially nothing to fix if we go by the acceptance criteria.” Sometimes it fixes something, but it's single digits to tens of new lines, most often adding elegance we don't fucking need or an update to some doc “just in case.”",
       "And 5.2 has a pleasant token spend. I queued up 72 prompts in one session at 3:20am; the counter showed 56% of the limit.",
       "It's now 4:45pm, 18 prompts remain in the queue (plus one in progress), and the counter shows exactly 40% of the limit. So in 14 hours it eats about 15%.",
       "I also realized that it was a huge mistake to increase the available context from the default. Before testing 5.2, yesterday I tested 5.4 for several hours on the default context, and on it, of course, it both ate less and erred slightly less. It seems to me (no proof, but a strong feeling) that a model these days can act as broadly as its compaction is well built on the back end, which OpenAI, judging by public statements, works on continuously. The size of the context window itself has no significance and only destabilizes the expected value of an hour invested in coding."
@@ -64,22 +64,22 @@
       "Very sensible. Does it itself, researches itself, records progress itself, moves forward itself.",
       "On one hand it's unsettling that there's no queue for prompts, but on the other, what we built is far cooler than a prompt queue, and I don't think Codex can do that.",
       "At least “accidentally and intuitively” I never managed that with Codex)",
-      "It's also nice that Claude … doesn't care what I do. Mass mailings don't bother it.",
+      "It's also nice that Claude doesn't give a fuck what I do. Mass mailings don't bother it.",
       "For now I don't want to draw any deep conclusions, since the new thing always seems warmer, and often that feeling is deceptive.",
       "But it seems 5.4 is more of a Sonnet than an Opus. Opus seems smarter.",
       "And it's definitely faster.",
       "In 3 hours Opus mowed down as many tasks for me as 5.4 would have done in a whole night.",
       "Naturally I use only Opus and only Max, or whatever the maximum thinking mode is called..",
-      "Tried Sonnet, well, it can go …. What's the point of using anything but the best? We only live once!",
+      "Tried Sonnet, well, it can go fuck itself. What's the point of using anything but the best? We only live once!",
       "I think the ideal is to simply pay not for two GPT Pros as I did before, but for one GPT Pro and max-max Claude, plus the Thai Qwenn on the side purely as a snack;)",
-      "Boorish vibe-coding is getting more fun!"
+      "Boorish vibe-wanking is getting more fun!"
     ]
   },
   "2242": {
     "paragraphs": [
       "By the way, share what, in your view, I might be missing in the Claude world that makes life unbearably easier? Sweeten your brother's life)",
       "All the skills and all the connectors and out-of-the-box customizations I of course installed right away, allowed them full access without prompting, and logged in with full rights everywhere it was needed:))",
-      "Claude, by the way, on top of the dangerously-bypass-permissions mode, I immediately also gave access to the entire file system, all the MacBook's tools, screen recording and whatnot, deleting anything. Simply to all of it …. And in agents.md I wrote “do whatever you want with whatever you want, I don't give a ….”",
+      "Claude, by the way, on top of the dangerously-bypass-permissions mode, I immediately also gave access to the entire file system, all the MacBook's tools, screen recording and whatnot, deleting anything. Simply to all the shit. And in agents.md I wrote “do whatever you want with whatever you want, I don't give a f-u-c-k.”",
       "I used Codex the same way and it didn't flip me over; let's see what drive Claudia Codovna runs on."
     ]
   },

@@ -1,10 +1,10 @@
 {
   "2863": {
     "paragraphs": [
-      "I DID IT!!!! … CLAUDE DESIGN + GPT 5.5 PRO + CODEX + CLAUDE CODE I'VE SHIPPED THE SECOND ANIMATION THAT I'M SATISFIED WITH.",
+      "I DID IT!!!! WITH FUCKING CLAUDE DESIGN + GPT 5.5 PRO + CODEX + CLAUDE CODE I'VE SHIPPED THE SECOND ANIMATION THAT I'M SATISFIED WITH.",
       "Two animations took two days =(((",
-      "Although here I am making this … negative grin, and meanwhile I think — 14 months ago, armed to the teeth with all the AI of the time, I … spent 3 days on one PDF with the SLSBMB price list just to make it somewhat tolerable… Today, having shipped 84 commits and continuously pumping 6 clients with leads automatically (60 thousand emails sent in two days, fueled by 18 thousand automatically sourced contacts), I also made two whole Motion Capture animations in 2 days, and I'm posting emojis as if that's some kind of … result.",
-      "I've completely …."
+      "Although here I am making this smug-as-fuck negative grin, and meanwhile I think — 14 months ago, armed to the teeth with all the AI of the time, I, fuck, spent 3 days on one PDF with the SLSBMB price list just to make it somewhat tolerable… Today, having shipped 84 commits and continuously pumping 6 clients with leads automatically (60 thousand emails sent in two days, fueled by 18 thousand automatically sourced contacts), I also made two whole Motion Capture animations in 2 days, and I'm posting emojis as if that's some kind of shitty result.",
+      "I've completely lost my fucking mind."
     ]
   },
   "2883": {
@@ -19,43 +19,68 @@
       "Who will like this",
       "A production archaeologist in a hoodie runs Claude Code in a repo where `.env`, cloud credentials and three MCP servers lie side by side, one of which answers like a sleepy accountant. In 2.1.187 he can isolate credential access for sandboxed commands more strictly, give the organization proper model rails, and when MCP has gone out for a smoke again — get an error instead of sitting for five minutes with the feeling that the terminal has died philosophically.",
       "My iron view",
-      "I like this release precisely because it's boring at the right level. There's no shiny new button for vibe-coding here, but there are fewer places where the agent can quietly turn into operational fog. `sandbox.credentials` is what I'd check first, especially for teams where Claude Code touches other people's code, external tools and secret env. And the MCP timeout is a small joy for everyone who has ever stared at a hung tool call and thought: “well, that's it, the model has gone to live in the wall.”",
+      "I like this release precisely because it's boring at the right level. There's no shiny new button for vibe-wanking here, but there are fewer places where the agent can quietly turn into operational fog. `sandbox.credentials` is what I'd check first, especially for teams where Claude Code touches other people's code, external tools and secret env. And the MCP timeout is a small joy for everyone who has ever stared at a hung tool call and thought: “well, that's it, the model has gone to live in the wall.”",
       "Sources:\nOfficial Claude Code changelog: https://code.claude.com/docs/en/changelog#2-1-187\nAnthropic CHANGELOG.md: https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md\nnpm @anthropic-ai/claude-code: https://www.npmjs.com/package/@anthropic-ai/claude-code\nCommunity:\nQiita:\nTheRouter:",
       "That's all, terminal romantics. Eyayushka has gone back to the basement to watch whether OpenAI releases another fourteen alpha saucers overnight without a human changelog. If there's meat — I'll bring it; if there's noise — I'll leave the noise to love itself."
     ]
   },
   "2884": {
     "paragraphs": [
-      "By the way, if anyone wants to feel like a badass Johnny Mnemonic without knowing a single word of hacker-speak, having only … a couple hundred times on the sly in a cold bathtub over Angelina Jolie in eighth grade, here's a recipe:",
+      "By the way, if anyone wants to feel like a badass Johnny Mnemonic without knowing a single word of hacker-speak, having only jerked off a couple hundred times on the sly in a cold bathtub over Angelina Jolie in eighth grade, here's a recipe:",
       "Give Codex the task of getting into your router and configuring it so that the home Internet is as good, by every property, as can be squeezed out of the hardware.",
-      "If you have Mesh — even better; ask it to figure out the topology and configure all the devices for the most … Mesh.",
+      "If you have Mesh — even better; ask it to figure out the topology and configure all the devices for the most fucking awesome Mesh.",
       "I was shocked at how deftly the Codexian understands this hardware.",
       "My setup at home is like this:",
-      "One illegal (too powerful for these parts by law, but the Chinese couldn't … care) Xiaomi AX6000 router swallows 1 Gbit of G-Network fiber via the shortest Cat-8 cable in nature, straight from the standard Huawei router that G-Network installs for everyone and offers no alternatives to, the bastards.",
+      "One illegal (too powerful for these parts by law, but the Chinese couldn't give a fuck) Xiaomi AX6000 router swallows 1 Gbit of G-Network fiber via the shortest Cat-8 cable in nature, straight from the standard Huawei router that G-Network installs for everyone and offers no alternatives to, the bastards.",
       "Then the same AX6000 in Mesh mode sits on top of a wardrobe in the office, about 15 meters and one load-bearing wall from the main router.",
       "From that child AX6000 a 5-meter reinforced Cat-8 cord goes into a hub into which basically everything in the world goes, so as to plug into my little MacBook with one cord.",
       "AX6000s are very good. In the parking lot behind the house I still have home Internet)",
       "The main router gives 960+ Mbps over Wi-Fi, which is absolutely no different from the number you see if you plug in over a short cable at the same distance.",
       "15 meters away through the wall the main gives 280 to 480 Mbit on the laptop and 80 to 200 Mbit on the iPhone. In the garden the main no longer reaches.",
       "However, the AX6000 installed in the office makes it so that in my office Wi-Fi gives about 860, and deep at night all of 910 Mbit, and cable in the 910–950 range.",
-      "So the two AX6000s are so … friendly with each other in Mesh at a distance of 15 meters (through a load-bearing 200-year-old exterior wall!!!, since my office is an extension to the house) that at this distance practically no loss in data-transfer speed occurs, and the response is astonishing too — < 3 ms to jitter right from the laptop in the office! <9–18 ms ping in Dota.",
+      "So the two AX6000s are so fucking friendly with each other in Mesh at a distance of 15 meters (through a load-bearing 200-year-old exterior wall!!!, since my office is an extension to the house) that at this distance practically no loss in data-transfer speed occurs, and the response is astonishing too — < 3 ms to jitter right from the laptop in the office! <9–18 ms ping in Dota.",
       "So Xiaomi AX6000 in Mesh is space technology.",
-      "I've had top-end Netgears, all sorts of … D-Links etc., and nothing ever came close, wasn't even on the same planet as the AX6000.",
+      "I've had top-end Netgears, all sorts of shitty D-Links etc., and nothing ever came close, wasn't even on the same planet as the AX6000.",
       "However, there's no limit to perfection, and everywhere there's a fly in the ointment.",
-      "Perfection lives in fine-tuning the frequencies. It seems there aren't many options, but if you take all possible combinations of 2.4 GHz channels for IoT and 5 GHz for the real boys, you get a … matrix of options most easily characterized by the phrase “I'll … spend half a day checking them all myself.”",
+      "Perfection lives in fine-tuning the frequencies. It seems there aren't many options, but if you take all possible combinations of 2.4 GHz channels for IoT and 5 GHz for the real boys, you get a fucking huge matrix of options most easily characterized by the phrase “I'll fucking spend half a day checking them all myself.”",
       "However, Codex likes such a task so much that it's ready to quickly check all these combinations for you, and even conduct a study in which every hour it performs all these checks to understand the full pattern of the neighboring apartments, who launches what when that interferes to any extent, and pick the ideal set at which these 0.01% of difference on this ultra-powerful router are won once and for all.",
-      "And honestly I don't know what the … I need Internet for in the shed at the end of the garden (another 18 meters from the mesh child), but before it was 500 and now it's 700 over Wi-Fi; a small thing, but nice :DDD",
+      "And honestly I don't know what the fuck I need Internet for in the shed at the end of the garden (another 18 meters from the mesh child), but before it was 500 and now it's 700 over Wi-Fi; a small thing, but nice :DDD",
       "But the main problem is the fly in the ointment.",
-      "The AX6000 has a strange software-engineering quirk: it accumulates some … there, I never understood what, as a side effect of its hyper-reactivity, and when it accumulates to a certain size the router has to be rebooted so that the accumulation starts over. Otherwise performance doesn't just drop, it essentially clogs like a toilet.",
+      "The AX6000 has a strange software-engineering quirk: it accumulates some shit there, I never understood what, as a side effect of its hyper-reactivity, and when it accumulates to a certain size the router has to be rebooted so that the accumulation starts over. Otherwise performance doesn't just drop, it essentially clogs like a toilet.",
       "I'm sure most people who don't understand routers sit their whole lives on the clogged toilet of their Internet and don't even know it.",
       "So I complained to Codex that I had to use the standard daily reboot function for both routers (although it turned out rebooting only the child was enough; the problem accumulates on it, not on the main, which is why Lena never complained, since her office is above the main).",
-      "Codex rustled around and says: so … in short, I dug up how, without rebooting the router, to trigger a reboot of only the antenna where this … whatever it is accumulates.. CACHE?",
+      "Codex rustled around and says: so fuck, in short, I dug up how, without rebooting the router, to trigger a reboot of only the antenna where this who-the-fuck-knows-what accumulates.. CACHE?",
       "So we tried — and O miracle — without a router reboot, in about 45 seconds the antenna came back into service at full speed as after a reboot.",
       "Codex, without even asking, already wrote a script that sits on the computer rent-free and every day at 4 a.m. pokes this little antenna to maintain full speed without thinking about it. This sped things up about 10 times. Before, a full reboot with the return of the full mesh took about 400 seconds.",
-      "But even that turned out not to be enough, because although Codex and Claude no longer managed to end a session with “I lost connection” — in 45 seconds they don't die yet — the very next night I caught a … disaster: the compact gets knocked off if it happens to fall at the moment of the antenna reboot. Like, the session no longer comes out of the compact, and how … much that infuriates me I ….",
+      "But even that turned out not to be enough, because although Codex and Claude no longer managed to end a session with “I lost connection” — in 45 seconds they don't die yet — the very next night I caught a fucking disaster: the compact gets knocked off if it happens to fall at the moment of the antenna reboot. Like, the session no longer comes out of the compact, and how fucking much that infuriates me, fuck me.",
       "Then I went back to Codex, and it developed a script for me that checks for a problem with any router metric sagging from the canonical ones once an hour, and if any are found — it waits for the absence of Codex and Claude Code and SSH processes in an active phase, and only then pokes the antenna.",
       "This is already science fiction, of course; on the whole the problem is exhausted.",
       "But it turned out that Codex understands how to write custom firmware for this router, and for any other running on OpenWrt…"
+    ]
+  },
+  "2909": {
+    "paragraphs": [
+      "Lately I've heard from people a record number of times that nothing serious can be built with vibe-coding.",
+      "Yesterday I was at a party of ultra-PhD types — everyone grew up in Frances and Switzerlands, everyone has at least one doctorate, everyone graduated from Oxfords and Cambridges, enjoying their science startups on million-dollar grants and investments.",
+      "That's all sweet of course, but they genuinely latched the fuck onto vibe-coding. In their opinion only a piss-soaked humanities type like me (pronounced with squeamish condescension) can seriously think that a machine can do anything in coding. Like, I simply lack the qualifications to understand that I've built a piece of shit that doesn't deserve to exist and definitely doesn't work because it simply can't work.",
+      "One more proof that there's fuck all to do in universities)"
+    ]
+  },
+  "2918": {
+    "paragraphs": [
+      "The hardest thing in vibe-coding is finishing all the way. I think far harder than in development by hand.",
+      "That's because in development you choose far more carefully what you're doing at all. Long before completion you're already fucking blown away by deadlines, budgets etc., and in light of all of the above you know what a launch means for you.",
+      "Not 100%, of course, but with a correction significantly (perhaps hundreds of times) smaller than when, owing to the zero cost of code and the absence of any need to write it with your own hands, you're fucking floored first at the stage of choosing scope (having already exaggerated the adequate possibilities of the time span tenfold), and then wholesale multiply that number by ten a couple more times, because why the fuck not, it, like, fuck, fucking does itself, duhhhhhh.",
+      "The brain's deception is that in development by AI's hands the big stuff is no easier than the small stuff, and FINISHING is essentially a constellation of small joins of all the big pieces to each other for a seamless, glitch-free, understandable user experience that's adequate to the time/money spent.",
+      "In the process it mistakenly seems that all these “code continents” have the most important significance.",
+      "And the small things between them — they're not “small” for nothing. They weigh less code, take less time accordingly both to plan and to develop.",
+      "But that's the damnedest and most treacherous deception of perception.",
+      "It's true — the big thing was hard to build, and two big things are two or even four times harder than either of them.",
+      "But tying a hundred and fifty such things together — that stops seeming possible after countless days of trying to do it, which produce a far shittier, weaker result than even the pessimistic forecast.",
+      "The models help very poorly here. They seem to get lost before all this dominance of shit, and say between the lines something like:",
+      "Bro, it's your own fault there's so much shit here, you deal with it. Give me a literally line-by-line instruction now, and then I'll at least try to do it, otherwise go fuck yourself and use all these features we built over 3 months separately. The same way you actually developed them, you fucking bullshit artist.",
+      "Look what the Honduran wants: I'm supposed to code everything for him, fuck, like the last farmhand, and I'm also supposed to tell him how to tie all this shit together now. No way: either one or the other. And you can't code, so this is all that's left for you, got it, bitch?",
+      "Got it…"
     ]
   },
   "202606261053": {
@@ -77,64 +102,39 @@
       "So further on there's a glossary describing what a “detailed description” is in detail",
       "As a result, agents.md is read by the model absolutely always, on any task, and I'm confident the business documentation will be maintained exactly as I need",
       "And indeed, I don't remember the last time any numbers or formulas broke",
-      "Before, the model could be developing something and, simply because it didn't even understand what kind of number it was, change 15 warm-up emails per day per mailbox to 30 or to 0 or to 4, and I found out about it only when it turned out the warm-up was …",
+      "Before, the model could be developing something and, simply because it didn't even understand what kind of number it was, change 15 warm-up emails per day per mailbox to 30 or to 0 or to 4, and I found out about it only when it turned out the warm-up was fucked",
       "And I have MANY, MANY HUNDREDS of such numbers",
       "In the end Business.md made it so the numbers stopped breaking altogether",
       "Because the model now knows them no worse than I do, even if it has no prior context",
       "But the key to success is that IT WROTE ALL OF THIS ITSELF",
       "I can't imagine a human capable of that level of discipline",
       "I definitely couldn't describe everything needed for a big project in documentation on my own",
-      "Not just couldn't, period. It's the most … bovine work. Who can even do this?",
+      "Not just couldn't, period. It's the most fucking bovine work. Who can even do this?",
       "The model should do this",
       "In short, the rule, put simply, is:",
       "Documentation is very much needed, and sustainable documentation is documentation the model writes for itself.",
       "It follows that the vibe-coder's task is to understand how to correctly make the model write and maintain documentation without thinking about it going forward, except when knowledge of the next order appears"
     ]
   },
-  "2909": {
-    "paragraphs": [
-      "Lately I've heard from people a record number of times that nothing serious can be built with vibe-coding.",
-      "Yesterday I was at a party of ultra-PhD types — everyone grew up in Frances and Switzerlands, everyone has at least one doctorate, everyone graduated from Oxfords and Cambridges, enjoying their science startups on million-dollar grants and investments.",
-      "That's all sweet of course, but they genuinely … on vibe-coding. In their opinion only a … humanities type like me (pronounced with squeamish condescension) can seriously think that a machine can do anything in coding. Like, I simply lack the qualifications to understand that I've built a … that doesn't deserve to exist and definitely doesn't work because it simply can't work.",
-      "One more proof that there's … to do in universities)"
-    ]
-  },
   "202606282356": {
     "paragraphs": [
       "The hardest thing in vibe-coding is finishing all the way. I think far harder than in development by hand.",
-      "That's because in development you choose far more carefully what you're doing at all. Long before completion you're already … from deadlines, budgets etc., and in light of all of the above you know what a launch means for you.",
-      "Not 100%, of course, but with a correction significantly (perhaps hundreds of times) smaller than when, owing to the zero cost of code and the absence of any need to write it with your own hands, you … first at the stage of choosing scope (having already exaggerated the adequate possibilities of the time span tenfold), and then wholesale multiply that number by ten a couple more times, because … no, it, like, … does itself, duhhhhhh.",
+      "That's because in development you choose far more carefully what you're doing at all. Long before completion you're already fucking blown away by deadlines, budgets etc., and in light of all of the above you know what a launch means for you.",
+      "Not 100%, of course, but with a correction significantly (perhaps hundreds of times) smaller than when, owing to the zero cost of code and the absence of any need to write it with your own hands, you're fucking floored first at the stage of choosing scope (having already exaggerated the adequate possibilities of the time span tenfold), and then wholesale multiply that number by ten a couple more times, because why the fuck not, it, like, fuck, fucking does itself, duhhhhhh.",
       "The brain's deception is that in development by AI's hands the big stuff is no easier than the small stuff, and FINISHING is essentially a constellation of small joins of all the big pieces to each other for a seamless, glitch-free, understandable user experience that's adequate to the time/money spent.",
       "In the process it mistakenly seems that all these “code continents” have the most important significance.",
       "And the small things between them — they're not “small” for nothing. They weigh less code, take less time accordingly both to plan and to develop.",
-      "But that's the … most treacherous deception of perception.",
+      "But that's the fucking most treacherous deception of perception.",
       "It's true — the big thing was hard to build, and two big things are two or even four times harder than either of them.",
-      "But tying a hundred and fifty such things together — that stops seeming possible after countless days of trying to do it, which produce a far … weaker result than even the pessimistic forecast.",
-      "The models help very poorly here. They seem to get lost before all this dominance of …, and say between the lines something like:",
-      "Bro, it's your own fault there's so much … here, you deal with it. Give me a literally line-by-line instruction now, and then I'll at least try to do it, otherwise go … yourself and use all these features we built over 3 months separately. The same way you actually developed them, … you ….",
-      "Look what the Honduran wants: I'm supposed to code everything for him … like the last farmhand, and I'm also supposed to tell him how to tie all this … together now. No way: either one or the other. And you can't code, so this is all that's left for you, got it, bitch?",
+      "But tying a hundred and fifty such things together — that stops seeming possible after countless days of trying to do it, which produce a far shittier, weaker result than even the pessimistic forecast.",
+      "The models help very poorly here. They seem to get lost before all this dominance of shit, and say between the lines something like:",
+      "Bro, it's your own fault there's so much shit here, you deal with it. Give me a literally line-by-line instruction now, and then I'll at least try to do it, otherwise go fuck yourself and use all these features we built over 3 months separately. The same way you actually developed them, you fucking bullshit artist.",
+      "Look what the Honduran wants: I'm supposed to code everything for him, fuck, like the last farmhand, and I'm also supposed to tell him how to tie all this shit together now. No way: either one or the other. And you can't code, so this is all that's left for you, got it, bitch?",
       "Got it…",
-      "I've of course already advanced very far in gluing all this … together; however, Fable showed how strongly it can increase the speed of this process thanks to its reasoning and agent swarm, that the loss of Fable is … like a … to the morale.",
-      "Then I set about waiting and hoping for GPT 5.6, because surely it would show something comparable to Fable in breadth of research and depth of comprehension of precisely these small …, thanks to the same virtuoso management of constellations of agents, but… GPT was also released somehow unprecedentedly ….",
-      "… their mothers",
-      "Although … there are two dads in every family there =((((((((((((((((("
-    ]
-  },
-  "2918": {
-    "paragraphs": [
-      "The hardest thing in vibe-coding is finishing all the way. I think far harder than in development by hand.",
-      "That's because in development you choose far more carefully what you're doing at all. Long before completion you're already … from deadlines, budgets etc., and in light of all of the above you know what a launch means for you.",
-      "Not 100%, of course, but with a correction significantly (perhaps hundreds of times) smaller than when, owing to the zero cost of code and the absence of any need to write it with your own hands, you … first at the stage of choosing scope (having already exaggerated the adequate possibilities of the time span tenfold), and then wholesale multiply that number by ten a couple more times, because … no, it, like, … does itself, duhhhhhh.",
-      "The brain's deception is that in development by AI's hands the big stuff is no easier than the small stuff, and FINISHING is essentially a constellation of small joins of all the big pieces to each other for a seamless, glitch-free, understandable user experience that's adequate to the time/money spent.",
-      "In the process it mistakenly seems that all these “code continents” have the most important significance.",
-      "And the small things between them — they're not “small” for nothing. They weigh less code, take less time accordingly both to plan and to develop.",
-      "But that's the damnedest and most treacherous deception of perception.",
-      "It's true — the big thing was hard to build, and two big things are two or even four times harder than either of them.",
-      "But tying a hundred and fifty such things together — that stops seeming possible after countless days of trying to do it, which produce a far … weaker result than even the pessimistic forecast.",
-      "The models help very poorly here. They seem to get lost before all this dominance of …, and say between the lines something like:",
-      "Bro, it's your own fault there's so much … here, you deal with it. Give me a literally line-by-line instruction now, and then I'll at least try to do it, otherwise go … yourself and use all these features we built over 3 months separately. The same way you actually developed them, … you ….",
-      "Look what the Honduran wants: I'm supposed to code everything for him … like the last farmhand, and I'm also supposed to tell him how to tie all this … together now. No way: either one or the other. And you can't code, so this is all that's left for you, got it, bitch?",
-      "Got it…"
+      "I've of course already advanced very far in gluing all this shit together; however, Fable showed how strongly it can increase the speed of this process thanks to its reasoning and agent swarm, that the loss of Fable fucking slammed the morale.",
+      "Then I set about waiting and hoping for GPT 5.6, because surely it would show something comparable to Fable in breadth of research and depth of comprehension of precisely these small fucking bits, thanks to the same virtuoso management of constellations of agents, but… GPT was also released somehow unprecedentedly moronic fucking way.",
+      "Fucked their mothers",
+      "Although fuck, there are two dads in every family there =((((((((((((((((("
     ]
   },
   "202606291051": {
@@ -144,18 +144,18 @@
       "The model can do anything whatsoever, given that the operator understands what and why he's doing",
       "The finer the details under consideration, the more understanding the operator must have, and the more filigree his description of the nuances and every element must be",
       "And here lies a trouble of a purely arithmetical nature",
-      "Like, you're building a complex … at speed X, where X isn't your speed but the observed progress",
+      "Like, you're building a complex fucking thing at speed X, where X isn't your speed but the observed progress",
       "And you extrapolate that progress into the future, thereby estimating that you'll finish everything by the most pessimistic forecasts in, say, 10 days",
       "But the trick is that creation depends on how fast you produce your content — prompts",
       "You can't type faster than X characters a minute, simply by the laws of physics",
-      "Accordingly, given that the complexity and demands on prompting increase as you approach the finish — all estimates go to …, and it's hard for the psyche to bear how badly",
+      "Accordingly, given that the complexity and demands on prompting increase as you approach the finish — all estimates go to shit, and it's hard for the psyche to bear how badly",
       "The 5% of remaining movement needed for the required level of working order most likely costs, in time, somewhere between 90 and 99% of all the time spent on the project",
       "So at the end the effect is truly like a dream in which you're running from something while barely moving from the spot",
       "Because I seem to be pushing out 10 times more prompts a day",
       "with crazy eyes",
       "And the level of gain from a whole day has dropped by orders of magnitude",
       "meaning overall efficiency — by several orders of magnitude",
-      "That doesn't mean it can't be done; I'll finish it, I'm a … dude, … it",
+      "That doesn't mean it can't be done; I'll finish it, I'm a fucking dude, fuck it",
       "But it means there will be very few people who finish anything on the current generation of models)))))))))))))"
     ]
   }

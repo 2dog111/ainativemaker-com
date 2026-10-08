@@ -1,13 +1,13 @@
 {
   "2330": {
     "paragraphs": [
-      "If you've ever watched juggling tutorials — and of course you have, since you're all … hardcore jugglers here, obviously :D — then you know that juggling is simply … the brain.",
+      "If you've ever watched juggling tutorials — and of course you have, since you're all fucking unbelievably hardcore jugglers here, obviously :D — then you know that juggling is simply drilling the fuck out of your brain.",
       "A juggler drills the movements until automatism appears, after which it's impossible to unlearn juggling, because the hands remember.",
       "Obviously, juggling is an endless staircase, like everything in this life that can be called a skill.",
       "Then the juggler starts juggling while balancing on a wheel, not three balls but a hundred, a cat gets added, a book, a sweaty sock dried stiff on the radiator, then juggling all of the above blindfolded, on a rocking boat in a storm, etc. — there's no limit.",
       "The brain can do a lot, but first it has to bend to that a lot, and that requires an effort to perform the bending.",
-      "In vibe-coding this … is felt immensely. Today it seems so stupid to me that a couple of weeks ago I vibe-coded only in Codex, and only by creating tasks in sessions in the Codex app, and only no more than 3 tasks in parallel (I simply couldn't keep up with more).",
-      "Today I have … 2–4 parallel sessions in the Codex app, 2–4 parallel sessions in the Claude Code app, 1 task in Claude via Telegram, 1 task in Codex via Telegram, and in parallel with all that I regularly toss something into the watch as thoughts arrive in my head.",
+      "In vibe-coding this shit is felt immensely. Today it seems so stupid to me that a couple of weeks ago I vibe-coded only in Codex, and only by creating tasks in sessions in the Codex app, and only no more than 3 tasks in parallel (I simply couldn't keep up with more).",
+      "Today I've got 2–4 parallel sessions fucking hammering away in the Codex app, 2–4 parallel sessions in the Claude Code app, 1 task in Claude via Telegram, 1 task in Codex via Telegram, and in parallel with all that I regularly toss something into the watch as thoughts arrive in my head.",
       "And today a guy wrote that there was a problem with a payment (a donation), and I remembered how I used to spend 20–60 minutes sorting out problems like that, whereas today I spent literally 20 seconds. It was still being done for a while, of course, but that was no longer my time but the machine's, which has an entire eternity if you pay it money.",
       "Looking at this acceleration of mine over just the past not-even-full month, I'm even curious what life will look like by the end of the year, let alone the end of next. I saw on YouTube today that my video about the end of Escalator was only 9 months ago. That's absurd. It feels like a whole life has passed since then. Back then I was happy that it filled 20 cells in a spreadsheet for me, with errors.",
       "9 months……"
@@ -15,77 +15,24 @@
   },
   "2339": {
     "paragraphs": [
-      "Ladies and gentlemen, I'm exposing a trick that I'm … about. Even GPT 5.4 is … about it, and even Opus 4.7.",
-      "It was so nice when they praised me, as if I were that little boy who behaved well and nobody will ever guess what he's … behind the door right now.",
+      "Ladies and gentlemen, I'm exposing a trick that fucking blew my mind. Even GPT 5.4 was fucking blown away by it, and even Opus 4.7.",
+      "It was so nice when they praised me, as if I were that little boy who behaved well and nobody will ever guess that he just jerked off behind the door.",
       "So… the day before yesterday I was playing with these webhooks and Telegrams and watches, and before sleep it occurred to me:",
-      "Here I have a … e2e test system that drags along a … of an alerting system. The product is extremely complex, so there are several hundred types of alerts, and for each type you can list many known patterns that trigger them, but bugs and the irony of life are such that nature always … to surprise you, and for every alert, once a month, an absolutely unique trigger scenario is bound to appear. In development the gun fires not once a year but, if you're lucky, once a month.",
-      "But if all of this really exists, then what stops us from triggering Codex via webhook when an alert fires, and asking it, with a very long tricky prompt, to conduct an investigation, and if it's a bug — fix the bug. If it's noise — tighten the bolt so it stops rattling. If it's … knows what — complain to daddy. If it's known what but daddy is still needed — complain. Complaining isn't weakness if you're not a … sucker and only complain when the obstacle is genuinely insurmountable. The upbringing for that little child was prompting.",
+      "Here I have a fucking awesome e2e test system that drags along a batshit insane alerting system. The product is extremely complex, so there are several hundred types of alerts, and for each type you can list many known patterns that trigger them, but bugs and the irony of life are such that nature always finds a fucking twisted way to surprise you, and for every alert, once a month, an absolutely unique trigger scenario is bound to appear. In development the gun fires not once a year but, if you're lucky, once a month.",
+      "But if all of this really exists, then what stops us from triggering Codex via webhook when an alert fires, and asking it, with a very long tricky prompt, to conduct an investigation, and if it's a bug — fix the bug. If it's noise — tighten the bolt so it stops rattling. If it's fuck knows what — complain to daddy. If it's known what but daddy is still needed — complain. Complaining isn't weakness if you're not a fucking sucker and only complain when the obstacle is genuinely insurmountable. The upbringing for that little child was prompting.",
       "As a result, for almost exactly two days now the system has been reacting to every alert by itself and fixing itself. About 170 problems were fixed; for 18 of them the situation was escalated to me; in 5 cases I helped resolve it by authorizing destructive actions, and in 13 cases I went to snitch to the vendor, because a problem on their side came to light that I hadn't noticed for two weeks.",
       "The deeper into the woods, the fewer of these triggers there will be, because a system that has fully repaired itself doesn't breed alerts and doesn't trigger the repairman.",
       "And if the tests are truly e2e all the way around, anything that matters, if it collapses, will trigger at least one of the alerts, no fortune teller needed.",
-      "I don't know, maybe everyone already does this, but I'm simply … that this is possible at all, and that it's not just a fantasy — I actually implemented it, and it works.",
+      "I don't know, maybe everyone already does this, but I'm simply fucking floored that this is possible at all, and that it's not just a fantasy — I actually implemented it, and it works.",
       "The system fixes itself.",
-      "What the …) I'll have to marry it"
-    ]
-  },
-  "202604201822": {
-    "paragraphs": [
-      "So the last straw was when just now Claude Opus 4.7 max … couldn't deploy to the server that both models have been deploying to without asking for a month, and couldn't find how it's done even when I asked twice, explaining that deploy instructions are lying around everywhere and you, like, used them successfully before, or how the … do you think you deployed?",
-      "It poked and poked but still couldn't.",
-      "I … this kind of development. It's like hiring an idiot to fix your house.",
-      "But experience says there's no point unsubscribing from Claude today over this butthurt, because in 1–2 weeks everything will change 360 degrees again.",
-      "It's just that now you need 2 subscriptions at $200 that are strong as of today, and 1 subscription at $200 that's dumber as of today, to cover 24/7 of coding-and-business tasks within the weekly limit.",
-      "Although if you think about it, what's … tragic about it? If for one client I buy two grand worth of mailboxes alone per month..",
-      "Put mailboxes for one client on the left pan of the scale, and AI, which already does literally everything in the world for me.",
-      "Even if it cost the same — AI outweighs it so much its pan punches … through the floor.",
-      "And all 3 AI accounts are also 3 times cheaper than a single … purchase of mailboxes for work.",
-      "And the joke is that I've just figured out how to build my own farm of domains and mailboxes entirely within the next 48 hours, and I won't have to pay for mailboxes at all.",
-      "If you count how much money $400 of AI subscriptions have let me save here and there, it comes to tens of thousands of dollars a month.",
-      "Based on that math, even 5,000 and even 8,000 and even 10,000 dollars a month for AI would still be perfectly reasonable to pay.",
-      "Let alone 600)",
-      "By the way, forgot to add something important:",
-      "Even a dumb Claude is very useful as a 2nd opinion engine for Codex.",
-      "So that Claude tokens don't sit idle for no reason, you can add Claude to Codex as an MCP (it can natively start as an MCP directly), and implement a complex mechanic for a complex big task — like a fully self-owned farm of domains/mailboxes/reputation — through requiring Codex, before taking on the implementation of the next block, to run the implementation plan, together with the context that gave birth to that plan, through Opus 4.7 in MCP mode; that way Codex manages to think about the task twice, around Opus 4.7's not-always-throwaway ideas, and the output is a … times more powerful plan.",
-      "All of this can be wired through prompting and a special file requiring a certain approach (temporarily, not in agents.md) so that it works by itself, straight up hands-free.",
-      "So in Codex there's a … loop-prompt spinning around a special multi-stage task workbench file, and each pass with a new loop-prompt pulls in Claude Code along the way. Slow, but the result should be an order of magnitude more reliable."
-    ]
-  },
-  "202604211629": {
-    "paragraphs": [
-      "Okay, so yesterday, in a difficult …, I … some … out loud, but decided to try to implement it so that it would transmogrify from … into the rank of the real, beautiful and eternal.",
-      "Given:",
-      "The repo has an Agents.MD and a Claude.MD, which can technically be linked to each other so that one always mirrors the other 1-to-1 — that way the models always have in their heads what they need and don't step on each other's toes, expecting EVERYTHING written in the main MD file and not only what a model wrote down “for itself, … everyone else on the computer.”",
-      "The repo has a Readme.MD, where everything goes that's unreasonable to shove into Agents.md and Claude.MD but that we definitely need the model to know, for example at least how to navigate a repo consisting of thousands of files.",
-      "On the computer there's the Claude Code APP and Claude Code CLI, the Codex APP and Codex CLI.",
-      "Claude has a number of useful tools that let you run scripts juggling terminal CLI sessions and read data from them via monitors spun up for the purpose.",
-      "And both tools have hooks.",
-      "And besides hooks, we have logic in our little heads, and having drawn the whole path of the data from X to Y and all possible ways events could unfold, we can describe the system in logical signals that strengthen Claude's monitoring, letting it lean on scenarios that are simply unrealistic to solve with a monitor.",
-      "For example: Codex in a headless terminal session doesn't emit reasoning tokens, even if the emit-enforcement flag is nailed down everywhere.",
-      "At first glance that means it's impossible to tell where Codex is.",
-      "But Codex can't emit nothing at all. Then creation would be impossible too. All the reasoning done over 5–50 minutes doesn't just fall out of its … afterwards, does it?",
-      "It follows that some file is swelling anyway, and having figured that out, finding it isn't hard at all. The very fact of swelling over time is already a sufficient blocker for interrupting the model, and a prolonger of the wait for the second model.",
-      "Etc.",
-      "If you dig around in all of this long enough, you get this kind of system:",
-      "1) Together with Claude, Codex and GPT PRO, by hand, over 4 hours, we create an implementation plan for a huge system.",
-      "2) Claude and Codex break this system into subtasks; in my case it came to 56 subtasks, each with 8–16 sub-subtasks.",
-      "3) Claude relies on two files: the main plan and a workbench document in which the main plan is already sliced into subtasks and enriched with a cloud of information on each subtask.",
-      "4) Claude takes 1 sub-subtask of task 1 into work and does all the thinking work on it -> throws the work done to Codex in a ONE-OFF headless session together with all the context and both files, the plan and the workbench -> Codex evaluates, and if it finds flaws in the logic, returns its doubts and ideas to Claude. Claude understands that Codex must not be touched or interrupted while monitoring the swelling file with non-exposed reasoning (a.k.a. system log or something). Only if the swelling has stopped and Codex isn't producing a summary does a kill-restart happen.",
-      "5) The back-and-forth throwing ends when the models have agreed = consensus. On some tasks the models manage to reach consensus from the very first exchange of reasoning. On some — from the 12th.",
-      "6) Only Claude writes code, but when the code is written it's shown to Codex via the above mechanics, and Consensus is required again. Curiously, in this mode Consensus on code comes practically always from the first exchange of finished code artifacts between Claude and Codex. Apparently, just as with humans — if 80% of the time is spent on design, the code gets written perfectly the first time. Everything as Tom DeMarco used to say =)",
-      "7) Claude can run this loop continuously until the tasks run out. When the tasks run out — terminate all, final celebratory conclusion into the mother session.",
-      "8) The mother session is the session in which we launch this whole mechanism in the Claude Code App. It's where the monitor hangs, which actually checks the situation for “are there changes” randomly every 10–30 minutes, and which monitors for the celebratory conclusion. It also pushes all changes to Telegram via the bot, so you can glance at your phone and watch how development progresses.",
-      "The mother session doesn't steer the development process; the Orchestrator session steers it. That's a headless Claude Code CLI session that launches instances of Claude Code CLI and Codex CLI and monitors their vital signs, plus makes sure the exchange between them is happening and that they write their conclusions to the right files, while a special Claude Code CLI session “gathers all these conclusions together and analyzes them to understand whether it's time to hand them to the session that writes the code, or to continue the exchange between Codex and Claude to obtain Consensus.”",
-      "In short, there's a president who manages a prime minister, who manages vice presidents, who manage workers, who on one hand have strict boundaries and on the other have none, since nobody tells them how long they may “negotiate” among themselves. But the very fact of an agreement between two top models (only Opus 4.7 max and GPT 5.4 xhigh work at all levels) even intuitively obviously raises the chance of the enterprise's success by … knows how many times — I think by tens — and the bigger the project, the higher this multiplier.",
-      "It's been running for ~7 hours now. Eats tokens slowly, since the models wait for each other a lot. This isn't just an absence of parallelism, it's in a sense anti-parallelism =)",
-      "Now one of two things: either it'll turn out to be total …, or it'll turn out to be the most efficient way to spend tokens and the ability to forget about developing a complex system for several days (by GPT PRO's calculations, the current scope of tasks could take up to 8 working days this way).",
-      "At the same time, you can launch as many of these combines in parallel as you like, meaning the human operator can spend all their free time loading this machine up with new projects and churning out tens of millions of lines of clean code a week. In theory :D"
+      "What the fuck) I'll have to marry it"
     ]
   },
   "2366": {
     "paragraphs": [
-      "Okay, so yesterday, in a difficult …, I … some … out loud, but decided to try to implement it so that it would transmogrify from … into the rank of the real, beautiful and eternal.",
+      "Okay, so yesterday, in a difficult moment, I blurted out some bullshit out loud, but decided to try to implement it so that it would transmogrify from bullshit into the rank of the real, beautiful and eternal.",
       "Given:",
-      "The repo has an Agents.MD and a Claude.MD, which can technically be linked to each other so that one always mirrors the other 1-to-1 — that way the models always have in their heads what they need and don't step on each other's toes, expecting EVERYTHING written in the main MD file and not only what a model wrote down “for itself, … everyone else on the computer.”",
+      "The repo has an Agents.MD and a Claude.MD, which can technically be linked to each other so that one always mirrors the other 1-to-1 — that way the models always have in their heads what they need and don't step on each other's toes, expecting EVERYTHING written in the main MD file and not only what a model wrote down “for itself, and fuck everyone else on the computer.”",
       "The repo has a Readme.MD, where everything goes that's unreasonable to shove into Agents.md and Claude.MD but that we definitely need the model to know, for example at least how to navigate a repo consisting of thousands of files.",
       "On the computer there's the Claude Code APP and Claude Code CLI, the Codex APP and Codex CLI.",
       "Claude has a number of useful tools that let you run scripts juggling terminal CLI sessions and read data from them via monitors spun up for the purpose.",
@@ -93,7 +40,7 @@
       "And besides hooks, we have logic in our little heads, and having drawn the whole path of the data from X to Y and all possible ways events could unfold, we can describe the system in logical signals that strengthen Claude's monitoring, letting it lean on scenarios that are simply unrealistic to solve with a monitor.",
       "For example: Codex in a headless terminal session doesn't emit reasoning tokens, even if the emit-enforcement flag is nailed down everywhere.",
       "At first glance that means it's impossible to tell where Codex is.",
-      "But Codex can't emit nothing at all. Then creation would be impossible too. All the reasoning done over 5–50 minutes doesn't just fall out of its … afterwards, does it?",
+      "But Codex can't emit nothing at all. Then creation would be impossible too. All the reasoning done over 5–50 minutes doesn't just fall from the sky afterwards, does it?",
       "It follows that some file is swelling anyway, and having figured that out, finding it isn't hard at all. The very fact of swelling over time is already a sufficient blocker for interrupting the model, and a prolonger of the wait for the second model.",
       "Etc.",
       "If you dig around in all of this long enough, you get this kind of system:",
@@ -110,9 +57,9 @@
     "paragraphs": [
       "8) The mother session is the session in which we launch this whole mechanism in the Claude Code App. It's where the monitor hangs, which actually checks the situation for “are there changes” randomly every 10–30 minutes, and which monitors for the celebratory conclusion. It also pushes all changes to Telegram via the bot, so you can glance at your phone and watch how development progresses.",
       "The mother session doesn't steer the development process; the Orchestrator session steers it. That's a headless Claude Code CLI session that launches instances of Claude Code CLI and Codex CLI and monitors their vital signs, plus makes sure the exchange between them is happening and that they write their conclusions to the right files, while a special Claude Code CLI session “gathers all these conclusions together and analyzes them to understand whether it's time to hand them to the session that writes the code, or to continue the exchange between Codex and Claude to obtain Consensus.”",
-      "In short, there's a president who manages a prime minister, who manages vice presidents, who manage workers, who on one hand have strict boundaries and on the other have none, since nobody tells them how long they may “negotiate” among themselves. But the very fact of an agreement between two top models (only Opus 4.7 max and GPT 5.4 xhigh work at all levels) even intuitively obviously raises the chance of the enterprise's success by … knows how many times — I think by tens — and the bigger the project, the higher this multiplier.",
+      "In short, there's a president who manages a prime minister, who manages vice presidents, who manage workers, who on one hand have strict boundaries and on the other have none, since nobody tells them how long they may “negotiate” among themselves. But the very fact of an agreement between two top models (only Opus 4.7 max and GPT 5.4 xhigh work at all levels) even intuitively obviously raises the chance of the enterprise's success by fuck knows how many times — I think by tens — and the bigger the project, the higher this multiplier.",
       "It's been running for ~7 hours now. Eats tokens slowly, since the models wait for each other a lot. This isn't just an absence of parallelism, it's in a sense anti-parallelism =)",
-      "Now one of two things: either it'll turn out to be total …, or it'll turn out to be the most efficient way to spend tokens and the ability to forget about developing a complex system for several days (by GPT PRO's calculations, the current scope of tasks could take up to 8 working days this way).",
+      "Now one of two things: either it'll turn out to be total shit, or it'll turn out to be the most efficient way to spend tokens and the ability to forget about developing a complex system for several days (by GPT PRO's calculations, the current scope of tasks could take up to 8 working days this way).",
       "At the same time, you can launch as many of these combines in parallel as you like, meaning the human operator can spend all their free time loading this machine up with new projects and churning out tens of millions of lines of clean code a week. In theory :D"
     ]
   },
@@ -127,10 +74,63 @@
       "Right now I'm into, I don't even know… the 16th hour of this thing running?",
       "It consumes roughly 0.5% of the weekly allowance per hour from each of the models (on the $200 plan). So per day it eats about 10% of the week.",
       "It closes one subtask in ~3 hours. Although of course you can't put it that way. Some in 2, and on some it'll spend 6. You understand what it depends on.",
-      "But I want to tell you — it's a pleasant feeling when some project you can't get around to in the broad sense, but which is very well structured in your head and will clearly be useful to you, is born not through sweaty dashes between 6 parallel sessions and talking into a watch in the time between dashes, but completely invisibly, by itself, somewhere … knows where in headless sessions.",
+      "But I want to tell you — it's a pleasant feeling when some project you can't get around to in the broad sense, but which is very well structured in your head and will clearly be useful to you, is born not through sweaty dashes between 6 parallel sessions and talking into a watch in the time between dashes, but completely invisibly, by itself, somewhere fuck knows where in headless sessions.",
       "The only reminder that something's happening there is a notification in the Telegram bot every couple of hours (and even that you don't have to set up), and the battery drains such that it's better not to take the computer off the charger)",
-      "What I love about the M3 Pro Max Ultra Hyper Mega Pizdec 128GB RAM — it's not exactly brand new anymore, but such a powerful beast that I can … ten coding sessions on it and stream in HD in parallel =)",
+      "What I love about the M3 Pro Max Ultra Hyper Mega Pizdec 128GB RAM — it's not exactly brand new anymore, but such a powerful beast that I can hammer out ten coding sessions on it and stream in HD in parallel =)",
       "I'm even curious what the very newest Pro is like) Hopefully not the same story as the new BMWs)"
+    ]
+  },
+  "202604201822": {
+    "paragraphs": [
+      "So the last straw was when just now Claude Opus 4.7 max, the bitch, couldn't deploy to the server that both models have been deploying to without asking for a month, and couldn't find how it's done even when I asked twice, explaining that deploy instructions are lying around everywhere and you, like, used them successfully before, or how the fuck do you think you deployed?",
+      "It poked and poked but still couldn't.",
+      "Fuck this kind of development. It's like hiring an idiot to fix your house.",
+      "But experience says there's no point unsubscribing from Claude today over this butthurt, because in 1–2 weeks everything will change 360 degrees again.",
+      "It's just that now you need 2 subscriptions at $200 that are strong as of today, and 1 subscription at $200 that's dumber as of today, to cover 24/7 of coding-and-business tasks within the weekly limit.",
+      "Although if you think about it, what the fuck is tragic about it? If for one client I buy two grand worth of mailboxes alone per month..",
+      "Put mailboxes for one client on the left pan of the scale, and AI, which already does literally everything in the world for me.",
+      "Even if it cost the same — AI outweighs it so much its pan punches the fuck through the floor.",
+      "And all 3 AI accounts are also 3 times cheaper than a single fucking purchase of mailboxes for work.",
+      "And the joke is that I've just figured out how to build my own farm of domains and mailboxes entirely within the next 48 hours, and I won't have to pay for mailboxes at all.",
+      "If you count how much money $400 of AI subscriptions have let me save here and there, it comes to tens of thousands of dollars a month.",
+      "Based on that math, even 5,000 and even 8,000 and even 10,000 dollars a month for AI would still be perfectly reasonable to pay.",
+      "Let alone 600)",
+      "By the way, forgot to add something important:",
+      "Even a dumb Claude is very useful as a 2nd opinion engine for Codex.",
+      "So that Claude tokens don't sit idle for no reason, you can add Claude to Codex as an MCP (it can natively start as an MCP directly), and implement a complex mechanic for a complex big task — like a fully self-owned farm of domains/mailboxes/reputation — through requiring Codex, before taking on the implementation of the next block, to run the implementation plan, together with the context that gave birth to that plan, through Opus 4.7 in MCP mode; that way Codex manages to think about the task twice, around Opus 4.7's not-always-throwaway ideas, and the output is a fuckillion times more powerful plan.",
+      "All of this can be wired through prompting and a special file requiring a certain approach (temporarily, not in agents.md) so that it works by itself, straight up hands-free.",
+      "So in Codex you fucking hammer out a loop-prompt spinning around a special multi-stage task workbench file, and each pass with a new loop-prompt pulls in Claude Code along the way. Slow, but the result should be an order of magnitude more reliable."
+    ]
+  },
+  "202604211629": {
+    "paragraphs": [
+      "Okay, so yesterday, in a difficult moment, I blurted out some bullshit out loud, but decided to try to implement it so that it would transmogrify from bullshit into the rank of the real, beautiful and eternal.",
+      "Given:",
+      "The repo has an Agents.MD and a Claude.MD, which can technically be linked to each other so that one always mirrors the other 1-to-1 — that way the models always have in their heads what they need and don't step on each other's toes, expecting EVERYTHING written in the main MD file and not only what a model wrote down “for itself, and fuck everyone else on the computer.”",
+      "The repo has a Readme.MD, where everything goes that's unreasonable to shove into Agents.md and Claude.MD but that we definitely need the model to know, for example at least how to navigate a repo consisting of thousands of files.",
+      "On the computer there's the Claude Code APP and Claude Code CLI, the Codex APP and Codex CLI.",
+      "Claude has a number of useful tools that let you run scripts juggling terminal CLI sessions and read data from them via monitors spun up for the purpose.",
+      "And both tools have hooks.",
+      "And besides hooks, we have logic in our little heads, and having drawn the whole path of the data from X to Y and all possible ways events could unfold, we can describe the system in logical signals that strengthen Claude's monitoring, letting it lean on scenarios that are simply unrealistic to solve with a monitor.",
+      "For example: Codex in a headless terminal session doesn't emit reasoning tokens, even if the emit-enforcement flag is nailed down everywhere.",
+      "At first glance that means it's impossible to tell where Codex is.",
+      "But Codex can't emit nothing at all. Then creation would be impossible too. All the reasoning done over 5–50 minutes doesn't just fall from the sky afterwards, does it?",
+      "It follows that some file is swelling anyway, and having figured that out, finding it isn't hard at all. The very fact of swelling over time is already a sufficient blocker for interrupting the model, and a prolonger of the wait for the second model.",
+      "Etc.",
+      "If you dig around in all of this long enough, you get this kind of system:",
+      "1) Together with Claude, Codex and GPT PRO, by hand, over 4 hours, we create an implementation plan for a huge system.",
+      "2) Claude and Codex break this system into subtasks; in my case it came to 56 subtasks, each with 8–16 sub-subtasks.",
+      "3) Claude relies on two files: the main plan and a workbench document in which the main plan is already sliced into subtasks and enriched with a cloud of information on each subtask.",
+      "4) Claude takes 1 sub-subtask of task 1 into work and does all the thinking work on it -> throws the work done to Codex in a ONE-OFF headless session together with all the context and both files, the plan and the workbench -> Codex evaluates, and if it finds flaws in the logic, returns its doubts and ideas to Claude. Claude understands that Codex must not be touched or interrupted while monitoring the swelling file with non-exposed reasoning (a.k.a. system log or something). Only if the swelling has stopped and Codex isn't producing a summary does a kill-restart happen.",
+      "5) The back-and-forth throwing ends when the models have agreed = consensus. On some tasks the models manage to reach consensus from the very first exchange of reasoning. On some — from the 12th.",
+      "6) Only Claude writes code, but when the code is written it's shown to Codex via the above mechanics, and Consensus is required again. Curiously, in this mode Consensus on code comes practically always from the first exchange of finished code artifacts between Claude and Codex. Apparently, just as with humans — if 80% of the time is spent on design, the code gets written perfectly the first time. Everything as Tom DeMarco used to say =)",
+      "7) Claude can run this loop continuously until the tasks run out. When the tasks run out — terminate all, final celebratory conclusion into the mother session.",
+      "8) The mother session is the session in which we launch this whole mechanism in the Claude Code App. It's where the monitor hangs, which actually checks the situation for “are there changes” randomly every 10–30 minutes, and which monitors for the celebratory conclusion. It also pushes all changes to Telegram via the bot, so you can glance at your phone and watch how development progresses.",
+      "The mother session doesn't steer the development process; the Orchestrator session steers it. That's a headless Claude Code CLI session that launches instances of Claude Code CLI and Codex CLI and monitors their vital signs, plus makes sure the exchange between them is happening and that they write their conclusions to the right files, while a special Claude Code CLI session “gathers all these conclusions together and analyzes them to understand whether it's time to hand them to the session that writes the code, or to continue the exchange between Codex and Claude to obtain Consensus.”",
+      "In short, there's a president who manages a prime minister, who manages vice presidents, who manage workers, who on one hand have strict boundaries and on the other have none, since nobody tells them how long they may “negotiate” among themselves. But the very fact of an agreement between two top models (only Opus 4.7 max and GPT 5.4 xhigh work at all levels) even intuitively obviously raises the chance of the enterprise's success by fuck knows how many times — I think by tens — and the bigger the project, the higher this multiplier.",
+      "It's been running for ~7 hours now. Eats tokens slowly, since the models wait for each other a lot. This isn't just an absence of parallelism, it's in a sense anti-parallelism =)",
+      "Now one of two things: either it'll turn out to be total shit, or it'll turn out to be the most efficient way to spend tokens and the ability to forget about developing a complex system for several days (by GPT PRO's calculations, the current scope of tasks could take up to 8 working days this way).",
+      "At the same time, you can launch as many of these combines in parallel as you like, meaning the human operator can spend all their free time loading this machine up with new projects and churning out tens of millions of lines of clean code a week. In theory :D"
     ]
   }
 }
