@@ -34,7 +34,7 @@ for (const exclusion of journalExclusions) {
   if (!exclusion.reason.trim()) failures.push(`missing reason for ${exclusion.id}`);
 }
 console.log(journalExclusions.map(({ id, reason }) => `${id}: ${reason}`).join("\n"));
-console.log(`Public corpus: ${[...posts, ...chatPosts, ...extraPosts].filter(({ id }) => !excludedJournalEntryIds.includes(id)).length} records per language`);
+console.log(`Public English corpus: ${[...posts, ...chatPosts, ...extraPosts].filter(({ id }) => !excludedJournalEntryIds.includes(id)).length} translated records`);
 
 if (failures.length) {
   console.error([...new Set(failures)].join("\n"));

@@ -243,26 +243,6 @@ h2 {
   transform: translateY(-2px);
 }
 
-/* Переключатель языка: тихая текстовая ссылка рядом с кнопкой дневника,
-   тап-таргет от 44px. */
-.lang-switch {
-  display: inline-flex;
-  min-height: 2.75rem;
-  align-items: center;
-  padding: 0.5rem 0.25rem;
-  color: var(--muted);
-  font-size: 1.125rem;
-  text-decoration: underline;
-  text-decoration-color: var(--line);
-  text-underline-offset: 0.25em;
-  transition: color 150ms ease, text-decoration-color 150ms ease;
-}
-
-.lang-switch:hover {
-  color: var(--ink);
-  text-decoration-color: var(--ink);
-}
-
 @keyframes header-journal-sheen {
   0%, 68% {
     background-position: 160% 0, 0 0, 0 0;
@@ -1037,11 +1017,6 @@ h2 {
     min-height: 3rem;
     margin-left: 5.45rem;
     padding-inline: 0.9rem;
-  }
-
-  .lang-switch {
-    margin-left: 5.45rem;
-    padding-block: 0.25rem;
   }
 
   .hero h1 {

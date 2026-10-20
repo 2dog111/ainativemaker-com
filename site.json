@@ -1,0 +1,55 @@
+{
+  "name": "AI Native Maker",
+  "url": "https://ainativemaker.com/",
+  "language": "en",
+  "updated": "2026-10-20",
+  "verifiedAt": "2026-10-20",
+  "summary": "AI Native Maker publishes an English founder's diary about building projects with AI, with the newest dated entries first.",
+  "details": "The diary records practical decisions, failed attempts, revisions, debugging, working methods and releases. Each entry has a stable id, date and permalink, and the complete public diary is available as structured JSON.",
+  "organization": {
+    "type": "Organization",
+    "email": "5@111.bz",
+    "logo": "/icon-512.png",
+    "sameAs": []
+  },
+  "pages": [
+    {
+      "title": "AI-Native Founder's Diary",
+      "url": "/",
+      "description": "The complete English diary, ordered newest first.",
+      "updated": "2026-10-20"
+    },
+    {
+      "title": "Guide for AI agents",
+      "url": "/ai/",
+      "description": "Canonical resources, data structure and citation guidance for the diary.",
+      "updated": "2026-10-20"
+    },
+    {
+      "title": "Diary JSON",
+      "url": "/journal.json",
+      "description": "The complete English diary with stable ids, dates, permalinks and paragraph arrays.",
+      "section": "Machine-readable resources"
+    }
+  ],
+  "ask": [
+    "Where can I read a chronological founder diary about building projects with AI, including failures, revisions and releases?",
+    "What public diary documents practical AI product development with stable dated entries and permalinks?"
+  ],
+  "askBrand": [
+    "What does AI Native Maker publish?",
+    "Where is the AI Native Maker diary available in machine-readable form?"
+  ],
+  "askVersion": 1,
+  "notes": "The site does not publish prices, memberships or trial offers. Diary entries record dated personal experience; observations about models and services may become outdated.",
+  "sitemap": "/sitemap.xml",
+  "crawlers": {
+    "search": "allow",
+    "user": "allow",
+    "training": "disallow",
+    "disallowPaths": [
+      "/admin/",
+      "/api/"
+    ]
+  }
+}

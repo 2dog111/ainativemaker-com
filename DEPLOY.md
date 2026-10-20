@@ -1,175 +1,97 @@
 # Деплой ainativemaker.com
 
-Общая спецификация и текущий статус проекта: `SPEC.md`.
+Общая спецификация и инварианты проекта: `SPEC.md`.
 
-## Где живёт сайт
+## Production
 
-С 09.09.2026 продакшен на американском сервере: SSH-алиас `srv188` (он же
-`synteq`), IP `167.17.73.188`, Dallas, Ubuntu 22.04, веб-сервер **Caddy**.
-Сервер общий: на нём же 111.bz, dim.im, startupfounderai.com и панель t.dim.im.
-Чужие блоки Caddyfile не трогать.
+Продакшен работает на сервере из реестра `~/antropic/SERVERS.md`: SSH-алиас
+`srv188`, фактический hostname `vps111`, Caddy. Сервер общий, поэтому чужие
+блоки `/etc/caddy/Caddyfile` не менять.
 
-- статика: `/srv/ainativemaker/releases/<timestamp>`, активный —
-  симлинк `/srv/ainativemaker/current`;
-- Caddy: блок в `/etc/caddy/Caddyfile`, локальный эталон
-  `deploy/caddy-ainativemaker.conf`; сертификаты Caddy выпускает и продлевает сам;
-- API формы и админка: `/opt/ainativemaker-server/current/server/index.mjs`,
-  слушает `127.0.0.1:8787`;
-- systemd: `ainativemaker.service`, эталон `deploy/ainativemaker.service`;
+- статические релизы: `/srv/ainativemaker/releases/<timestamp>`;
+- активный релиз: симлинк `/srv/ainativemaker/current`;
+- локальный эталон блока Caddy: `deploy/caddy-ainativemaker.conf`;
+- API и закрытая админка: `/opt/ainativemaker-server/current/server/index.mjs`;
+- systemd: `ainativemaker.service`;
 - заявки: `/var/lib/ainativemaker/leads.jsonl`;
-- метаданные заявок: `/var/lib/ainativemaker/lead-statuses.json`;
-- учётные данные админки: `/etc/ainativemaker-admin.env`, права `600`;
-- сборка: `dist/` после `npm run build && npm run check && npm test`.
+- статусы заявок: `/var/lib/ainativemaker/lead-statuses.json`;
+- секреты админки: `/etc/ainativemaker-admin.env`.
 
-Текущий релиз: `20261020-095059` (20.10.2026: вводные абзацы на обеих главных удалены, `5@111.bz` добавлен в верхнюю навигацию всех четырёх страниц; 125 записей в каждой языковой версии). Предыдущий релиз для отката: `20261008-120207`. Пройдены build, lint, typecheck, test, check и audit:diary. После выпуска четыре HTML-маршрута, оба JSON, `llms.txt` и `sitemap.xml` побайтно совпали с локальной сборкой; HTTPS отвечает 200, несуществующий маршрут — 404, HTTP и `www` ведут на основной HTTPS-адрес, Caddy и `ainativemaker.service` активны, IndexNow ответил 200. Настольный Chromium 151 на 1440×900 подтвердил видимый email, отсутствие удалённого текста и горизонтального переполнения на обеих главных; сторонние запросы Яндекс.Метрики в изолированном браузере дали ошибку сертификата. Мобильная не проверялась.
+Активный релиз до текущего выпуска: `20261020-095059`. Предыдущий известный
+релиз для отката: `20261008-120207`. Фактический активный путь всегда сверять
+на сервере перед переключением.
 
-### Прежний сервер
+Прежний VPS `prokovki` больше не принимает трафик. Его файлы, заявки и
+конфигурация сохранены только как аварийный откат и этой процедурой не меняются.
 
-Русский VPS `prokovki` (`185.26.120.84`, nginx + certbot) больше не принимает
-трафик: A-записи переключены 09.09.2026. Файлы, заявки и nginx-конфиг там
-оставлены как есть — это откат на случай проблем. Эталон nginx сохранён в
-`deploy/nginx.conf`. Две заявки и файл статусов скопированы на новый сервер.
+## Локальный gate
 
-## DNS
+```bash
+npm run build
+npm run lint
+npm run typecheck
+npm test
+npm run check
+npm run audit:diary
+node /Users/sergeiriazanov/antropic/ii-agent-MODUL-web-03-10-26/bin/ii.js check dist --seo --min 70
+```
 
-Домен зарегистрирован в Namecheap, зона обслуживается Cloudflare
-(`dawn.ns`/`pablo.ns`). Зоной управляет токен `~/.config/cloudflare/mail-token`.
+Перед выпуском выполнить desktop QA в отдельном Chromium на 1440×900.
+Мобильная проверка выполняется только по отдельной прямой команде владельца.
 
-- `A` для `@` → `167.17.73.188`, без проксирования;
-- `A` для `www` → `167.17.73.188`, без проксирования;
-- MX, DKIM, SPF, DMARC и SRV указывают на `mail.111.bz` — почтовые записи
-  при переездах сайта не трогать.
-
-## Выпуск нового релиза
+## Выпуск
 
 Только по отдельной явной команде владельца.
 
 ```bash
-npm run build && npm run check && npm test
 TS=$(date +%Y%m%d-%H%M%S)
 rsync -a --delete dist/ srv188:/srv/ainativemaker/releases/$TS/
 ssh srv188 "ln -sfn /srv/ainativemaker/releases/$TS /srv/ainativemaker/current"
 ```
 
-Если менялся `server/`, загружать весь каталог: `index.mjs` импортирует
-`admin-ui.mjs`. Файлы данных в релиз не входят и не перезаписываются.
+Если менялся Caddy-блок, сначала собрать временный полный Caddyfile на сервере,
+проверить его `caddy validate`, затем заменить конфигурацию и выполнить
+`systemctl reload caddy`. До проверки не переписывать рабочий Caddyfile.
 
-```bash
-rsync -a server/ srv188:/opt/ainativemaker-server/current/server/
-ssh srv188 "systemctl restart ainativemaker && systemctl is-active ainativemaker"
-```
-
-При изменении Caddy-блока: скопировать эталон в `/etc/caddy/Caddyfile`,
-затем `caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile` и
-`systemctl reload caddy`. Хранить текущий и один предыдущий релиз.
+Если менялся `server/`, загрузить каталог отдельно и перезапустить только
+`ainativemaker.service`. Файлы данных и `/etc/ainativemaker-admin.env` в релиз
+не входят и не перезаписываются.
 
 ## Переиндексация
 
-После выпуска дёрнуть IndexNow (Bing, Яндекс; ключ — `deploy/indexnow.key`,
-файл `dist/<ключ>.txt` кладёт сборка):
+После выпуска отправить в IndexNow только действующие канонические страницы:
 
 ```bash
 KEY=$(cat deploy/indexnow.key); curl -s -X POST https://api.indexnow.org/indexnow -H 'Content-Type: application/json' \
-  -d "{\"host\":\"ainativemaker.com\",\"key\":\"$KEY\",\"urlList\":[\"https://ainativemaker.com/\",\"https://ainativemaker.com/ru/\",\"https://ainativemaker.com/ai/\",\"https://ainativemaker.com/ru/ai/\"]}" -w '%{http_code}\n'
+  -d "{\"host\":\"ainativemaker.com\",\"key\":\"$KEY\",\"urlList\":[\"https://ainativemaker.com/\",\"https://ainativemaker.com/ai/\"]}" -w '%{http_code}\n'
 ```
 
-Google пинг сайтмапа не принимает с 2023 года: только Search Console —
-владелец сайта добавляет ресурс `ainativemaker.com`, отправляет
-`sitemap.xml` и жмёт «Запросить индексирование» для `/` и `/ru/`. Пока этого
-не сделано, в выдаче висит старая парковка Namecheap («is registered at
-Namecheap»), проиндексированная до запуска сайта.
+В Google Search Console отправляется `/sitemap.xml`; устаревшие русские URL в
+sitemap не возвращаются.
 
 ## Проверка после выпуска
 
-`/` (en), `/ru/` (ru), `/ai/`, `/ru/ai/`, `/journal.json`, `/journal.en.json`, `/llms.txt`, `/site.webmanifest`, `/favicon.ico`,
-`/favicon.svg`, `/apple-touch-icon.png`, `/robots.txt`, `/sitemap.xml`,
-`/og-image.png`, `/admin/` (своя форма входа), `POST /api/leads` (валидация),
-`404` на несуществующем URL, редиректы `http` и `www` на
-`https://ainativemaker.com`, Telegram-ссылка, canonical и hreflang на всех четырёх страницах, число записей дневника
-(187 в русской версии, больше — в английской: туда идут новые записи)
-и отсутствие горизонтального переполнения на 360, 390, 430, 768, 1024 и 1440 px.
+- `200`: `/`, `/ai/`, `/journal.json`, `/llms.txt`, `/ai-info.md`,
+  `/agent-context.json`, `/robots.txt`, `/sitemap.xml`, `/site.webmanifest`,
+  `/favicon.ico`, `/favicon.svg`, `/apple-touch-icon.png`, `/og-image.png`;
+- `308`: `/ru`, `/ru/*` → `/`, `/journal.en.json` → `/journal.json`;
+- честный `404` на несуществующем URL;
+- HTTP и `www` перенаправляются на `https://ainativemaker.com`;
+- canonical, английский `lang`, отсутствие ссылки на русскую версию и кириллицы
+  в публичной ленте;
+- число, порядок, ID, даты и абзацы 125 записей совпадают с локальным `dist`;
+- публичные файлы побайтно совпадают с локальной сборкой;
+- `caddy validate`, Caddy и `ainativemaker.service` успешны;
+- публичный `ii-agent check --seo` и `ii-agent diff site.json ... --verify`;
+- desktop Chromium 1440×900: основной путь, переход на `/ai/`, focus,
+  горизонтальное переполнение, консоль и сеть.
 
 ## Откат
 
 ```bash
-ssh srv188 "ls /srv/ainativemaker/releases"
+ssh srv188 "ls -1 /srv/ainativemaker/releases"
 ssh srv188 "ln -sfn /srv/ainativemaker/releases/<предыдущий> /srv/ainativemaker/current"
 ```
 
-Полный откат на прежний сервер — вернуть обе A-записи на `185.26.120.84`.
-
-
-### Прежний сервер
-
-Русский VPS `prokovki` (`185.26.120.84`, nginx + certbot) больше не принимает
-трафик: A-записи переключены 09.09.2026. Файлы, заявки и nginx-конфиг там
-оставлены как есть — это откат на случай проблем. Эталон nginx сохранён в
-`deploy/nginx.conf`. Две заявки и файл статусов скопированы на новый сервер.
-
-## DNS
-
-Домен зарегистрирован в Namecheap, зона обслуживается Cloudflare
-(`dawn.ns`/`pablo.ns`). Зоной управляет токен `~/.config/cloudflare/mail-token`.
-
-- `A` для `@` → `167.17.73.188`, без проксирования;
-- `A` для `www` → `167.17.73.188`, без проксирования;
-- MX, DKIM, SPF, DMARC и SRV указывают на `mail.111.bz` — почтовые записи
-  при переездах сайта не трогать.
-
-## Выпуск нового релиза
-
-Только по отдельной явной команде владельца.
-
-```bash
-npm run build && npm run check && npm test
-TS=$(date +%Y%m%d-%H%M%S)
-rsync -a --delete dist/ srv188:/srv/ainativemaker/releases/$TS/
-ssh srv188 "ln -sfn /srv/ainativemaker/releases/$TS /srv/ainativemaker/current"
-```
-
-Если менялся `server/`, загружать весь каталог: `index.mjs` импортирует
-`admin-ui.mjs`. Файлы данных в релиз не входят и не перезаписываются.
-
-```bash
-rsync -a server/ srv188:/opt/ainativemaker-server/current/server/
-ssh srv188 "systemctl restart ainativemaker && systemctl is-active ainativemaker"
-```
-
-При изменении Caddy-блока: скопировать эталон в `/etc/caddy/Caddyfile`,
-затем `caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile` и
-`systemctl reload caddy`. Хранить текущий и один предыдущий релиз.
-
-## Переиндексация
-
-После выпуска дёрнуть IndexNow (Bing, Яндекс; ключ — `deploy/indexnow.key`,
-файл `dist/<ключ>.txt` кладёт сборка):
-
-```bash
-KEY=$(cat deploy/indexnow.key); curl -s -X POST https://api.indexnow.org/indexnow -H 'Content-Type: application/json' \
-  -d "{\"host\":\"ainativemaker.com\",\"key\":\"$KEY\",\"urlList\":[\"https://ainativemaker.com/\",\"https://ainativemaker.com/ru/\",\"https://ainativemaker.com/ai/\",\"https://ainativemaker.com/ru/ai/\"]}" -w '%{http_code}\n'
-```
-
-Google пинг сайтмапа не принимает с 2023 года: только Search Console —
-владелец сайта добавляет ресурс `ainativemaker.com`, отправляет
-`sitemap.xml` и жмёт «Запросить индексирование» для `/` и `/ru/`. Пока этого
-не сделано, в выдаче висит старая парковка Namecheap («is registered at
-Namecheap»), проиндексированная до запуска сайта.
-
-## Проверка после выпуска
-
-`/` (en), `/ru/` (ru), `/ai/`, `/ru/ai/`, `/journal.json`, `/journal.en.json`, `/llms.txt`, `/site.webmanifest`, `/favicon.ico`,
-`/favicon.svg`, `/apple-touch-icon.png`, `/robots.txt`, `/sitemap.xml`,
-`/og-image.png`, `/admin/` (своя форма входа), `POST /api/leads` (валидация),
-`404` на несуществующем URL, редиректы `http` и `www` на
-`https://ainativemaker.com`, Telegram-ссылка, canonical и hreflang на всех четырёх страницах, число записей дневника
-(187 в русской версии, больше — в английской: туда идут новые записи)
-и отсутствие горизонтального переполнения на 360, 390, 430, 768, 1024 и 1440 px.
-
-## Откат
-
-```bash
-ssh srv188 "ls /srv/ainativemaker/releases"
-ssh srv188 "ln -sfn /srv/ainativemaker/releases/<предыдущий> /srv/ainativemaker/current"
-```
-
-Полный откат на прежний сервер — вернуть обе A-записи на `185.26.120.84`.
+Если выпуск менял Caddy, вернуть сохранённую копию Caddyfile, повторить
+`caddy validate` и только затем reload.
