@@ -79,6 +79,7 @@
         <img src="/brand-mark.svg?v={{ASSET_VERSION}}" width="134" height="134" alt="">
         <span>{{BRAND_NAME}}.com</span>
       </a>
+      <a class="header-contact-link" href="mailto:5@111.bz" aria-label="Написать на 5@111.bz">5@111.bz</a>
       <a class="header-journal-link" href="#journal" data-event="header_journal_click">Дневник AI-native предпринимателя</a>
       <a class="lang-switch" href="{{OTHER_HOME_PATH}}" hreflang="en" lang="en" data-event="lang_switch_click">English</a>
     </div>
@@ -88,19 +89,12 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">Дневник AI-native предпринимателя</h1>
-        <p class="hero-lede">Как создаются проекты с ИИ: решения, неудачные попытки, переделки и работающие запуски. Сначала — свежие записи.</p>
-        <p class="hero-lede">{{JOURNAL_COUNT_LABEL}} из канала и закрытого чата показывают работу в моменте. В более ранних записях изменены имена и город.</p>
         <a class="button-journal" href="#journal" data-event="hero_journal_click">Читать свежие записи</a>
         <img class="hero-illustration" src="/hero-illustration.webp?v={{ASSET_VERSION}}" width="1774" height="887" alt="От записной книжки линии ведут к сайту, архиву и публикации" fetchpriority="high">
       </div>
     </section>
 
-    <section class="journal" id="journal" aria-labelledby="journal-title" data-journal-start>
-      <header class="journal-intro">
-        <h2 id="journal-title">Дневник AI-native предпринимателя</h2>
-        <p>Работа над проектами в словах автора. Сначала октябрьские события, затем более ранние записи.</p>
-      </header>
-
+    <section class="journal" id="journal" aria-label="Дневник AI-native предпринимателя" data-journal-start>
       <nav class="journal-nav" aria-label="Навигация по месяцам хронологии" data-journal-nav>{{MONTH_NAV}}</nav>
 
       <div class="journal-content">{{DIARY_CONTENT}}</div>

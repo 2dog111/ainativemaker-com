@@ -64,7 +64,7 @@ if (/entry-footer|entry-source|copy-link|Скопировать ссылку|>З
 if (/class="eyebrow"|journal-actions|journal-filters|data-journal-search|data-year-filter|data-clear-filter|data-filter-status/u.test(html)) failures.push("Redundant labels or journal controls remain");
 if (/Начать с первой записи|Перейти к последней|Продолжить с места, где остановились/u.test(html)) failures.push("Redundant journal navigation remains");
 if (/<header class="month-header"><p>/u.test(html)) failures.push("Monthly entry counts remain");
-if (!html.includes("<h2 id=\"journal-title\">Дневник AI-native предпринимателя</h2>")) failures.push("Journal heading is missing");
+if (!html.includes('<section class="journal" id="journal" aria-label="Дневник AI-native предпринимателя"')) failures.push("Journal accessible name is missing");
 if (/вайб-кодеров|вайбкодеров/u.test(`${html.slice(0, html.indexOf('<section class="journal"'))}${enHtml.slice(0, enHtml.indexOf('<section class="journal"'))}${aiHtml}${enAiHtml}${llms}`)) failures.push("Old 'vibe coders' naming remains outside the diary");
 if (html.includes("Записи из канала и из закрытого чата") || html.includes("правлены только имена людей и город")) failures.push("Removed journal intro sentence remains");
 if (/data-year-link|>Начало<|>Последняя запись</u.test(html)) failures.push("Extra journal navigation buttons remain");
@@ -183,9 +183,12 @@ const enPosts = sanitizePosts([...channelPosts, ...chatPosts.filter(({ id }) => 
 if (!enHtml.startsWith("<!doctype html>\n<html lang=\"en\">") || !enAiHtml.includes('<html lang="en">')) failures.push("English pages must declare lang=en");
 if (!html.includes('<html lang="ru">')) failures.push("Russian page must declare lang=ru");
 if ((enHtml.match(/<h1(?:\s|>)/gu) ?? []).length !== 1 || (enAiHtml.match(/<h1(?:\s|>)/gu) ?? []).length !== 1) failures.push("English pages must contain exactly one H1");
-if (!enHtml.includes('<h2 id="journal-title">AI-Native Founder\'s Diary</h2>') || !enHtml.includes('class="header-journal-link" href="#journal" data-event="header_journal_click">AI-Native Founder\'s Diary</a>')) failures.push("English journal naming is missing");
-if (!enHtml.includes('class="journal-translation-note"') || !enHtml.includes('href="/ru/#journal" hreflang="ru"')) failures.push("Translation notice with a link to the Russian original is missing");
+if (!enHtml.includes('<section class="journal" id="journal" aria-label="AI-Native Founder\'s Diary"') || !enHtml.includes('class="header-journal-link" href="#journal" data-event="header_journal_click">AI-Native Founder\'s Diary</a>')) failures.push("English journal naming is missing");
+if (/journal-intro|journal-translation-note|The work behind the projects|Translated from the Russian source/u.test(`${enHtml}${html}`)) failures.push("Removed journal introduction remains");
 if (!enHtml.includes('class="lang-switch" href="/ru/" hreflang="ru" lang="ru"') || !html.includes('class="lang-switch" href="/" hreflang="en" lang="en"')) failures.push("Language switch is missing");
+for (const [route, page] of [["/", enHtml], ["/ai/", enAiHtml], ["/ru/", html], ["/ru/ai/", aiHtml]]) {
+  if (!page.includes('class="header-contact-link" href="mailto:5@111.bz"')) failures.push(`Visible email contact is missing on ${route}`);
+}
 for (const [route, page] of [["/", enHtml], ["/ai/", enAiHtml], ["/ru/", html], ["/ru/ai/", aiHtml]]) {
   if (!page.includes(`<link rel="alternate" hreflang="en" href="${siteConfig.siteUrl}${route.startsWith("/ru") ? route.slice(3) : route}">`) || !page.includes(`<link rel="alternate" hreflang="ru" href="${siteConfig.siteUrl}/ru${route.startsWith("/ru") ? route.slice(3) : route}">`) || !page.includes('hreflang="x-default"')) failures.push(`hreflang links are incomplete on ${route}`);
 }

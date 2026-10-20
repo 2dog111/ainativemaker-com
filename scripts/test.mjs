@@ -92,7 +92,7 @@ assert.doesNotMatch(html, /Вы всю жизнь объясняете слов�
 assert.doesNotMatch(html, /Отказаться можно в любой день/u);
 assert.doesNotMatch(html, /Оставьте имя и выберите, куда ответить|вы успеете прочитать архив/u);
 assert.match(html, /class="button-journal"/u);
-assert.match(html, /<h2 id="journal-title">Дневник AI-native предпринимателя<\/h2>/u);
+assert.match(html, /<section class="journal" id="journal" aria-label="Дневник AI-native предпринимателя"/u);
 assert.doesNotMatch(html, /Записи из канала и из закрытого чата|правлены только имена людей и город/u);
 assert.match(html, /class="journal-nav"/u);
 assert.doesNotMatch(html, /data-year-link|>Начало<|>Последняя запись</u);
@@ -156,8 +156,10 @@ const enPosts = sanitizePosts([...channelPosts, ...chatPosts.filter(({ id }) => 
 assert.match(enHtml, /^<!doctype html>\n<html lang="en">/u);
 assert.equal((enHtml.match(/<h1(?:\s|>)/gu) ?? []).length, 1);
 assert.equal((enAiHtml.match(/<h1(?:\s|>)/gu) ?? []).length, 1);
-assert.match(enHtml, /<h2 id="journal-title">AI-Native Founder's Diary<\/h2>/u);
+assert.match(enHtml, /<section class="journal" id="journal" aria-label="AI-Native Founder's Diary"/u);
 assert.match(enHtml, /AI-Native Founder.s Diary/u);
+assert.doesNotMatch(`${enHtml}${html}`, /journal-intro|journal-translation-note|The work behind the projects|Translated from the Russian source/u);
+for (const page of [enHtml, enAiHtml, html, aiHtml]) assert.match(page, /class="header-contact-link" href="mailto:5@111\.bz"/u);
 assert.match(enHtml, /class="lang-switch" href="\/ru\/" hreflang="ru" lang="ru"/u);
 assert.match(html, /class="lang-switch" href="\/" hreflang="en" lang="en"/u);
 assert.match(enHtml, /<link rel="alternate" hreflang="x-default" href="https:\/\/ainativemaker\.com\/">/u);

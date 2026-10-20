@@ -81,6 +81,7 @@
         <img src="/brand-mark.svg?v={{ASSET_VERSION}}" width="134" height="134" alt="">
         <span>{{BRAND_NAME}}.com</span>
       </a>
+      <a class="header-contact-link" href="mailto:5@111.bz" aria-label="Email 5@111.bz">5@111.bz</a>
       <a class="header-journal-link" href="#journal" data-event="header_journal_click">AI-Native Founder's Diary</a>
       <a class="lang-switch" href="{{OTHER_HOME_PATH}}" hreflang="ru" lang="ru" data-event="lang_switch_click">По-русски</a>
     </div>
@@ -90,20 +91,12 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">AI-Native Founder's Diary</h1>
-        <p class="hero-lede">A dated account of building with AI: decisions, failed attempts, revisions and working releases. The newest entries come first.</p>
-        <p class="hero-lede">{{JOURNAL_COUNT_LABEL}} from a public channel and a private chat show the work as it happened. The diary was translated from Russian; names and the city in earlier entries were changed.</p>
         <a class="button-journal" href="#journal" data-event="hero_journal_click">Read the latest entries</a>
         <img class="hero-illustration" src="/hero-illustration.webp?v={{ASSET_VERSION}}" width="1774" height="887" alt="A notebook connects to a website, an archive and a publication" fetchpriority="high">
       </div>
     </section>
 
-    <section class="journal" id="journal" aria-labelledby="journal-title" data-journal-start>
-      <header class="journal-intro">
-        <h2 id="journal-title">AI-Native Founder's Diary</h2>
-        <p>The work behind the projects, in the author’s own words. October comes first; older entries follow.</p>
-        <p class="journal-translation-note">Translated from the Russian source, published at <a href="{{OTHER_HOME_PATH}}#journal" hreflang="ru">ainativemaker.com/ru</a>. Names and the city in older entries were changed.</p>
-      </header>
-
+    <section class="journal" id="journal" aria-label="AI-Native Founder's Diary" data-journal-start>
       <nav class="journal-nav" aria-label="Diary navigation by month" data-journal-nav>{{MONTH_NAV}}</nav>
 
       <div class="journal-content">{{DIARY_CONTENT}}</div>
